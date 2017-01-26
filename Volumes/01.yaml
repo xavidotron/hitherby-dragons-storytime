@@ -1,0 +1,20 @@
+name: |
+  <i>Jane</i>, or, <i>A Series of Brothers</i>
+episodes:
+- 
+  name: Scrape. Scrape. Crunch.
+  url: http://imago.hitherby.com/2004/06/scrape-scrape-crunch/
+  type: Legend
+-
+  name: What is Hitherby Dragons?
+  type: Merin
+  url: http://imago.hitherby.com/2003/09/historical-note/
+-
+  name: Daniel
+  date: 1976
+  type: History
+  url: http://imago.hitherby.com/2004/02/daniel-iiv/
+-
+  name: A Story
+  type: Legend
+  url: http://imago.hitherby.com/2003/11/a-story/
