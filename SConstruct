@@ -34,9 +34,9 @@ TITLES = {'index': 'About'}
 for makof in Glob('Pages/*.mak'):
     stem = str(makof).rsplit('/', 1)[-1].split('.', 1)[0]
     if stem == 'index':
-        htmlf = 'gh-pages/index.html'
+        htmlf = 'docs/index.html'
     else:
-        htmlf = 'gh-pages/' + stem + '/index.html'
+        htmlf = 'docs/' + stem + '/index.html'
     c = Command(htmlf, makof, render_mako())
     Depends(c, 'SConstruct')
     for d in Glob('Templates/*.mak'):
@@ -48,7 +48,7 @@ for yamlf in Glob('Volumes/*.yaml'):
         vol = yaml.load(fil)
     volumes.append(vol)
 
-c = Command('gh-pages/episodes/index.html', 'Templates/episodes.mak',
+c = Command('docs/episodes/index.html', 'Templates/episodes.mak',
             render_mako(volumes=volumes))
 Depends(c, 'SConstruct')
 Depends(c, 'Templates/base.mak')
