@@ -26,7 +26,7 @@
 <a href="${ep['url']}" title="Read original in Hitherby Dragons" aria-label="Read original in Hitherby Dragons"><i class="fa fa-book" aria-hidden="true"></i></a>
 </td>
 <td>
-${ep['type']}
+<a href="..#${ep['type']}">${ep['type']}</a>
 %if 'date' in ep:
 (${ep['date']})
 %endif

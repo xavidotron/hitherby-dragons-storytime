@@ -5,7 +5,8 @@
 body {
   max-width: 1000px;
   margin: auto;
-  padding: 10px
+  padding: 10px;
+  background: url(Images/header.png) top no-repeat #260565;
 }
 
 blockquote {
@@ -43,12 +44,22 @@ td,th {
   border: thin solid black;
   margin-top: -1px;
   padding: 1em 2em;
+  background: white;
+  margin-right: 160px;
 }
 
 .sidebar {
-  width: 100px;
+  width: 130px;
   float: right;
+  border: thin solid black;
   background: lightgrey;
+  padding: 10px;
+  position: relative;
+}
+.sidebar img {
+  width: 100%;
+  display: block;
+  margin-top: 2ex;
 }
 </style>
 </head>
@@ -61,6 +72,26 @@ td,th {
     <li><a href="characters/">Characters</a></li>
     <li><a href="credits/">Credits</a></li>
 </ul>
+
+<div class="sidebar">
+<div><b>More Hitherby</b></div>
+
+<img src="Images/jack-o-lantern.jpg" />
+<a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>
+
+<img src="Images/bears.jpg" />
+<a href="http://www.drivethrurpg.com/product/142782/Magical-Bears-in-the-Context-of-Contemporary-Political-Theory">Magical Bears in the Context of Contemporary Political Theory</a>
+
+<img src="Images/legacy.jpg" />
+<a href="https://www.amazon.com/Unclean-Legacy-Jenna-Katerin-Moran/dp/1503013081/">An Unclean Legacy</a>
+
+<img src="Images/round.jpg" />
+<a href="http://www.drivethrufiction.com/product/102805/Enemies-Endure-Stomping-the-World-Round">Stomping the World Round</a>
+
+<img src="Images/invasion.jpg" />
+<a href="https://www.amazon.com/Invasion-Jenna-Katerin-Moran/dp/1482730057/">Invasion</a>
+
+</div>
 
 <div class="main">
 
@@ -93,7 +124,7 @@ for an inscrutable thematic progression.
 
 <!-- Largely from http://imago.hitherby.com/2004/05/histories-legends-and-stories/ -->
 
-<h2>Histories</h2>
+<h2 id="History">Histories</h2>
 
 <p>Hitherby Dragons defines a “history” as a reliable but tonally
 biased description of events. You can reasonably trust that the events
@@ -109,7 +140,7 @@ the category of “histories”. In the original, stories take place in
 the present, and histories in the past. But as the present is a moving
 target, here we dispense with this duality.)
 
-<h2>Legends</h2>
+<h2 id="Legend">Legends</h2>
 
 <p>A “legend,” conversely, is something that people use to help them
 understand history and the world. There’s a stage at the Gibbelins’
@@ -122,16 +153,12 @@ a real reason to ask—e.g., you spot a connection between a legend and
 a history—then there’s probably some data. If not, then probably
 not.
 
-<h2>Merins</h2>
+<h2 id="Merin">Merins</h2>
 
 <p>Merins help make sense of the world. In this usage, they are entries
 that provide exposition on Hitherby Dragons and its universe and
 metaphysics in the form of an aside or authorial interjection.
 
-</div>
-
-<div class="sidebar">
-Foo
 </div>
 
 </body>
