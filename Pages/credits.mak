@@ -22,3 +22,10 @@ and her support of this project.
 <li>Richard Gould: <a href="http://99sounds.org/percussion-samples/">Percussa Toolbox</a>,
 <a href="http://99sounds.org/the-warehouse/">The Warehouse</a>
 </ul>
+
+<h2>Art</h2>
+
+<ul>
+<li><a href="http://mamancochet.tumblr.com/">cochet v.</a>: character portraits
+<li>Xavid: episode and background art
+</ul>

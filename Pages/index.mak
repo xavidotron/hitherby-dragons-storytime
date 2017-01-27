@@ -19,11 +19,12 @@
 <p align="right">—“<a href="http://imago.hitherby.com/2003/09/historical-note/">What is Hitherby Dragons?</a>”</p>
 </blockquote>
 
-<p>Hitherby Dragons Storytime is a voicecast of Hitherby Dragons, a
-serial ficton by Jenna Moran. Episode text and much of the text on
-this website is hers. We present her episodes in neither their
-original posting order nor a strict in-universe order, but instead aim
-for an inscrutable thematic progression.
+<p>Hitherby Dragons Storytime is a voicecast of <a
+href="http://imago.hitherby.com/">Hitherby Dragons</a>, a serial
+ficton by Jenna Moran. Episode text and much of the text on this
+website is hers. We present her episodes in neither their original
+posting order nor a strict in-universe order, but instead aim for an
+inscrutable thematic progression.
 
 <p>There are three types of episodes:
 

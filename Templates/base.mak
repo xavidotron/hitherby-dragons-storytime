@@ -3,10 +3,20 @@
 <head>
 <link rel="stylesheet" href="${prefix}font-awesome/css/font-awesome.min.css">
 <style type="text/css">
+@font-face {
+  font-family: Amarante;
+  src: url(${prefix}amarante/Amarante-Regular.ttf);
+}
+
+h1 {
+  font-family: Amarante;
+  font-size: 3em;
+  margin: 2px 10px 7px;
+}
+
 body {
   max-width: 1000px;
   margin: auto;
-  padding: 10px;
   background: url(${prefix}Images/header.jpg) top no-repeat #26056f;
 }
 
@@ -25,7 +35,7 @@ td,th {
 }
 
 .tabs {
-  margin-bottom: 0;
+  margin: 0 5px;
 }
 .tabs li {
   display: inline-block;
@@ -42,6 +52,7 @@ td,th {
 }
 
 .main {
+  overflow: auto;
   border: thin solid black;
   margin-top: -1px;
   padding: 1em 2em;
@@ -58,10 +69,21 @@ td,th {
   padding: 10px;
   position: relative;
 }
+.sidebar a {
+  display: block;
+  margin-top: 2ex;
+}
 .sidebar img {
   width: 100%;
   display: block;
-  margin-top: 2ex;
+}
+
+.right {
+  float: right;
+  width: 150px;
+}
+.clear {
+  clear: both;
 }
 </style>
 </head>
@@ -79,27 +101,37 @@ td,th {
 </ul>
 
 <div class="sidebar">
-<div><b>More Hitherby</b></div>
+<center><b>More Hitherby</b></center>
 
+<a href="http://imago.hitherby.com/">Imago</a>
+
+<a href="http://books.hitherby.com/">Books</a>
+
+<a href="https://www.smashwords.com/books/view/256783">
 <img src="${prefix}Images/jack-o-lantern.jpg" />
-<a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>
+Jack o’Lantern Girl</a>
 
+<a href="http://www.drivethrurpg.com/product/142782/Magical-Bears-in-the-Context-of-Contemporary-Political-Theory">
 <img src="${prefix}Images/bears.jpg" />
-<a href="http://www.drivethrurpg.com/product/142782/Magical-Bears-in-the-Context-of-Contemporary-Political-Theory">Magical Bears in the Context of Contemporary Political Theory</a>
+Magical Bears in the Context of Contemporary Political Theory</a>
 
+<a href="https://www.amazon.com/Unclean-Legacy-Jenna-Katerin-Moran/dp/1503013081/">
 <img src="${prefix}Images/legacy.jpg" />
-<a href="https://www.amazon.com/Unclean-Legacy-Jenna-Katerin-Moran/dp/1503013081/">An Unclean Legacy</a>
+An Unclean Legacy</a>
 
+<a href="http://www.drivethrufiction.com/product/102805/Enemies-Endure-Stomping-the-World-Round">
 <img src="${prefix}Images/round.jpg" />
-<a href="http://www.drivethrufiction.com/product/102805/Enemies-Endure-Stomping-the-World-Round">Stomping the World Round</a>
+Stomping the World Round</a>
 
+<a href="https://www.amazon.com/Invasion-Jenna-Katerin-Moran/dp/1482730057/">
 <img src="${prefix}Images/invasion.jpg" />
-<a href="https://www.amazon.com/Invasion-Jenna-Katerin-Moran/dp/1482730057/">Invasion</a>
+Invasion</a>
 
 </div>
 
 <div class="main">
 ${self.body()}
+<div class="clear"></div>
 </div>
 
 </body>
