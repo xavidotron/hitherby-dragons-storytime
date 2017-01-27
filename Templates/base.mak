@@ -77,6 +77,10 @@ td,th {
   width: 100%;
   display: block;
 }
+.footer {
+  margin-top: 10ex;
+  font-size: smaller;
+}
 
 .right {
   float: right;
@@ -103,9 +107,9 @@ td,th {
 <div class="sidebar">
 <center><b>More Hitherby</b></center>
 
-<a href="http://imago.hitherby.com/">Imago</a>
+<a href="http://imago.hitherby.com/">The Original</a>
 
-<a href="http://books.hitherby.com/">Books</a>
+<a href="http://books.hitherby.com/">Enemies Endure</a>
 
 <a href="https://www.smashwords.com/books/view/256783">
 <img src="${prefix}Images/jack-o-lantern.jpg" />
@@ -131,7 +135,13 @@ Invasion</a>
 
 <div class="main">
 ${self.body()}
-<div class="clear"></div>
+
+<div class="footer clear">
+<%block name="footer">
+  Hitherby Dragons by Jenna Moran.
+</%block>
+</div>
+
 </div>
 
 </body>

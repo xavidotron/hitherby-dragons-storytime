@@ -3,7 +3,7 @@
 
 %for vi in xrange(len(volumes)):
 <% vol = volumes[vi] %>
-<h1>Volume ${vi + 1}: ${vol['name']}</h1>
+<h2>Volume ${vi + 1}: ${vol['name']}</h2>
 
 <table>
 %for ei in xrange(len(vol['episodes'])):

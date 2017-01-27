@@ -30,7 +30,7 @@ inscrutable thematic progression.
 
 <!-- Largely from http://imago.hitherby.com/2004/05/histories-legends-and-stories/ -->
 
-<h2 id="History">Histories</h2>
+<h3 id="History">Histories</h3>
 
 <p>Hitherby Dragons defines a “history” as a reliable but tonally
 biased description of events. You can reasonably trust that the events
@@ -46,7 +46,7 @@ the category of “histories”. In the original, stories take place in
 the present, and histories in the past. But as the present is a moving
 target, here we dispense with this duality.)
 
-<h2 id="Legend">Legends</h2>
+<h3 id="Legend">Legends</h3>
 
 <p>A “legend,” conversely, is something that people use to help them
 understand history and the world. There’s a stage at the Gibbelins’
@@ -59,7 +59,7 @@ a real reason to ask—e.g., you spot a connection between a legend and
 a history—then there’s probably some data. If not, then probably
 not.
 
-<h2 id="Merin">Merins</h2>
+<h3 id="Merin">Merins</h3>
 
 <p>Merins help make sense of the world. In this usage, they are entries
 that provide exposition on Hitherby Dragons and its universe and

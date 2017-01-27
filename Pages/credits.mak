@@ -1,7 +1,7 @@
 ## -*- coding: utf-8 -*-
 <%inherit file="../base.mak"/>
 
-<p>Original text by Jenna Katerin Moran. Great thanks for her amazing writing
+<p>Original text by Jenna Katerin Moran. Huge thanks for her amazing writing
 and her support of this project.
 
 <h2>Cast</h2>
@@ -14,6 +14,13 @@ and her support of this project.
 <li>Edwin: Martin
 </ul>
 
+<h2>Art</h2>
+
+<ul>
+<li><a href="http://mamancochet.tumblr.com/">cochet v.</a>: characters page art
+<li>Xavid: episode and background art
+</ul>
+
 <h2>Sound Effects</h2>
 
 <ul>
@@ -21,11 +28,4 @@ and her support of this project.
 <li>scarfield: <a href="http://www.freesound.org/people/scarfield/sounds/52005/">table scrape</a>
 <li>Richard Gould: <a href="http://99sounds.org/percussion-samples/">Percussa Toolbox</a>,
 <a href="http://99sounds.org/the-warehouse/">The Warehouse</a>
-</ul>
-
-<h2>Art</h2>
-
-<ul>
-<li><a href="http://mamancochet.tumblr.com/">cochet v.</a>: character portraits
-<li>Xavid: episode and background art
 </ul>

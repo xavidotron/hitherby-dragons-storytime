@@ -56,4 +56,7 @@ thinking about.
 
 <p>He can make them stick.
 
-<p><small>Art by <a href="http://mamancochet.tumblr.com/">cochet v.</a></small></p>
+<%block name="footer">
+  ${parent.footer()}
+  Character art by <a href="http://mamancochet.tumblr.com/">cochet v.</a>
+</%block>
