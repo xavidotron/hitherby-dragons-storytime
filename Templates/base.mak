@@ -7,7 +7,7 @@ body {
   max-width: 1000px;
   margin: auto;
   padding: 10px;
-  background: url(${prefix}Images/header.png) top no-repeat #260565;
+  background: url(${prefix}Images/header.jpg) top no-repeat #26056f;
 }
 
 blockquote {
@@ -54,6 +54,7 @@ td,th {
   float: right;
   border: thin solid black;
   background: lightgrey;
+  margin-top: 5px;
   padding: 10px;
   position: relative;
 }
