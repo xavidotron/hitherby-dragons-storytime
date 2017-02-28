@@ -1,20 +1,44 @@
 name: |
   <i>Jane</i>, or, <i>A Series of Brothers</i>
+desc: |
+  How four brothers sought—in linear succession—to answer their sister’s pain.
 episodes:
 - 
   name: Scrape. Scrape. Crunch.
   url: http://imago.hitherby.com/2004/06/scrape-scrape-crunch/
   type: Legend
+  soundcloud: https://soundcloud.com/hitherby/scrape-scrape-crunch
+  tagline: A legend, that is to say a show, performed in 2004 by Jane and her final brother Martin.
 -
   name: What is Hitherby Dragons?
   type: Merin
   url: http://imago.hitherby.com/2003/09/historical-note/
 -
   name: Daniel
-  date: 1976
+  date: 1976.2
   type: History
   url: http://imago.hitherby.com/2004/02/daniel-iiv/
+  timenote: Daniel deals with Mr. Banks and Ms. Bell.
+  tagline: The history of Daniel's attempt to rescue his sister Jenna, who would later become Jane, from the monster.
 -
   name: A Story
   type: Legend
   url: http://imago.hitherby.com/2003/11/a-story/
+-
+  name: Classifying Things
+  type: Legend
+  url: http://imago.hitherby.com/2004/03/classifying-things/
+-
+  name: Alan
+  type: History
+  date: 1980
+  url: http://imago.hitherby.com/2004/02/alan-iiiv/
+-
+  name: She Puts on Shows
+  type: Merin
+  url: http://imago.hitherby.com/2003/12/she-puts-on-shows/
+-
+  name: The Truth
+  type: Legend
+  url: http://imago.hitherby.com/2003/12/the-truth/
+# January 12, 1974: Tunnel Rat (We're going to have to make him ready)

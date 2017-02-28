@@ -1,6 +1,7 @@
 ## -*- coding: utf-8 -*-
 <html>
 <head>
+<title>${title}</title>
 <link rel="stylesheet" href="${prefix}font-awesome/css/font-awesome.min.css">
 <style type="text/css">
 @font-face {
@@ -12,6 +13,10 @@ h1 {
   font-family: Amarante;
   font-size: 3em;
   margin: 2px 10px 7px;
+}
+h1 a {
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -32,6 +37,11 @@ td,th {
   padding: 5px;
   text-align: left;
   border: 1px solid silver;
+}
+td.c {
+  text-align: center;
+  width: 1px;
+  white-space: nowrap;
 }
 
 .tabs {
@@ -84,6 +94,9 @@ td,th {
 
 .right {
   float: right;
+  margin-left: 5px;
+}
+img.right {
   width: 150px;
 }
 .clear {
@@ -92,7 +105,7 @@ td,th {
 </style>
 </head>
 <body>
-<h1>Hitherby Dragons Storytime</h1>
+<h1><a href="${prefix}">Hitherby Dragons Storytime</a></h1>
 
 <ul class="tabs">
 %for tab,href in tablist:
@@ -130,6 +143,10 @@ Stomping the World Round</a>
 <a href="https://www.amazon.com/Invasion-Jenna-Katerin-Moran/dp/1482730057/">
 <img src="${prefix}Images/invasion.jpg" />
 Invasion</a>
+
+<a href="http://www.lulu.com/shop/rebecca-borgstrom/hitherby-dragons-primal-chaos/paperback/product-96630.html">
+<img src="${prefix}Images/chaos.jpg" />
+Primal Chaos</a>
 
 </div>
 

@@ -2,21 +2,11 @@
 <%inherit file="../base.mak"/>
 
 <blockquote>
-<p>Hitherby Dragons is a story about the emptiness.
-
-<p>If you look out at the world, there’s a lot that you know. There’s a lot that you understand. But at the edge of your map, there’s emptiness.
-
-<p>There’s questions that are hard to answer.
-
-<p>There’s things that are hard to explain.
-
-<p>There’s choices that don’t make sense and there’s a sea of chaos and there’s emptiness.
-
 <p>So Jane goes to the edge of the world, where Santa Ynez touches on the chaos. She walks across the bridge to the abandoned tower of the gibbelins. Finding that its machinery is in recoverable order, she assembles a theater company of gods and humans to answer suffering.
 
 <p>Also they put on shows.
 
-<p align="right">—“<a href="http://imago.hitherby.com/2003/09/historical-note/">What is Hitherby Dragons?</a>”</p>
+<p align="right">—“<a href="http://imago.hitherby.com/2003/09/historical-note/">What is Hitherby Dragons?</a>”, by Jenna Moran</p>
 </blockquote>
 
 <p>Hitherby Dragons Storytime is a voicecast of <a
@@ -26,15 +16,20 @@ website is hers. We present her episodes in neither their original
 posting order nor a strict in-universe order, but instead aim for an
 inscrutable thematic progression.
 
+<p>Questions? Interested in joining the crew? Email hitherby@xavid.us.
+
+<h2>Narrative Structure</h2>
+
 <p>There are three types of episodes:
 
 <!-- Largely from http://imago.hitherby.com/2004/05/histories-legends-and-stories/ -->
 
 <h3 id="History">Histories</h3>
 
-<p>Hitherby Dragons defines a “history” as a reliable but tonally
-biased description of events. You can reasonably trust that the events
-in a history happened, with some minor wiggleroom for the tonal shifts.
+<p><a href="http://imago.hitherby.com/2004/05/histories-legends-and-stories/">According
+to Jenna</a>, a “history” is a reliable but tonally biased description
+of events. You can reasonably trust that the events in a history
+happened, with some minor wiggleroom for the tonal shifts.
 
 <p>Histories are often biased by one of the participant’s
 perceptions. That said, the entries are real events.  Even “Alan”,

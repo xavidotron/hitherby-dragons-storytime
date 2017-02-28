@@ -3,6 +3,8 @@
 
 <a href="../Images/jane.png"><img class="right" src="../Images/jane.png" /></a>
 
+<h2>Characters</h2>
+
 <h2><a href="http://imago.hitherby.com/2004/05/character-profile-jane/">Jane</a></h2>
 
 <p>In the histories, Jane has straight black hair to mid-back. She has
@@ -56,7 +58,24 @@ thinking about.
 
 <p>He can make them stick.
 
+<!-- http://imago.hitherby.com/2004/05/character-profile-the-angel-four/ -->
+
+<h2>Strange Entities</h2>
+
+
+<!-- http://hitherby-dragons.wikidot.com/what-is-hitherby-dragons-2 -->
+
+<ul>
+<li><b>Angels</b> answer emptiness with hope.
+<li><b>Death</b> solves problems through extinction.
+<li><b>Fairies</b> reflect the chaos outside the world.
+<li><b>Fiends</b> answer hurt with madness.
+<li><b>Merins</b> help make sense of the world.
+<li><b>Woglies</b> devour the integrity of the world. They are shaped
+like a torus and have two winky eyes. Inside of a wogly it’s empty.
+</ul>
+
 <%block name="footer">
   ${parent.footer()}
-  Character art by <a href="http://mamancochet.tumblr.com/">cochet v.</a>
+  "Jane" character art by <a href="http://mamancochet.tumblr.com/">cochet v.</a>
 </%block>
