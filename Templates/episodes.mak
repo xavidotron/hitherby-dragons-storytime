@@ -77,12 +77,6 @@ ${ep['desc']}</td>
 %if 'youtube' in ep:
   <a href="${ep['youtube']}" title="Listen on YouTube" aria-label="Listen on YouTube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 %endif
-%if 'stitcher' in ep:
-  <a href="${ep['stitcher']}" title="Listen on Stitcher" aria-label="Listen on Stitcher"><i class="fa fa-podcast" aria-hidden="true"></i></a>
-%endif
-%if 'itunes' in ep:
-  <a href="${ep['itunes']}" title="Listen on iTunes" aria-label="Listen on iTunes"><i class="fa fa-apple" aria-hidden="true"></i></a>
-%endif
 <a href="${ep['url']}" title="Read original text" aria-label="Read original text"><i class="fa fa-book" aria-hidden="true"></i></a>
 </td>
 %if title != 'Timeline':

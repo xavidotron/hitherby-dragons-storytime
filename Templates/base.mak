@@ -79,7 +79,7 @@ td.c {
   padding: 10px;
   position: relative;
 }
-.sidebar a {
+.sidebar > a {
   display: block;
   margin-top: 2ex;
 }
@@ -87,6 +87,10 @@ td.c {
   width: 100%;
   display: block;
 }
+.sidebar ul {
+  padding-left: 20px;
+}
+
 .footer {
   margin-top: 10ex;
   font-size: smaller;
@@ -118,6 +122,17 @@ img.right {
 </ul>
 
 <div class="sidebar">
+<center><b>Elsewhere</b></center>
+
+<ul>
+<li><a href="https://soundcloud.com/hitherby">SoundCloud</a>
+<li><a href="https://www.youtube.com/channel/UCQZ3UkIccB-P27K1jJTxKcA">YouTube</a>
+<li><a href="https://hitherby-storytime.tumblr.com/">Tumblr</a>
+<li><a href="https://twitter.com/HitherbyStorytm">Twitter</a>
+<li><a href="http://fb.me/HitherbyStorytime">Facebook</a>
+<li><a href="http://www.stitcher.com/podcast/hitherby-dragons-storytime">Stitcher</a>
+</ul>
+
 <center><b>More Hitherby</b></center>
 
 <a href="http://imago.hitherby.com/">The Original</a>
