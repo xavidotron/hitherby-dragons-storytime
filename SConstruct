@@ -20,7 +20,6 @@ class dateparse(object):
             self.monthday = None
             self.key = d
             self.full = self.year
-        print self.key
     def __repr__(self):
         return '<%s>' % self.key
     def __str__(self):
@@ -54,7 +53,7 @@ def render_mako(index=False, **kw):
 TABS = ['episodes',
         'about',
         #'timeline',
-        #'characters',
+        'characters',
         'credits']
 TITLES = {'characters': 'Characters and Strange Entities'}
     

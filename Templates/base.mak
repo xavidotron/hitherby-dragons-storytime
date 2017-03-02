@@ -88,7 +88,7 @@ td.c {
   display: block;
 }
 .sidebar ul {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .footer {
@@ -129,8 +129,10 @@ img.right {
 <li><a href="https://www.youtube.com/channel/UCQZ3UkIccB-P27K1jJTxKcA">YouTube</a>
 <li><a href="https://hitherby-storytime.tumblr.com/">Tumblr</a>
 <li><a href="https://twitter.com/HitherbyStorytm">Twitter</a>
+<li><a href="https://itunes.apple.com/us/podcast/hitherby-dragons-storytime/id1210240055">iTunes</a>
 <li><a href="http://fb.me/HitherbyStorytime">Facebook</a>
-<li><a href="http://www.stitcher.com/podcast/hitherby-dragons-storytime">Stitcher</a>
+<li><a href="http://www.stitcher.com/s?fid=132282&refid=stpr">Stitcher</a>
+<li><a href="http://tunein.com/radio/Hitherby-Dragons-Storytime-p964711/">TuneIn</a>
 </ul>
 
 <center><b>More Hitherby</b></center>
