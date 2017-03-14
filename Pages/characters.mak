@@ -91,6 +91,6 @@ like a torus and have two winky eyes. Inside of a wogly it’s empty.
 </ul>
 
 <%block name="footer">
-  Hitherby Dragons, including the descriptions here, by Jenna Moran.
+  Hitherby Dragons, including the descriptions here, by <a href="https://www.patreon.com/JennaMoran">Jenna Moran</a>.
   "Jane" character art by <a href="http://mamancochet.tumblr.com/">cochet v.</a>
 </%block>
