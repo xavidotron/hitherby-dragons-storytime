@@ -52,7 +52,7 @@ def render_mako(index=False, **kw):
 
 TABS = ['episodes',
         'about',
-        #'timeline',
+        'timeline',
         'characters',
         'credits']
 TITLES = {'characters': 'Characters and Strange Entities'}
