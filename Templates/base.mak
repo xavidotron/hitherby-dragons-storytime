@@ -172,7 +172,7 @@ ${self.body()}
 
 <div class="footer clear">
 <%block name="footer">
-  Hitherby Dragons by Jenna Moran.
+  Hitherby Dragons by <a href="https://www.patreon.com/JennaMoran">Jenna Moran</a>.
 </%block>
 </div>
 
