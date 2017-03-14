@@ -3,6 +3,11 @@
 
 <script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>
 
+%if title == 'Timeline':
+<p>A chronological ordering of the Histories, with certain additional contextual
+  notes.</p>
+%endif
+
 %for vi in xrange(len(volumes)):
 <% vol = volumes[vi] %>
 <h2>${vol['name']}</h2>
