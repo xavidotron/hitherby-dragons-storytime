@@ -3,6 +3,8 @@
 
 <%block name="meta">
 <meta property="og:image" content="http://hitherby.xavid.us/${episode['path']}square.png" />
+<meta property="og:url" content="http://hitherby.xavid.us/${episode['path']}" />
+<meta property="og:title" content="${episode['name']}" />
 %if 'tagline' in episode:
 <meta property="og:description" content="${episode['tagline']}" />
 %else:
