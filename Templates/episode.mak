@@ -2,7 +2,12 @@
 <%inherit file="../base.mak"/>
 
 <%block name="meta">
-  <meta property="og:image" content="square.png" />
+<meta property="og:image" content="http://hitherby.xavid.us/${episode['path']}square.png" />
+%if 'tagline' in episode:
+<meta property="og:description" content="${episode['tagline']}" />
+%else:
+<meta property="og:description" content="From Hitherby Dragons by Jenna Moran." />
+%endif
 </%block>
 
 <script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>

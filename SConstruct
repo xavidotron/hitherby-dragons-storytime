@@ -98,7 +98,8 @@ for vol in volumes:
         if 'soundcloud' in ep:
             c = Command('docs/%sindex.html' % (ep['path']),
                         'Templates/episode.mak', render_mako(
-                            volume=vol, episode=ep, prefix='../../'))
+                            volume=vol, episode=ep, prefix='../../',
+                            title=ep['name']))
             Depends(c, 'SConstruct')
             Depends(c, 'Templates/base.mak')
             # Simplest to depend on all b/c of prev/next
