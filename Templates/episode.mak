@@ -5,10 +5,16 @@
 <meta property="og:image" content="http://hitherby.xavid.us/${episode['path']}square.png" />
 <meta property="og:url" content="http://hitherby.xavid.us/${episode['path']}" />
 <meta property="og:title" content="${episode['name']}" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HitherbyStorytm" />
+<meta name="twitter:title" content="${episode['name']}" />
+<meta name="twitter:image" content="http://hitherby.xavid.us/${episode['path']}square.png" />
 %if 'tagline' in episode:
 <meta property="og:description" content="${episode['tagline']}" />
+<meta name="twitter:description" content="${episode['tagline']}" />
 %else:
 <meta property="og:description" content="From Hitherby Dragons by Jenna Moran." />
+<meta name="twitter:description" content="From Hitherby Dragons by Jenna Moran." />
 %endif
 </%block>
 
