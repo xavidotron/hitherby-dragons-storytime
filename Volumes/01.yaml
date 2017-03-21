@@ -2,20 +2,38 @@ name: |
   <i>Jane</i>, or, <i>A Series of Brothers</i>
 desc: |
   How four brothers sought—in linear succession—to answer their sister’s pain.
+seebits:
+  Legend: |
+    For more legends, check out <a href="http://www.drivethrurpg.com/product/142782/Magical-Bears-in-the-Context-of-Contemporary-Political-Theory">Magical Bears in the Context of Contemporary Political Theory</a>.
 episodes:
 - 
   name: Scrape. Scrape. Crunch.
   url: http://imago.hitherby.com/2004/06/scrape-scrape-crunch/
   type: Legend
   tagline: A legend, that is to say a show, performed in 2004 by Jane and her final brother Martin.
+  credits: |
+    Narrator: Xavid
+    Martin: Edwin
+    Jane: Sarah
+
+    Sound Effects by
+    Julian Evans: <a href="http://www.freesound.org/people/SpliceSound/sounds/218316/">Wooden chair, push in, pull out</a>
+    scarfield: <a href="http://www.freesound.org/people/scarfield/sounds/52005/">table_scrape</a>
+    Richard Gould: <a href="http://99sounds.org/percussion-samples/">Percussa Toolbox</a>, <a href="http://99sounds.org/the-warehouse/">The Warehouse</a>
   soundcloud: https://soundcloud.com/hitherby/scrape-scrape-crunch
   youtube: https://www.youtube.com/watch?v=xymVuwDJTWs
+  art: legend-washing-machine.svg
 -
   name: What is Hitherby Dragons?
   type: Merin
   url: http://imago.hitherby.com/2003/09/historical-note/
   soundcloud: https://soundcloud.com/hitherby/what-is-hitherby-dragons
   youtube: https://www.youtube.com/watch?v=Boj9KZL7uAE
+  seebit: |
+    For more on Jane, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  credits: |
+    Narrator: Xavid
+  art: merin-edge-of-map.svg
 -
   name: Daniel
   date: 1976.2
@@ -23,14 +41,38 @@ episodes:
   url: http://imago.hitherby.com/2004/02/daniel-iiv/
   timenote: Daniel deals with Mr. Banks and Ms. Bell.
   tagline: "The history of Daniel's attempt to rescue his sister Jenna, who would later become Jane, from the monster."
+  seebit: |
+    For Daniel’s birth, see <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  credits: |
+    Narrator: Xavid
+    Mr. Banks: Edwin
+    Ms. Bell: Sarah
+    Daniel: Andrew Clough
+    Security Guard: Xavid
+    Mr. Manager: Sam Dukhovni
+    
+    Sound Effects by:
+    Agaxly: <a href="http://www.freesound.org/people/agaxly/sounds/213003/">Stamp</a>
+    filmfan87: <a href="http://www.freesound.org/people/filmfan87/sounds/108396/">hand hitting table</a>
+    Richard Gould: <a href="http://99sounds.org/percussion-samples/">Percussa Toolbox</a>
+  tags: [angels]
   soundcloud: https://soundcloud.com/hitherby/daniel
   youtube: https://www.youtube.com/watch?v=KykPd6n0Tvk
+  art: history-jacket.svg
 -
   name: A Story
   type: Legend
   url: http://imago.hitherby.com/2003/11/a-story/
   soundcloud: https://soundcloud.com/hitherby/a-story
   youtube: https://www.youtube.com/watch?v=JPm-q6XwOJ4
+  seebit: |
+    For a much longer legend, see <a href="https://www.amazon.com/Unclean-Legacy-Jenna-Katerin-Moran/dp/1503013081/">An Unclean Legacy</a>.
+  credits: |
+    Narrator: Xavid
+    
+    Music by:
+    piermic: <a href="http://www.freesound.org/people/piermic/sounds/324085/">Improvisation with Sopranino recorder</a>
+  art: legend-book.svg
 -
   name: Classifying Things
   type: Legend

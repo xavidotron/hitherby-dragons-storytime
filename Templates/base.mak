@@ -1,8 +1,10 @@
 ## -*- coding: utf-8 -*-
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
-<title>${title}</title>
-<link rel="stylesheet" href="${prefix}font-awesome/css/font-awesome.min.css">
+  <title>${title}</title>
+  <%block name="meta">
+  </%block>
+  <link rel="stylesheet" href="${prefix}font-awesome/css/font-awesome.min.css">
 <style type="text/css">
 @font-face {
   font-family: Amarante;
@@ -105,6 +107,11 @@ img.right {
 }
 .clear {
   clear: both;
+}
+
+iframe {
+  display: block;
+  margin: auto;
 }
 </style>
 </head>
