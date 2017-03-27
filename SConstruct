@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import re, sys, os
+import re, sys, os, subprocess
 import yaml
 from mako.template import Template
 from mako.lookup import TemplateLookup
@@ -13,13 +13,16 @@ class dateparse(object):
             self.full = '%s, %s' % (self.monthday, self.year)
         else:
             d = str(d)
-            if '.' in d:
-                self.year = d.split('.')[0]
-            else:
-                self.year = d
             self.monthday = None
             self.key = d
-            self.full = self.year
+            self.full = d
+            if ' ' in d:
+                self.year, self.monthday = d.split(' ')
+            elif '.' in d:
+                self.year = d.split('.')[0]
+                self.full = self.year
+            else:
+                self.year = d
     def __repr__(self):
         return '<%s>' % self.key
     def __str__(self):
@@ -70,6 +73,9 @@ for makof in Glob('Pages/*.mak'):
 volumes = []
 age = []
 prev_ep = None
+last_upload = None
+next_upload = None
+upload_vol = None
 for yamlf in Glob('Volumes/*.yaml'):
     with open(str(yamlf)) as fil:
         vol = yaml.load(fil)
@@ -83,11 +89,17 @@ for yamlf in Glob('Volumes/*.yaml'):
                 ' ', '-'))
         if 'date' in ep:
             ep['date'] = dateparse(ep['date'])
+        if 'seebit' not in ep:
+            ep['seebit'] = vol['seebits'][ep['type']]
         if 'soundcloud' in ep:
             if prev_ep:
                 ep['prev'] = prev_ep['path']
                 prev_ep['next'] = ep['path']
             prev_ep = ep
+        else:
+            if next_upload is None:
+                next_upload = ep
+                upload_vol = vol
         if ep['type'] == 'History':
             age.append(ep)
     volumes.append(vol)
@@ -96,6 +108,7 @@ pwd = os.getcwd()
 for vol in volumes:
     for ep in vol['episodes']:
         if 'soundcloud' in ep:
+            assert 'art' in ep, ep
             c = Command('docs/%sindex.html' % (ep['path']),
                         'Templates/episode.mak', render_mako(
                             volume=vol, episode=ep, prefix='../../',
@@ -104,7 +117,7 @@ for vol in volumes:
             Depends(c, 'Templates/base.mak')
             # Simplest to depend on all b/c of prev/next
             Depends(c, 'Volumes/')
-
+        if 'art' in ep:
             c = Command(
                 'docs/%ssquare.png' % ep['path'],
                 'Art/' + ep['art'],
@@ -124,7 +137,8 @@ for vol in volumes:
             #Depends(c, 'Volumes/%02d.yaml' % vol['number'])
 
 c = Command('docs/index.html', 'Templates/episodes.mak',
-            render_mako(prefix='', volumes=volumes, mode='episodes'))
+            render_mako(prefix='', volumes=volumes, mode='episodes',
+                        title='Hitherby Dragons Storytime'))
 Depends(c, 'SConstruct')
 Depends(c, 'Templates/base.mak')
 Depends(c, 'Volumes/')
@@ -147,3 +161,87 @@ Depends(c, 'SConstruct')
 Depends(c, 'Templates/base.mak')
 Depends(c, 'Volumes/')
 Depends(c, 'historical-notes.yaml')
+
+AddOption('--upload',
+          dest='upload',
+          type='string',
+          nargs=1,
+          action='store',
+          metavar='EP',
+          help='upload episode')
+
+FMT_RE = re.compile(r'</?i>')
+LINK_RE = re.compile(r'<a href="([^"]+)">([^<]+)</a>[.]?')
+
+upload = GetOption('upload')
+if upload:
+    upload = os.path.expanduser(upload)
+    Command(
+        'vids/%syoutube.mp4' % next_upload['path'],
+        [upload, 'docs/%srect.png' % next_upload['path']],
+        "/opt/local/bin/ffmpeg -loop 1 -y -i 'docs/%srect.png' -i '%s' "
+        "-shortest -acodec libfdk_aac -vcodec libx264 -tune stillimage "
+        "'vids/%syoutube.mp4'" % (
+            next_upload['path'], upload, next_upload['path']))
+    
+    def upload_stuff(target, source, env):
+        wav = str(source[0])
+        square = str(source[1])
+        rect = str(source[2])
+        vid = str(source[3])
+        desc = ''
+        if 'tagline' in next_upload:
+            desc = next_upload['tagline'] + '\n'
+        desc += 'From Hitherby Dragons by Jenna Moran.\n'
+        desc += next_upload['url'] + '\n\n'
+        desc += LINK_RE.sub(r'\2:\n\1', next_upload['seebit'].strip()) + '\n\n'
+        desc += LINK_RE.sub(r'\1', next_upload['credits'])
+        tags = ['surreal', 'hitherby dragons']
+        if 'tags' in next_upload:
+            tags += next_upload['tags']
+        album = FMT_RE.sub('', upload_vol['name'].strip())
+        print "Title:", next_upload['name']
+        print "Album:", album
+        print "Description:"
+        print desc
+        print "Tags:", tags
+        if raw_input('Upload %s for episode "%s"? [yN] ' % (
+                wav, next_upload['name'])) == 'y':
+            #subprocess.call([
+            #    'sc',
+            #    'upload',
+            #    '--public',
+            #    '--artist', 'Hitherby Dragons Storytime',
+            #    '--title', next_upload['name'],
+            #    '--album', album,
+            #    '--year', '2017',
+            #    '--description', desc,
+            #    '--genre', 'Storytelling',
+            #    '--tags', ','.join(tags),
+            #    '--artwork', square,
+            #    wav])
+            subprocess.check_call([
+                'youtube-upload',
+                '--title', next_upload['name'],
+                '--description', desc,
+                '--category', 'Entertainment',
+                '--tags', ', '.join(tags),
+                '--default-language', 'en',
+                '--default-audio-language', 'en',
+                '--playlist', album,
+                vid])
+    Command('upload', [
+        upload,
+        'docs/%ssquare.png' % next_upload['path'],
+        'docs/%srect.png' % next_upload['path'],
+        'vids/%syoutube.mp4' % next_upload['path'],
+    ], upload_stuff)
+
+AddOption('--post',
+          dest='post',
+          action='store_true',
+          help='post episode to social media')
+
+post = GetOption('post')
+if post:
+    print "Would post", 

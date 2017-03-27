@@ -44,11 +44,7 @@ w = SC.Widget("player");
 
 <p>From <a href="${episode['url']}">Hitherby Dragons</a> by <a href="https://www.patreon.com/JennaMoran">Jenna Moran</a>.</p>
 
-%if 'seebit' in episode:
 <p>${episode['seebit']}</p>
-%else:
-<p>${volume['seebits'][episode['type']]}</p>
-%endif
 
 <p>${episode['credits'].replace('\n\n', '<p>').replace('\n', '<br>')}
 

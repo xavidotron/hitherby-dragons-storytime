@@ -77,15 +77,33 @@ episodes:
   name: Classifying Things
   type: Legend
   url: http://imago.hitherby.com/2004/03/classifying-things/
+  art: legend-sandpiper.svg
+  credits: |
+    Narrator: Xavid
+    Jane: Sarah
+    Martin: Edwin
+
+    Sound Effects by:
+    jasinski: <a href="http://www.freesound.org/people/jasinski/sounds/18363/">alkaibeach</a>
+  soundcloud: https://soundcloud.com/hitherby/classifying-things
+  youtube: https://www.youtube.com/watch?v=6CN5Mdxys6w
 -
   name: Alan
   type: History
-  date: 1980
+  date: 1980 Midyear
   url: http://imago.hitherby.com/2004/02/alan-iiiv/
+  tagline: |
+    The history of the birth of Alan, brother to Jenna, who will become Jane.
+  timenote: Alan is born.
+  seebit: |
+    For more on Jane’s brothers, see <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  tags: [fiends]
 -
   name: She Puts on Shows
   type: Merin
   url: http://imago.hitherby.com/2003/12/she-puts-on-shows/
+  seebit: |
+    For more on Jane and Martin, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
 -
   name: The Truth
   type: Legend
