@@ -4,6 +4,11 @@ import yaml
 from mako.template import Template
 from mako.lookup import TemplateLookup
 
+# This is dumb.
+sys.path.append('/Library/Python/2.7/site-packages/')
+import pytumblr
+import soundcloud
+
 class dateparse(object):
     def __init__(self, d):
         if hasattr(d, 'year'):
@@ -18,6 +23,9 @@ class dateparse(object):
             self.full = d
             if ' ' in d:
                 self.year, self.monthday = d.split(' ')
+                if self.monthday.isdigit():
+                    self.year, self.monthday = self.monthday, self.year
+                    self.key = '%s %s' % (self.year, self.monthday)
             elif '.' in d:
                 self.year = d.split('.')[0]
                 self.full = self.year
@@ -96,6 +104,7 @@ for yamlf in Glob('Volumes/*.yaml'):
                 ep['prev'] = prev_ep['path']
                 prev_ep['next'] = ep['path']
             prev_ep = ep
+            last_upload = ep
         else:
             if next_upload is None:
                 next_upload = ep
@@ -173,6 +182,13 @@ AddOption('--upload',
 FMT_RE = re.compile(r'</?i>')
 LINK_RE = re.compile(r'<a href="([^"]+)">([^<]+)</a>[.]?')
 
+def get_tags(ep):
+    tags = ['surreal', 'hitherby dragons', 'hitherby dragons storytime']
+    tags.append(ep['type'].lower())
+    if 'tags' in ep:
+        tags += ep['tags']
+    return tags
+
 upload = GetOption('upload')
 if upload:
     upload = os.path.expanduser(upload)
@@ -196,9 +212,7 @@ if upload:
         desc += next_upload['url'] + '\n\n'
         desc += LINK_RE.sub(r'\2:\n\1', next_upload['seebit'].strip()) + '\n\n'
         desc += LINK_RE.sub(r'\1', next_upload['credits'])
-        tags = ['surreal', 'hitherby dragons']
-        if 'tags' in next_upload:
-            tags += next_upload['tags']
+        tags = get_tags(next_upload)
         album = FMT_RE.sub('', upload_vol['name'].strip())
         print "Title:", next_upload['name']
         print "Album:", album
@@ -207,29 +221,39 @@ if upload:
         print "Tags:", tags
         if raw_input('Upload %s for episode "%s"? [yN] ' % (
                 wav, next_upload['name'])) == 'y':
-            #subprocess.call([
-            #    'sc',
-            #    'upload',
-            #    '--public',
-            #    '--artist', 'Hitherby Dragons Storytime',
-            #    '--title', next_upload['name'],
-            #    '--album', album,
-            #    '--year', '2017',
-            #    '--description', desc,
-            #    '--genre', 'Storytelling',
-            #    '--tags', ','.join(tags),
-            #    '--artwork', square,
-            #    wav])
-            subprocess.check_call([
-                'youtube-upload',
-                '--title', next_upload['name'],
-                '--description', desc,
-                '--category', 'Entertainment',
-                '--tags', ', '.join(tags),
-                '--default-language', 'en',
-                '--default-audio-language', 'en',
-                '--playlist', album,
-                vid])
+            with open('~/.soundcloud') as fil:
+                client = soundcloud.Client(**yaml.load(fil))
+            print 'Uploading', wav, 'to Soundcloud with', square
+            scd = dict(
+                title=next_upload['name'],
+                sharing='public',
+                track_type='spoken',
+                genre='Storytelling',
+                tag_list=' '.join('"%s"' % t for t in tags),
+                release_year='2017',
+                description=desc)
+            print 'Metadata:', scd
+            scd['asset_data'] =open(wav, 'rb')
+            scd['artwork_data'] = open(square, 'rb')
+            if False:
+                try:
+                    track = client.post('/tracks', track=scd)
+                    # '--artist', 'Hitherby Dragons Storytime',
+                    # '--album', album,
+                    print "Soundcloud URL:", track.permalink_url
+                except Exception, e:
+                    print e
+            if True:
+                subprocess.check_call([
+                    'youtube-upload',
+                    '--title', next_upload['name'],
+                    '--description', desc,
+                    '--category', 'Entertainment',
+                    '--tags', ', '.join(tags),
+                    '--default-language', 'en',
+                    '--default-audio-language', 'en',
+                    '--playlist', album,
+                    vid])
     Command('upload', [
         upload,
         'docs/%ssquare.png' % next_upload['path'],
@@ -244,4 +268,24 @@ AddOption('--post',
 
 post = GetOption('post')
 if post:
-    print "Would post", 
+    def post_stuff(target, source, env):
+        desc = ''
+        if 'tagline' in last_upload:
+            desc += next_upload['tagline'] + '<br />'
+        desc += 'From <a href="%s">Hitherby Dragons</a> by <a href="http://jennamoran.tumblr.com/">@jennamoran</a>.' % last_upload['url']
+        print 'Description:'
+        print desc
+        if raw_input('Post episode "%s" linking to %s? [yN] ' % (
+                last_upload['name'], last_upload['path'])) == 'y':
+            with open(os.path.expanduser('~/.tumblr')) as fil:
+                auth = yaml.load(fil)
+            client = pytumblr.TumblrRestClient(
+                auth['consumer_key'], auth['consumer_secret'],
+                auth['oauth_token'], auth['oauth_token_secret'])
+            # This doesn't seem to do the preview image right...
+            client.create_link(
+                'hitherby-storytime', title=last_upload['name'],
+                url='http://hitherby.xavid.us/%s' % last_upload['path'],
+                description=desc, tags=get_tags(last_upload))
+
+    Command('post', 'docs/%sindex.html' % last_upload['path'], post_stuff)

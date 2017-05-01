@@ -90,14 +90,31 @@ episodes:
 -
   name: Alan
   type: History
-  date: 1980 Midyear
+  date: Early 1980
   url: http://imago.hitherby.com/2004/02/alan-iiiv/
+  art: history-toad.svg
   tagline: |
     The history of the birth of Alan, brother to Jenna, who will become Jane.
   timenote: Alan is born.
   seebit: |
     For more on Jane’s brothers, see <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
   tags: [fiends]
+  credits: |
+    Narrator: Xavid
+    Mr. Thotep: Edwin
+    Alan: Thomas Mack
+    One of them: Xavid
+    Black Tsathoggua: Andrew Clough
+    Yog-Sothoth: James Pretzer
+    Jenna: Sarah
+    The monster: Matthew Peairs
+
+    Sound Effects by:
+    murraysortz: <a href="http://www.freesound.org/people/murraysortz/sounds/192497/">Bubbles</a>
+    WIM: <a href="http://www.freesound.org/people/WIM/sounds/19194/">p1 07 toy gibber chant</a>
+    Smhertz: <a href="http://99sounds.org/massamolla/">Massamolla</a>
+  soundcloud: https://soundcloud.com/hitherby/alan
+  youtube: https://www.youtube.com/watch?v=zR1uFIrs0q0
 -
   name: She Puts on Shows
   type: Merin

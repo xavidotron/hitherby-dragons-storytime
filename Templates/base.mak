@@ -5,6 +5,7 @@
   <%block name="meta">
   </%block>
   <link rel="stylesheet" href="${prefix}font-awesome/css/font-awesome.min.css">
+  <meta charset="UTF-8" />
 <style type="text/css">
 @font-face {
   font-family: Amarante;
