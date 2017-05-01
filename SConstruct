@@ -147,7 +147,7 @@ for vol in volumes:
 
 c = Command('docs/index.html', 'Templates/episodes.mak',
             render_mako(prefix='', volumes=volumes, mode='episodes',
-                        title='Hitherby Dragons Storytime'))
+                        title='Episodes'))
 Depends(c, 'SConstruct')
 Depends(c, 'Templates/base.mak')
 Depends(c, 'Volumes/')

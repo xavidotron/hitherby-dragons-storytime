@@ -1,7 +1,7 @@
 ## -*- coding: utf-8 -*-
 <html prefix="og: http://ogp.me/ns#">
 <head>
-  <title>${title}</title>
+  <title>Hitherby Dragons Storytime: ${title}</title>
   <%block name="meta">
   </%block>
   <link rel="stylesheet" href="${prefix}font-awesome/css/font-awesome.min.css">
