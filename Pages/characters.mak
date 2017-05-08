@@ -84,6 +84,7 @@ replaced.
 <li><b>Angels</b> answer emptiness with hope.
 <li><b>Death</b> solves problems through extinction.
 <li><b>Fairies</b> reflect the chaos outside the world.
+<li><b>Fetches</b> are secret-keeping gods.
 <li><b>Fiends</b> answer hurt with madness.
 <li><b>Merins</b> help make sense of the world.
 <li><b>Woglies</b> devour the integrity of the world. They are shaped

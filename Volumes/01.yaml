@@ -23,6 +23,7 @@ episodes:
   soundcloud: https://soundcloud.com/hitherby/scrape-scrape-crunch
   youtube: https://www.youtube.com/watch?v=xymVuwDJTWs
   art: legend-washing-machine.svg
+  tags: [Jane, Martin]
 -
   name: What is Hitherby Dragons?
   type: Merin
@@ -40,7 +41,8 @@ episodes:
   type: History
   url: http://imago.hitherby.com/2004/02/daniel-iiv/
   timenote: Daniel deals with Mr. Banks and Ms. Bell.
-  tagline: "The history of Daniel's attempt to rescue his sister Jenna, who would later become Jane, from the monster."
+  tagline: |
+    The history of Daniel’s attempt to rescue his sister Jenna, who would later become Jane, from the monster.
   seebit: |
     For Daniel’s birth, see <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
   credits: |
@@ -87,6 +89,7 @@ episodes:
     jasinski: <a href="http://www.freesound.org/people/jasinski/sounds/18363/">alkaibeach</a>
   soundcloud: https://soundcloud.com/hitherby/classifying-things
   youtube: https://www.youtube.com/watch?v=6CN5Mdxys6w
+  tags: [Jane, Martin]
 -
   name: Alan
   type: History
@@ -115,14 +118,74 @@ episodes:
     Smhertz: <a href="http://99sounds.org/massamolla/">Massamolla</a>
   soundcloud: https://soundcloud.com/hitherby/alan
   youtube: https://www.youtube.com/watch?v=zR1uFIrs0q0
+  tags: [Jane, the monster]
 -
   name: She Puts on Shows
   type: Merin
   url: http://imago.hitherby.com/2003/12/she-puts-on-shows/
   seebit: |
     For more on Jane and Martin, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  credits: |
+    Narrator: Xavid
+  art: merin-alien.svg
+  soundcloud: http://soundcloud.com/hitherby/she-puts-on-shows
+  youtube: https://www.youtube.com/watch?v=YILQf8gMODU
 -
   name: The Truth
   type: Legend
   url: http://imago.hitherby.com/2003/12/the-truth/
+  art: legend-firewood.svg
+-
+  name: Tenebrae
+  type: History
+  url: http://imago.hitherby.com/2004/04/good-friday-tenebrae-ii/
+  date: 1975
+  timenote: Karen succumbs to woglies.
+  tagline: A history with insights into woglies and the monster.
+  tags: [woglies]
+  seebit: |
+    For more histories, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  art: history-wogly-green.svg
+-
+  name: Scanning Things
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/scanning-things/
+  art: legend-wheel-of-knives.svg
+  tags: [woglies, siggorts]
+-
+  name: Bob
+  type: History
+  url: http://imago.hitherby.com/2004/02/bob-iiiiv/
+  date: 1989-10-28
+  timenote: Bob meets the wogly. The firewood world is born.
+  tagline: |
+    The history of Bob’s attempt to keep his sister Jane safe.
+  seebit: |
+    For more on Bob and Jane, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  art: history-wogly-blue.svg
+  tags: [fetches, woglies]
+-
+  name: Woglies
+  type: Merin
+  url: http://imago.hitherby.com/2004/07/woglies/
+  seebit: |
+    For more on woglies, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  art: merin-wogly-red.svg
+  tags: [woglies]
+-
+  name: Before He Was Cool
+  type: History
+  url: http://imago.hitherby.com/2005/03/before-he-was-cool-ii/
+  date: 1995-03-22
+  timenote: Martin is born on a night of screams and fire.
+  tagline: |
+    Martin, Jane’s final brother, is born on a night of screams and fire.
+  seebit: |
+    For more on Martin’s birth, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  art: history-barber-pole.svg
+  tags: [Martin]
+-
+  name: The Girl And The Rat
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/the-girl-and-the-rat/
 # January 12, 1974: Tunnel Rat (We're going to have to make him ready)

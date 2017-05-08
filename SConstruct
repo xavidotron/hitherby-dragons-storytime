@@ -118,6 +118,7 @@ for vol in volumes:
     for ep in vol['episodes']:
         if 'soundcloud' in ep:
             assert 'art' in ep, ep
+            assert ep['art'].startswith(ep['type'].lower() + '-'), ep
             c = Command('docs/%sindex.html' % (ep['path']),
                         'Templates/episode.mak', render_mako(
                             volume=vol, episode=ep, prefix='../../',
@@ -189,6 +190,16 @@ def get_tags(ep):
         tags += ep['tags']
     return tags
 
+def get_desc(ep):
+    desc = ''
+    if 'tagline' in next_upload:
+        desc = next_upload['tagline'] + '\n'
+    desc += 'From Hitherby Dragons by Jenna Moran.\n'
+    desc += next_upload['url'] + '\n\n'
+    desc += LINK_RE.sub(r'\2:\n\1', next_upload['seebit'].strip()) + '\n\n'
+    desc += LINK_RE.sub(r'\1', next_upload['credits'])
+    return desc
+
 upload = GetOption('upload')
 if upload:
     upload = os.path.expanduser(upload)
@@ -205,13 +216,7 @@ if upload:
         square = str(source[1])
         rect = str(source[2])
         vid = str(source[3])
-        desc = ''
-        if 'tagline' in next_upload:
-            desc = next_upload['tagline'] + '\n'
-        desc += 'From Hitherby Dragons by Jenna Moran.\n'
-        desc += next_upload['url'] + '\n\n'
-        desc += LINK_RE.sub(r'\2:\n\1', next_upload['seebit'].strip()) + '\n\n'
-        desc += LINK_RE.sub(r'\1', next_upload['credits'])
+        desc = get_desc(next_upload)
         tags = get_tags(next_upload)
         album = FMT_RE.sub('', upload_vol['name'].strip())
         print "Title:", next_upload['name']
@@ -221,7 +226,7 @@ if upload:
         print "Tags:", tags
         if raw_input('Upload %s for episode "%s"? [yN] ' % (
                 wav, next_upload['name'])) == 'y':
-            with open('~/.soundcloud') as fil:
+            with open(os.path.expanduser('~/.soundcloud')) as fil:
                 client = soundcloud.Client(**yaml.load(fil))
             print 'Uploading', wav, 'to Soundcloud with', square
             scd = dict(
@@ -235,12 +240,24 @@ if upload:
             print 'Metadata:', scd
             scd['asset_data'] =open(wav, 'rb')
             scd['artwork_data'] = open(square, 'rb')
-            if False:
+            if True:
                 try:
                     track = client.post('/tracks', track=scd)
                     # '--artist', 'Hitherby Dragons Storytime',
                     # '--album', album,
                     print "Soundcloud URL:", track.permalink_url
+                    playlists = client.get('/me/playlists')
+                    for pl in playlists:
+                        if pl.title == album:
+                            tracks = [t['id'] for t in pl[0].tracks]
+                            tracks.append(track.id)
+                            client.put(playlist.uri, playlist={
+                                'tracks': map(lambda id: dict(id=id), tracks)
+                            })
+                            print "Added to playlist", album
+                            break
+                    else:
+                        print "No playlist found for", album
                 except Exception, e:
                     print e
             if True:
@@ -260,7 +277,15 @@ if upload:
         'docs/%srect.png' % next_upload['path'],
         'vids/%syoutube.mp4' % next_upload['path'],
     ], upload_stuff)
-
+elif next_upload and 'credits' in next_upload:
+    print
+    print '== Next Upload =='
+    print
+    # This is for email convenience
+    print next_upload['name']
+    print
+    print get_desc(next_upload)
+    
 AddOption('--post',
           dest='post',
           action='store_true',
