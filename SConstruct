@@ -172,6 +172,15 @@ Depends(c, 'Templates/base.mak')
 Depends(c, 'Volumes/')
 Depends(c, 'historical-notes.yaml')
 
+c = Command('docs/rss.xml', 'Templates/rss.mak',
+            render_mako(
+                episodes=[
+                    ep for ep in
+                    sum((v['episodes'] for v in volumes), [])
+                    if 'soundcloud' in ep][-15:]))
+Depends(c, 'SConstruct')
+Depends(c, 'Volumes/')
+
 AddOption('--upload',
           dest='upload',
           type='string',

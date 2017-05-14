@@ -11,6 +11,7 @@ episodes:
   url: http://imago.hitherby.com/2004/06/scrape-scrape-crunch/
   type: Legend
   tagline: A legend, that is to say a show, performed in 2004 by Jane and her final brother Martin.
+  postdate: 2017-02-27
   credits: |
     Narrator: Xavid
     Martin: Edwin
@@ -30,6 +31,7 @@ episodes:
   url: http://imago.hitherby.com/2003/09/historical-note/
   soundcloud: https://soundcloud.com/hitherby/what-is-hitherby-dragons
   youtube: https://www.youtube.com/watch?v=Boj9KZL7uAE
+  postdate: 2017-03-06
   seebit: |
     For more on Jane, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
   credits: |
@@ -41,6 +43,7 @@ episodes:
   type: History
   url: http://imago.hitherby.com/2004/02/daniel-iiv/
   timenote: Daniel deals with Mr. Banks and Ms. Bell.
+  postdate: 2017-03-14
   tagline: |
     The history of Daniel’s attempt to rescue his sister Jenna, who would later become Jane, from the monster.
   seebit: |
@@ -63,6 +66,7 @@ episodes:
   art: history-jacket.svg
 -
   name: A Story
+  postdate: 2017-03-20
   type: Legend
   url: http://imago.hitherby.com/2003/11/a-story/
   soundcloud: https://soundcloud.com/hitherby/a-story
@@ -77,6 +81,7 @@ episodes:
   art: legend-book.svg
 -
   name: Classifying Things
+  postdate: 2017-03-27
   type: Legend
   url: http://imago.hitherby.com/2004/03/classifying-things/
   art: legend-sandpiper.svg
@@ -92,6 +97,7 @@ episodes:
   tags: [Jane, Martin]
 -
   name: Alan
+  postdate: 2017-05-01
   type: History
   date: Early 1980
   url: http://imago.hitherby.com/2004/02/alan-iiiv/
@@ -121,6 +127,7 @@ episodes:
   tags: [Jane, the monster]
 -
   name: She Puts on Shows
+  postdate: 2017-05-07
   type: Merin
   url: http://imago.hitherby.com/2003/12/she-puts-on-shows/
   seebit: |
