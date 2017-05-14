@@ -40,7 +40,7 @@ def fmtdate(ep):
     <title>${ep['name']}</title>
     <guid>http://hitherby.xavid.us/${ep['path']}</guid>
     <description>
-      &lt;a href="http://hitherby.xavid.us/${ep['path']}"&gt;&lt;img src="http://hitherby.xavid.us/${ep['path']}square.png" /&gt;&lt;/a&gt;
+      &lt;a href="http://hitherby.xavid.us/${ep['path']}"&gt;&lt;img src="http://hitherby.xavid.us/${ep['path']}square.png" height="360" width="360" /&gt;&lt;/a&gt;
       %if 'tagline' in ep:
         ${ep['tagline']}
       %else:
