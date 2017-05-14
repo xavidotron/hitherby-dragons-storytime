@@ -38,13 +38,15 @@ def fmtdate(ep):
   %for ep in episodes:
   <item>
     <title>${ep['name']}</title>
-    <link>http://hitherby.xavid.us/${ep['path']}</link>
     <guid>http://hitherby.xavid.us/${ep['path']}</guid>
-    %if 'tagline' in ep:
-    <description>${ep['tagline']}</description>
-    %else:
-    <description>From Hitherby Dragons by Jenna Moran.</description>
-    %endif
+    <description>
+      &lt;a href="http://hitherby.xavid.us/${ep['path']}"&gt;&lt;img src="http://hitherby.xavid.us/${ep['path']}square.png" /&gt;&lt;/a&gt;
+      %if 'tagline' in ep:
+        ${ep['tagline']}
+      %else:
+        From Hitherby Dragons by Jenna Moran.
+      %endif
+    </description>
     %if 'tags' in ep:
       %for t in ep['tags']:
       <category>${t}</category>
