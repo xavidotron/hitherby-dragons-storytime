@@ -5,7 +5,7 @@
   <%block name="meta">
   </%block>
   <link rel="stylesheet" href="${prefix}font-awesome/css/font-awesome.min.css">
-  <link rel="alternate" type="application/rss+xml" href="${prefix}rss.xml">
+  <link rel="alternate" type="application/rss+xml" href="http://hitherby.xavid.us/rss.xml">
   <meta charset="UTF-8" />
 <style type="text/css">
 @font-face {
