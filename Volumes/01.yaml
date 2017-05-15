@@ -146,11 +146,14 @@ episodes:
   url: http://imago.hitherby.com/2003/12/the-truth/
   art: legend-firewood.svg
   tagline: A legend that misleads, perhaps, to reveal a greater truth.
-  tags: [Jane]
+  tags: [Jane, Bob]
   credits: |
     Narrator: Xavid
     Jane’s mother: Barbara Fleming
     Jane: Sarah
+  soundcloud: https://soundcloud.com/hitherby/the-truth
+  youtube: https://www.youtube.com/watch?v=Y9rt1UAab5c
+  postdate: 2017-05-15
 -
   name: Tenebrae
   type: History

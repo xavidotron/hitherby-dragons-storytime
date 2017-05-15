@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Sun, 07 May 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Sun, 07 May 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Mon, 15 May 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Mon, 15 May 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -108,6 +108,17 @@
     </description>
       <category>Jane</category>
     <pubDate>Sun, 07 May 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>The Truth</title>
+    <guid>http://hitherby.xavid.us/1/the-truth/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/1/the-truth/"&gt;&lt;img src="http://hitherby.xavid.us/1/the-truth/square.png" height="360" width="360" /&gt;&lt;/a&gt;
+        A legend that misleads, perhaps, to reveal a greater truth.
+    </description>
+      <category>Jane</category>
+      <category>Bob</category>
+    <pubDate>Mon, 15 May 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>
