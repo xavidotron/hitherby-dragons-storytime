@@ -48,6 +48,7 @@
       &lt;a href="http://hitherby.xavid.us/1/what-is-hitherby-dragons/"&gt;&lt;img src="http://hitherby.xavid.us/1/what-is-hitherby-dragons/square.png" height="360" width="360" /&gt;&lt;/a&gt;
         From Hitherby Dragons by Jenna Moran.
     </description>
+      <category>Jane</category>
     <pubDate>Mon, 06 Mar 2017 05:00:00 -0000</pubDate>
   </item>
   <item>
@@ -59,6 +60,9 @@
 
     </description>
       <category>angels</category>
+      <category>fairies</category>
+      <category>Jenna</category>
+      <category>Daniel</category>
     <pubDate>Tue, 14 Mar 2017 04:00:00 -0000</pubDate>
   </item>
   <item>
@@ -89,7 +93,9 @@
         The history of the birth of Alan, brother to Jenna, who will become Jane.
 
     </description>
-      <category>Jane</category>
+      <category>fiends</category>
+      <category>Alan</category>
+      <category>Jenna</category>
       <category>the monster</category>
     <pubDate>Mon, 01 May 2017 04:00:00 -0000</pubDate>
   </item>
@@ -100,6 +106,7 @@
       &lt;a href="http://hitherby.xavid.us/1/she-puts-on-shows/"&gt;&lt;img src="http://hitherby.xavid.us/1/she-puts-on-shows/square.png" height="360" width="360" /&gt;&lt;/a&gt;
         From Hitherby Dragons by Jenna Moran.
     </description>
+      <category>Jane</category>
     <pubDate>Sun, 07 May 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>

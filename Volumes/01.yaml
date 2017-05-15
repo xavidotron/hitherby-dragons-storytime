@@ -37,6 +37,7 @@ episodes:
   credits: |
     Narrator: Xavid
   art: merin-edge-of-map.svg
+  tags: [Jane]
 -
   name: Daniel
   date: 1976.2
@@ -60,7 +61,8 @@ episodes:
     Agaxly: <a href="http://www.freesound.org/people/agaxly/sounds/213003/">Stamp</a>
     filmfan87: <a href="http://www.freesound.org/people/filmfan87/sounds/108396/">hand hitting table</a>
     Richard Gould: <a href="http://99sounds.org/percussion-samples/">Percussa Toolbox</a>
-  tags: [angels]
+  tags: [angels, fairies, Jenna, Daniel]
+  notags: [Jane, the monster]
   soundcloud: https://soundcloud.com/hitherby/daniel
   youtube: https://www.youtube.com/watch?v=KykPd6n0Tvk
   art: history-jacket.svg
@@ -107,7 +109,8 @@ episodes:
   timenote: Alan is born.
   seebit: |
     For more on Jane’s brothers, see <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
-  tags: [fiends]
+  tags: [fiends, Alan, Jenna, the monster]
+  notags: [Jane]
   credits: |
     Narrator: Xavid
     Mr. Thotep: Edwin
@@ -124,7 +127,6 @@ episodes:
     Smhertz: <a href="http://99sounds.org/massamolla/">Massamolla</a>
   soundcloud: https://soundcloud.com/hitherby/alan
   youtube: https://www.youtube.com/watch?v=zR1uFIrs0q0
-  tags: [Jane, the monster]
 -
   name: She Puts on Shows
   postdate: 2017-05-07
@@ -137,11 +139,18 @@ episodes:
   art: merin-alien.svg
   soundcloud: http://soundcloud.com/hitherby/she-puts-on-shows
   youtube: https://www.youtube.com/watch?v=YILQf8gMODU
+  tags: [Jane]
 -
   name: The Truth
   type: Legend
   url: http://imago.hitherby.com/2003/12/the-truth/
   art: legend-firewood.svg
+  tagline: A legend that misleads, perhaps, to reveal a greater truth.
+  tags: [Jane]
+  credits: |
+    Narrator: Xavid
+    Jane’s mother: Barbara Fleming
+    Jane: Sarah
 -
   name: Tenebrae
   type: History
@@ -149,10 +158,22 @@ episodes:
   date: 1975
   timenote: Karen succumbs to woglies.
   tagline: A history with insights into woglies and the monster.
-  tags: [woglies]
+  tags: [woglies, the shadow, the monster]
   seebit: |
     For more histories, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
   art: history-wogly-green.svg
+  credits: |
+    Narrator: Xavid
+    Karen: Mehitabel Glenhaber
+    Wogly 1: Edwin
+    Wogly 2: Sam Dukhovni
+    Wogly 3: Sarah
+    The monster: Matthew Peairs
+
+    Sound Effects by:
+      Herbert Boland: <a href="http://www.freesound.org/people/HerbertBoland/sounds/30085/">BakelitePhoneRingSingleMono</a>
+      jppi_Stu: <a href="http://www.freesound.org/people/jppi_Stu/sounds/189727/">sw_phone_hangup</a>
+      odilonmarcenaro: <a href="http://www.freesound.org/people/odilonmarcenaro/sounds/275999/">Hiss of a Tilley pressurised paraffin (kerosene) lamp</a>
 -
   name: Scanning Things
   type: Legend
@@ -195,4 +216,5 @@ episodes:
   name: The Girl And The Rat
   type: Legend
   url: http://imago.hitherby.com/2004/02/the-girl-and-the-rat/
+  tags: [Jane, Broderick]
 # January 12, 1974: Tunnel Rat (We're going to have to make him ready)

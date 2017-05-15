@@ -50,6 +50,13 @@ w = SC.Widget("player");
 
 <h3>A ${episode['type']} from <a href="${prefix}#${volume['number']}">${volume['name']}</a></h3>
 
+%if 'tags' in episode:
+<p><b>Tags:</b>
+%for t in episode['tags']:
+  <a href="${tag_path(t)}">${t}</a>
+%endfor
+%endif
+
 <ul>
 <li><a href="${episode['soundcloud']}">Listen on SoundCloud</a>
 <li><a href="${episode['youtube']}">Listen on YouTube</a>

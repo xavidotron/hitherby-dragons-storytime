@@ -44,7 +44,15 @@ def get_href(tab, prefix):
     else:
         return '%s%s/' % (prefix, tab)
 
+def cap_first(s):
+  return s[0].upper() + s[1:]
+
 def render_mako(prefix='../', **kw):
+    def tag_path(t):
+        if t in TAG_ALIASES:
+            return prefix + 'tag/' + TAG_ALIASES[t]
+        else:
+            return prefix + 'tag/' + t
     def render_mako_impl(target, source, env):
         stem = str(source[0]).rsplit('/', 1)[-1].split('.', 1)[0]
         tmpl = Template(filename=str(source[0]),
@@ -55,10 +63,25 @@ def render_mako(prefix='../', **kw):
             kw['title'] = get_title(stem)
         rendered = tmpl.render(tablist=tablist,
                                prefix=prefix,
+                               cap_first=cap_first,
+                               tag_path=tag_path,
                                **kw)
         with open(str(target[0]), 'w') as fil:
             fil.write(rendered.encode('utf-8'))
     return render_mako_impl
+
+def get_desc(ep):
+    desc = ''
+    if 'tagline' in ep:
+        desc = ep['tagline'] + '\n'
+    desc += 'From Hitherby Dragons by Jenna Moran.\n'
+    desc += ep['url'] + '\n\n'
+    desc += LINK_RE.sub(r'\2:\n\1', ep['seebit'].strip()) + '\n\n'
+    desc += LINK_RE.sub(r'\1', ep['credits'])
+    return desc
+
+FMT_RE = re.compile(r'</?i>')
+LINK_RE = re.compile(r'<a href="([^"]+)">([^<]+)</a>[.]?')
 
 TABS = ['episodes',
         'about',
@@ -66,17 +89,9 @@ TABS = ['episodes',
         'characters',
         'credits']
 TITLES = {'characters': 'Characters and Strange Entities'}
-    
-for makof in Glob('Pages/*.mak'):
-    stem = str(makof).rsplit('/', 1)[-1].split('.', 1)[0]
-    if stem == 'index':
-        htmlf = 'docs/index.html'
-    else:
-        htmlf = 'docs/' + stem + '/index.html'
-    c = Command(htmlf, makof, render_mako())
-    Depends(c, 'SConstruct')
-    for d in Glob('Templates/*.mak'):
-        Depends(c, d)
+
+with open('tags.yaml') as fil:
+    tags = yaml.load(fil)
 
 volumes = []
 age = []
@@ -109,9 +124,51 @@ for yamlf in Glob('Volumes/*.yaml'):
             if next_upload is None:
                 next_upload = ep
                 upload_vol = vol
+            if 'credits' in ep:
+                print
+                print '== Future Upload =='
+                print
+                # This is for email convenience
+                print ep['name']
+                print
+                print get_desc(ep)
+
         if ep['type'] == 'History':
             age.append(ep)
     volumes.append(vol)
+
+TAG_TO_EPISODES = {}
+TAG_ALIASES = {}
+DESCRIBED_SUBTAGS = {}
+for sec in tags:
+    for t in sec['tags']:
+        assert t['tag'] not in TAG_TO_EPISODES
+        if t['tag'] in TAG_ALIASES:
+            DESCRIBED_SUBTAGS[TAG_ALIASES[t['tag']]] = [t]
+            continue
+        subtags = t.get('subtags', [])
+        for st in subtags:
+            assert st not in TAG_ALIASES
+            TAG_ALIASES[st] = t['tag']
+        TAG_TO_EPISODES[t['tag']] = [
+            ep for ep in
+            sum((v['episodes'] for v in volumes), [])
+            if any([tg in ep.get('tags', ())
+                    for tg in [t['tag']] + subtags])
+            and 'soundcloud' in ep]
+
+for makof in Glob('Pages/*.mak'):
+    stem = str(makof).rsplit('/', 1)[-1].split('.', 1)[0]
+    if stem == 'index':
+        htmlf = 'docs/index.html'
+    else:
+        htmlf = 'docs/' + stem + '/index.html'
+    c = Command(htmlf, makof, render_mako(
+        tags=tags, TAG_TO_EPISODES=TAG_TO_EPISODES, TAG_ALIASES=TAG_ALIASES))
+    Depends(c, 'SConstruct')
+    Depends(c, 'tags.yaml')
+    for d in Glob('Templates/*.mak'):
+        Depends(c, d)
 
 pwd = os.getcwd()
 for vol in volumes:
@@ -119,6 +176,18 @@ for vol in volumes:
         if 'soundcloud' in ep:
             assert 'art' in ep, ep
             assert ep['art'].startswith(ep['type'].lower() + '-'), ep
+            for t in ep.get('tags', ()):
+                assert t in TAG_TO_EPISODES or t in TAG_ALIASES, t
+            for t in TAG_TO_EPISODES.keys() + TAG_ALIASES.keys():
+                if t in ep.get('tags', ()) or t in ep.get('notags', ()):
+                    continue
+                assert t.lower() not in ep['name'].lower(), (t, ep['name'])
+                assert t.lower() not in ep.get('tagline', '').lower(), (
+                    t, ep['tagline'])
+                assert t.lower() not in ep.get('timenote', '').lower(), (
+                    t, ep['timenote'])
+                assert t.lower() not in ep['credits'].lower(), (
+                    t, ep['credits'])
             c = Command('docs/%sindex.html' % (ep['path']),
                         'Templates/episode.mak', render_mako(
                             volume=vol, episode=ep, prefix='../../',
@@ -181,6 +250,20 @@ c = Command('docs/rss.xml', 'Templates/rss.mak',
 Depends(c, 'SConstruct')
 Depends(c, 'Volumes/')
 
+for sec in tags:
+    for t in sec['tags']:
+        if t['tag'] in TAG_ALIASES:
+            continue
+        c = Command('docs/tag/%s/index.html' % t['tag'],
+                    'Templates/tag.mak',
+                    render_mako(
+                        prefix='../../',
+                        tag=t,
+                        episodes=TAG_TO_EPISODES[t['tag']],
+                        subtags=DESCRIBED_SUBTAGS.get(t['tag'], [])))
+        Depends(c, 'SConstruct')
+        Depends(c, 'Volumes/')
+
 AddOption('--upload',
           dest='upload',
           type='string',
@@ -189,25 +272,12 @@ AddOption('--upload',
           metavar='EP',
           help='upload episode')
 
-FMT_RE = re.compile(r'</?i>')
-LINK_RE = re.compile(r'<a href="([^"]+)">([^<]+)</a>[.]?')
-
 def get_tags(ep):
-    tags = ['surreal', 'hitherby dragons', 'hitherby dragons storytime']
+    tags = ['surreal', 'Hitherby Dragons', 'Hitherby Dragons Storytime']
     tags.append(ep['type'].lower())
     if 'tags' in ep:
         tags += ep['tags']
     return tags
-
-def get_desc(ep):
-    desc = ''
-    if 'tagline' in next_upload:
-        desc = next_upload['tagline'] + '\n'
-    desc += 'From Hitherby Dragons by Jenna Moran.\n'
-    desc += next_upload['url'] + '\n\n'
-    desc += LINK_RE.sub(r'\2:\n\1', next_upload['seebit'].strip()) + '\n\n'
-    desc += LINK_RE.sub(r'\1', next_upload['credits'])
-    return desc
 
 upload = GetOption('upload')
 if upload:
@@ -286,14 +356,6 @@ if upload:
         'docs/%srect.png' % next_upload['path'],
         'vids/%syoutube.mp4' % next_upload['path'],
     ], upload_stuff)
-elif next_upload and 'credits' in next_upload:
-    print
-    print '== Next Upload =='
-    print
-    # This is for email convenience
-    print next_upload['name']
-    print
-    print get_desc(next_upload)
     
 AddOption('--post',
           dest='post',
