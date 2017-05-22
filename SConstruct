@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import re, sys, os, subprocess
+import traceback
 import yaml
 from mako.template import Template
 from mako.lookup import TemplateLookup
@@ -303,6 +304,7 @@ if upload:
         print "Description:"
         print desc
         print "Tags:", tags
+        print "Post Date:", next_upload['postdate']
         if raw_input('Upload %s for episode "%s"? [yN] ' % (
                 wav, next_upload['name'])) == 'y':
             with open(os.path.expanduser('~/.soundcloud')) as fil:
@@ -314,7 +316,9 @@ if upload:
                 track_type='spoken',
                 genre='Storytelling',
                 tag_list=' '.join('"%s"' % t for t in tags),
-                release_year='2017',
+                release_year=next_upload['postdate'].year,
+                release_month=next_upload['postdate'].month,
+                release_day=next_upload['postdate'].day,
                 description=desc)
             print 'Metadata:', scd
             scd['asset_data'] =open(wav, 'rb')
@@ -328,7 +332,7 @@ if upload:
                     playlists = client.get('/me/playlists')
                     for pl in playlists:
                         if pl.title == album:
-                            tracks = [t['id'] for t in pl[0].tracks]
+                            tracks = [t['id'] for t in pl.tracks]
                             tracks.append(track.id)
                             client.put(playlist.uri, playlist={
                                 'tracks': map(lambda id: dict(id=id), tracks)
@@ -338,7 +342,7 @@ if upload:
                     else:
                         print "No playlist found for", album
                 except Exception, e:
-                    print e
+                    traceback.print_exc()
             if True:
                 subprocess.check_call([
                     'youtube-upload',
