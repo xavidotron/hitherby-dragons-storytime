@@ -166,6 +166,14 @@ An Unclean Legacy</a>
 <img src="${prefix}Images/round.jpg" />
 Stomping the World Round</a>
 
+<a href="http://www.drivethrufiction.com/product/144086/Enemies-Endure-the-Storm-That-Saw-Itself">
+<img src="${prefix}Images/storm.jpg" />
+The Storm That Saw Itself</a>
+
+<a href="http://www.drivethrufiction.com/product/212728/Enemies-Endure-Vidars-Boot">
+<img src="${prefix}Images/boot.jpg" />
+Vidar's Boot</a>
+
 <a href="https://www.amazon.com/Invasion-Jenna-Katerin-Moran/dp/1482730057/">
 <img src="${prefix}Images/invasion.jpg" />
 Invasion</a>
