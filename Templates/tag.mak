@@ -2,6 +2,9 @@
 <%inherit file="../base.mak"/>
 
 <h2>${cap_first(tag['tag'])}</h2>
+%if 'image' in tag:
+<a href="../../Images/${tag['image']}"><img class="right" src="../../Images/${tag['image']}" /></a>
+%endif
 
 <p><b>${cap_first(tag['tag'])}</b>
 ${tag['desc']}
