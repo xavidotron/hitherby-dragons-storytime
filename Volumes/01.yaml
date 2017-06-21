@@ -174,9 +174,9 @@ episodes:
     The monster: Matthew Peairs
 
     Sound Effects by:
-      Herbert Boland: <a href="http://www.freesound.org/people/HerbertBoland/sounds/30085/">BakelitePhoneRingSingleMono</a>
-      jppi_Stu: <a href="http://www.freesound.org/people/jppi_Stu/sounds/189727/">sw_phone_hangup</a>
-      odilonmarcenaro: <a href="http://www.freesound.org/people/odilonmarcenaro/sounds/275999/">Hiss of a Tilley pressurised paraffin (kerosene) lamp</a>
+    Herbert Boland: <a href="http://www.freesound.org/people/HerbertBoland/sounds/30085/">BakelitePhoneRingSingleMono</a>
+    jppi_Stu: <a href="http://www.freesound.org/people/jppi_Stu/sounds/189727/">sw_phone_hangup</a>
+    odilonmarcenaro: <a href="http://www.freesound.org/people/odilonmarcenaro/sounds/275999/">Hiss of a Tilley pressurised paraffin (kerosene) lamp</a>
   postdate: 2017-05-22
   soundcloud: http://soundcloud.com/hitherby/tenebrae
   youtube: https://www.youtube.com/watch?v=mDtwhv4s7ZA
@@ -185,7 +185,19 @@ episodes:
   type: Legend
   url: http://imago.hitherby.com/2004/01/scanning-things/
   art: legend-wheel-of-knives.svg
-  tags: [woglies, siggorts]
+  tags: [woglies, siggorts, Jane, Bob, Martin]
+  credits: |
+    Narrator: Xavid
+    Jane: Sarah
+    Martin: Edwin
+
+    Sound Effects by:
+    Chris Castiglione: <a href="http://www.freesound.org/people/alienistcog/sounds/125779/">bird-chatter4</a>
+    Ariel Gross: <a href="http://www.freesound.org/people/funkymuskrat/sounds/220874/">Third Bird Synth 01</a>
+    odilonmarcenaro: <a href="http://www.freesound.org/people/odilonmarcenaro/sounds/275999/">Hiss of a Tilley pressurised paraffin (kerosene) lamp</a>
+  postdate: 2017-06-21
+  soundcloud: https://soundcloud.com/hitherby/scanning-things
+  youtube: https://www.youtube.com/watch?v=LjJy_knsGTM
 -
   name: Bob
   type: History
@@ -197,7 +209,15 @@ episodes:
   seebit: |
     For more on Bob and Jane, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
   art: history-wogly-blue.svg
-  tags: [fetches, woglies]
+  tags: [fetches, woglies, Bob, Jane]
+  credits: |
+    Narrator: Xavid
+    Bob: Sam Dukhovni
+    Wogly: Edwin
+    Jane: Sarah
+
+    Sound Effects by:
+    odilonmarcenaro: <a href="http://www.freesound.org/people/odilonmarcenaro/sounds/275999/">Hiss of a Tilley pressurised paraffin (kerosene) lamp</a>
 -
   name: Woglies
   type: Merin
@@ -217,7 +237,17 @@ episodes:
   seebit: |
     For more on Martin’s birth, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
   art: history-barber-pole.svg
-  tags: [Martin]
+  tags: [Martin, the monster]
+  credits: |
+    Narrator: Xavid
+    Martin: Edwin
+    Firewood monster: Matthew Peairs
+    Firewood Death: Thomas Mack
+    Firewood barber: Sarah
+
+    Sound Effects by:
+    Gabriel Killhour: <a href="http://www.freesound.org/people/gkillhour/sounds/267222/">War Noises (Distance Explosions)</a>
+    Mr_KeybOred: <a href="http://www.freesound.org/people/Mr_KeybOred/sounds/372086/">Distant Explosion</a>
 -
   name: The Girl And The Rat
   type: Legend

@@ -334,7 +334,7 @@ if upload:
                         if pl.title == album:
                             tracks = [t['id'] for t in pl.tracks]
                             tracks.append(track.id)
-                            client.put(playlist.uri, playlist={
+                            client.put(pl.uri, playlist={
                                 'tracks': map(lambda id: dict(id=id), tracks)
                             })
                             print "Added to playlist", album
