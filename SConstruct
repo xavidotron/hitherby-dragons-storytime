@@ -151,11 +151,15 @@ for sec in tags:
         for st in subtags:
             assert st not in TAG_ALIASES
             TAG_ALIASES[st] = t['tag']
+        exp_tags = [t['tag']] + subtags
         TAG_TO_EPISODES[t['tag']] = [
-            ep for ep in
-            sum((v['episodes'] for v in volumes), [])
+            (ep,
+             ', '.join(tg for tg in ep.get('tags') if tg in exp_tags)
+             if len(exp_tags) > 1 else None
+            )
+            for ep in sum((v['episodes'] for v in volumes), [])
             if any([tg in ep.get('tags', ())
-                    for tg in [t['tag']] + subtags])
+                    for tg in exp_tags])
             and 'soundcloud' in ep]
 
 for makof in Glob('Pages/*.mak'):

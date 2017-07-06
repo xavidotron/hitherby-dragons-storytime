@@ -17,7 +17,7 @@ ${st['desc']}
 <h3>Episodes with ${'/'.join([tag['tag']] + [st['tag'] for st in subtags])}:</h3>
   
 <table>
-%for ep in episodes:
+%for ep, specific_tags in episodes:
 <tr>
   <th><a href="${prefix}${ep['path']}">${ep['name']}</a></th>
   <td>
@@ -26,6 +26,16 @@ ${st['desc']}
     (${ep['date']})
     %endif
   </td>
+  %if specific_tags is not None:
+  <td>(${specific_tags})</td>
+  %endif
 </tr>
 %endfor
 </table>
+
+<%block name="footer">
+Hitherby Dragons, including the description here, by <a href="https://www.patreon.com/JennaMoran">Jenna Moran</a>.
+%if 'image' in tag:
+"${cap_first(tag['tag'])}" character art by <a href="${tag['imageurl']}">${tag['imagecredit']}</a>
+%endif
+</%block>
