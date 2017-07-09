@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Wed, 21 Jun 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Wed, 21 Jun 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Sun, 09 Jul 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Sun, 09 Jul 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -144,6 +144,20 @@
       <category>Bob</category>
       <category>Martin</category>
     <pubDate>Wed, 21 Jun 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>Bob</title>
+    <guid>http://hitherby.xavid.us/1/bob/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/1/bob/"&gt;&lt;img src="http://hitherby.xavid.us/1/bob/square.png" height="360" width="360" /&gt;&lt;/a&gt;
+        The history of Bob’s attempt to keep his sister Jane safe.
+
+    </description>
+      <category>fetches</category>
+      <category>woglies</category>
+      <category>Bob</category>
+      <category>Jane</category>
+    <pubDate>Sun, 09 Jul 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>

@@ -218,6 +218,9 @@ episodes:
 
     Sound Effects by:
     odilonmarcenaro: <a href="http://www.freesound.org/people/odilonmarcenaro/sounds/275999/">Hiss of a Tilley pressurised paraffin (kerosene) lamp</a>
+  postdate: 2017-07-09
+  soundcloud: http://soundcloud.com/hitherby/bob
+  youtube: https://www.youtube.com/watch?v=Vzvk4vTiPno
 -
   name: Woglies
   type: Merin
@@ -226,6 +229,8 @@ episodes:
     For more on woglies, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
   art: merin-wogly-red.svg
   tags: [woglies]
+  credits: |
+    Narrator: Xavid
 -
   name: Before He Was Cool
   type: History
