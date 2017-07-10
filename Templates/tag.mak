@@ -3,7 +3,7 @@
 
 <h2>${cap_first(tag['tag'])}</h2>
 %if 'image' in tag:
-<a href="../../Images/${tag['image']}"><img class="right" src="../../Images/${tag['image']}" /></a>
+<a href="../../Images/${tag['image']}"><img class="right" style="width: 300px" src="../../Images/${tag['image']}" /></a>
 %endif
 
 <p><b>${cap_first(tag['tag'])}</b>
@@ -36,6 +36,6 @@ ${st['desc']}
 <%block name="footer">
 Hitherby Dragons, including the description here, by <a href="https://www.patreon.com/JennaMoran">Jenna Moran</a>.
 %if 'image' in tag:
-"${cap_first(tag['tag'])}" character art by <a href="${tag['imageurl']}">${tag['imagecredit']}</a>
+"${cap_first(tag['tag'])}" character art by <a href="${tag['imageurl']}">${tag['imagecredit']}</a>.
 %endif
 </%block>

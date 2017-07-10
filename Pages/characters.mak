@@ -1,7 +1,7 @@
 ## -*- coding: utf-8 -*-
 <%inherit file="../base.mak"/>
 
-<a href="../Images/jane.png"><img class="right" src="../Images/jane.png" /></a>
+<a href="../Images/jane.png"><img class="right" style="width: 150px" src="../Images/jane.png" /></a>
 
 %for sec in tags:
 
