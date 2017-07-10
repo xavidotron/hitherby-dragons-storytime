@@ -258,6 +258,7 @@ episodes:
   type: Legend
   url: http://imago.hitherby.com/2004/02/the-girl-and-the-rat/
   tags: [Jane, Broderick, Meredith]
+  art: legend-rat.svg
   credits: |
     Narrator: Xavid
     Jane: Sarah
@@ -269,4 +270,15 @@ episodes:
     Reitanna Seishin: <a href="http://freesound.org/people/Reitanna/sounds/217767/">ratty squeaks</a>
     kristinhamby: <a href="http://freesound.org/people/kristinhamby/sounds/384231/">Alto Recorder Riff (Paulstretch)</a>
     ondrosik: <a href="http://freesound.org/people/ondrosik/sounds/372568/">fujara</a>
+-
+  name: Broderick
+  type: Merin
+  url: http://imago.hitherby.com/2004/02/broderick/
+  tags: [Broderick]
+  art: merin-rat.svg
+  credits: |
+    Narrator: Xavid
+  seebit: |
+    For more on the Gibbelins’ Tower Theater Company, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  
 # January 12, 1974: Tunnel Rat (We're going to have to make him ready)
