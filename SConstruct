@@ -264,6 +264,7 @@ for sec in tags:
                     render_mako(
                         prefix='../../',
                         tag=t,
+                        title=cap_first(t['tag']),
                         episodes=TAG_TO_EPISODES[t['tag']],
                         subtags=DESCRIBED_SUBTAGS.get(t['tag'], [])))
         Depends(c, 'SConstruct')
