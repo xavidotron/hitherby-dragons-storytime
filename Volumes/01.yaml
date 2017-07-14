@@ -246,6 +246,7 @@ episodes:
     For more on Martin’s birth, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
   art: history-barber-pole.svg
   tags: [Martin, the monster, Death]
+  notags: [Jane]
   credits: |
     Narrator: Xavid
     Martin: Edwin
@@ -256,6 +257,9 @@ episodes:
     Sound Effects by:
     Gabriel Killhour: <a href="http://www.freesound.org/people/gkillhour/sounds/267222/">War Noises (Distance Explosions)</a>
     Mr_KeybOred: <a href="http://www.freesound.org/people/Mr_KeybOred/sounds/372086/">Distant Explosion</a>
+  postdate: 2017-07-14
+  soundcloud: http://soundcloud.com/hitherby/before-he-was-cool
+  youtube: https://www.youtube.com/watch?v=3wHAiWZT7oA
 -
   name: The Girl And The Rat
   type: Legend

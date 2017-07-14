@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Wed, 12 Jul 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Wed, 12 Jul 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Fri, 14 Jul 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Fri, 14 Jul 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -168,6 +168,19 @@
     </description>
       <category>woglies</category>
     <pubDate>Wed, 12 Jul 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>Before He Was Cool</title>
+    <guid>http://hitherby.xavid.us/1/before-he-was-cool/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/1/before-he-was-cool/"&gt;&lt;img src="http://hitherby.xavid.us/1/before-he-was-cool/square.png" height="360" width="360" /&gt;&lt;/a&gt;
+        Martin, Jane’s final brother, is born on a night of screams and fire.
+
+    </description>
+      <category>Martin</category>
+      <category>the monster</category>
+      <category>Death</category>
+    <pubDate>Fri, 14 Jul 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>
