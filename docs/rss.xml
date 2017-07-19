@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Fri, 14 Jul 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Fri, 14 Jul 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Tue, 18 Jul 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Tue, 18 Jul 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -181,6 +181,18 @@
       <category>the monster</category>
       <category>Death</category>
     <pubDate>Fri, 14 Jul 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>The Girl And The Rat</title>
+    <guid>http://hitherby.xavid.us/1/the-girl-and-the-rat/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/1/the-girl-and-the-rat/"&gt;&lt;img src="http://hitherby.xavid.us/1/the-girl-and-the-rat/square.png" height="360" width="360" /&gt;&lt;/a&gt;
+        From Hitherby Dragons by Jenna Moran.
+    </description>
+      <category>Jane</category>
+      <category>Broderick</category>
+      <category>Meredith</category>
+    <pubDate>Tue, 18 Jul 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>
