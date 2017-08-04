@@ -293,5 +293,83 @@ episodes:
   postdate: 2017-07-26
   youtube: https://www.youtube.com/watch?v=fiv7b0Q-ZLA
   soundcloud: http://soundcloud.com/hitherby/broderick
-  
-# January 12, 1974: Tunnel Rat (We're going to have to make him ready)
+-
+  name: The Angels
+  type: History
+  url: http://imago.hitherby.com/2003/12/the-angels-iiiiv/
+  date: 1996-12-08?
+  timenote: Jane meets the Angel Four.
+  tagline: In which Jane, admidst inexplicable circumstances, meets four angels for the first time.
+  seebit: |
+    For more on the Angel Four, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  art: history-jacket-back.svg
+  tags: [Jane, the Angel Four, Evasive A, Realistic A, Magic A, Forbidden A, angels]
+  credits: |
+    Narrator: Xavid
+    Jane’s mother: Barbara Fleming
+    Jane: Sarah
+    Burning bush: Sam Dukhovni
+    CEOs: Edwin
+    Evasive A: Susanna Pretzer
+    Realistic A: Mehitabel Glenhaber
+    Magic A: Sarah
+    Forbidden A: Mehitabel Glenhaber
+    Robot butlers: Matthew Peairs
+    
+    Sound Effects by:
+    Richard Gould: <a href="http://99sounds.org/percussion-samples/">Percussa Toolbox</a>
+    Patrick Ford: <a href="http://freesound.org/people/hykenfreak/sounds/331621/">Flame Ignition</a>
+  postdate: 2017-08-04
+  soundcloud: http://soundcloud.com/hitherby/the-angels
+  youtube: https://www.youtube.com/watch?v=ihGbGqZUoyY
+-
+  name: Jane’s Father
+  type: Legend
+  url: http://imago.hitherby.com/2004/03/janes-father/
+  art: legend-hopscotch.svg
+  tags: [Jane, Martin]
+  credits: |
+    Narrator: Xavid
+    Jane: Sarah
+    Martin: Edwin
+    Jane’s father: James Pretzer
+-
+  name: The Righteousness Game
+  type: Legend
+  url: http://imago.hitherby.com/2003/12/the-righteousness-game/
+  art: legend-nuke.svg
+  tags: [Meredith]
+  credits: |
+    Narrator: Xavid
+    Meredith: Xavid
+    Diana: Sarah
+    People: Andrew Clough
+    Rick: James Pretzer
+    God: Thomas Mack
+-
+  name: Jane Confronts the Problem of Martin
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/jane-confronts-the-problem-of-martin/
+  tags: [Martin, Jane]
+  credits: |
+    Narrator: Xavid
+    Jane: Sarah
+    Martin: Edwin
+-
+  name: Martin
+  type: History
+  url: http://imago.hitherby.com/2004/02/martin-iviv/
+  date: 2001
+  timenote: Martin meets the monster.
+  tagline: Martin meets the monster.
+  seebit: |
+    For more on Martin and the monster, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  tags: [Martin, the monster, Lisa, Thess]
+  credits: |
+    Narrator: Xavid
+    Martin: Edwin
+    Bethany: Sarah
+    Edna: Barbara Fleming
+    The monster: Matthew Peairs
+    The Barbie: Susanna Pretzer
+    Augusta: Sarah

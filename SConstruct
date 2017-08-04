@@ -110,7 +110,7 @@ for yamlf in Glob('Volumes/*.yaml'):
         ep['path'] = '%d/%s/' % (
             vol['number'],
             ep['name'].lower().replace('.', '').replace('?', '').replace(
-                ' ', '-'))
+                ' ', '-').replace(u'’', ''))
         if 'date' in ep:
             ep['date'] = dateparse(ep['date'])
         if 'seebit' not in ep:

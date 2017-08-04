@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Wed, 26 Jul 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Wed, 26 Jul 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Fri, 04 Aug 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Fri, 04 Aug 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -30,17 +30,6 @@
     <width>144</width>
     <height>400</height>
   </image>
-  <item>
-    <title>Scrape. Scrape. Crunch.</title>
-    <guid>http://hitherby.xavid.us/1/scrape-scrape-crunch/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/scrape-scrape-crunch/"&gt;&lt;img src="http://hitherby.xavid.us/1/scrape-scrape-crunch/square.png" height="360" width="360" /&gt;&lt;/a&gt;
-        A legend, that is to say a show, performed in 2004 by Jane and her final brother Martin.
-    </description>
-      <category>Jane</category>
-      <category>Martin</category>
-    <pubDate>Mon, 27 Feb 2017 05:00:00 -0000</pubDate>
-  </item>
   <item>
     <title>What is Hitherby Dragons?</title>
     <guid>http://hitherby.xavid.us/1/what-is-hitherby-dragons/</guid>
@@ -203,6 +192,22 @@
     </description>
       <category>Broderick</category>
     <pubDate>Wed, 26 Jul 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>The Angels</title>
+    <guid>http://hitherby.xavid.us/1/the-angels/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/1/the-angels/"&gt;&lt;img src="http://hitherby.xavid.us/1/the-angels/square.png" height="360" width="360" /&gt;&lt;/a&gt;
+        In which Jane, admidst inexplicable circumstances, meets four angels for the first time.
+    </description>
+      <category>Jane</category>
+      <category>the Angel Four</category>
+      <category>Evasive A</category>
+      <category>Realistic A</category>
+      <category>Magic A</category>
+      <category>Forbidden A</category>
+      <category>angels</category>
+    <pubDate>Fri, 04 Aug 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>
