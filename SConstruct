@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import re, sys, os, subprocess
+import re, sys, os, subprocess, calendar
 import traceback
 import yaml
 from mako.template import Template
@@ -19,19 +19,28 @@ class dateparse(object):
             self.full = '%s, %s' % (self.monthday, self.year)
         else:
             d = str(d)
-            self.monthday = None
-            self.key = d
-            self.full = d
-            if ' ' in d:
-                self.year, self.monthday = d.split(' ')
-                if self.monthday.isdigit():
-                    self.year, self.monthday = self.monthday, self.year
-                    self.key = '%s %s' % (self.year, self.monthday)
-            elif '.' in d:
-                self.year = d.split('.')[0]
-                self.full = self.year
+            if '-' in d and d.endswith('?'):
+                d = str(d)[:-1]
+                self.year, month, day = d.split('-')
+                self.monthday = '%s %s' % (calendar.month_name[int(month)],
+                                           int(day))
+                self.key = d
+                self.full = '%s, %s?' % (self.monthday, self.year)
+                self.monthday += '?'
             else:
-                self.year = d
+                self.monthday = None
+                self.key = d
+                self.full = d
+                if ' ' in d:
+                    self.year, self.monthday = d.split(' ')
+                    if self.monthday.isdigit():
+                        self.year, self.monthday = self.monthday, self.year
+                        self.key = '%s %s' % (self.year, self.monthday)
+                elif '.' in d:
+                    self.year = d.split('.')[0]
+                    self.full = self.year
+                else:
+                    self.year = d
     def __repr__(self):
         return '<%s>' % self.key
     def __str__(self):
