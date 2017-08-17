@@ -320,7 +320,7 @@ if upload:
         print "Tags:", tags
         print "Post Date:", next_upload['postdate']
         if raw_input('Upload %s for episode "%s"? [yN] ' % (
-                wav, next_upload['name'])) == 'y':
+                wav, next_upload['name'].encode('utf-8'))) == 'y':
             with open(os.path.expanduser('~/.soundcloud')) as fil:
                 client = soundcloud.Client(**yaml.load(fil))
             print 'Uploading', wav, 'to Soundcloud with', square

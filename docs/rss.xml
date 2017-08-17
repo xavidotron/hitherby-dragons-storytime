@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Fri, 04 Aug 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Fri, 04 Aug 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Thu, 17 Aug 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Thu, 17 Aug 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -30,16 +30,6 @@
     <width>144</width>
     <height>400</height>
   </image>
-  <item>
-    <title>What is Hitherby Dragons?</title>
-    <guid>http://hitherby.xavid.us/1/what-is-hitherby-dragons/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/what-is-hitherby-dragons/"&gt;&lt;img src="http://hitherby.xavid.us/1/what-is-hitherby-dragons/square.png" height="360" width="360" /&gt;&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
-    </description>
-      <category>Jane</category>
-    <pubDate>Mon, 06 Mar 2017 05:00:00 -0000</pubDate>
-  </item>
   <item>
     <title>Daniel</title>
     <guid>http://hitherby.xavid.us/1/daniel/</guid>
@@ -208,6 +198,17 @@
       <category>Forbidden A</category>
       <category>angels</category>
     <pubDate>Fri, 04 Aug 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>Jane’s Father</title>
+    <guid>http://hitherby.xavid.us/1/janes-father/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/1/janes-father/"&gt;&lt;img src="http://hitherby.xavid.us/1/janes-father/square.png" height="360" width="360" /&gt;&lt;/a&gt;
+        From Hitherby Dragons by Jenna Moran.
+    </description>
+      <category>Jane</category>
+      <category>Martin</category>
+    <pubDate>Thu, 17 Aug 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>
