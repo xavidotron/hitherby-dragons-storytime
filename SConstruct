@@ -383,23 +383,24 @@ AddOption('--post',
 post = GetOption('post')
 if post:
     def post_stuff(target, source, env):
-        desc = ''
+        desc = '<p><a href="http://hitherby.xavid.us/%s">%s</a>, from <a href="http://hitherby.xavid.us/">Hitherby Dragons Storytime.</a>\n\n' % (
+            last_upload['path'], last_upload['name'])
         if 'tagline' in last_upload:
-            desc += next_upload['tagline'] + '<br />'
-        desc += 'From <a href="%s">Hitherby Dragons</a> by <a href="http://jennamoran.tumblr.com/">@jennamoran</a>.' % last_upload['url']
+            desc += '<p>' + next_upload['tagline'] + '\n\n'
+        desc += '<p><a href="%s">Hitherby Dragons</a> by <a href="http://jennamoran.tumblr.com/">@jennamoran</a>.' % last_upload['url']
         print 'Description:'
         print desc
         if raw_input('Post episode "%s" linking to %s? [yN] ' % (
-                last_upload['name'], last_upload['path'])) == 'y':
+                last_upload['name'], last_upload['soundcloud'])) == 'y':
             with open(os.path.expanduser('~/.tumblr')) as fil:
                 auth = yaml.load(fil)
             client = pytumblr.TumblrRestClient(
                 auth['consumer_key'], auth['consumer_secret'],
                 auth['oauth_token'], auth['oauth_token_secret'])
             # This doesn't seem to do the preview image right...
-            client.create_link(
-                'hitherby-storytime', title=last_upload['name'],
-                url='http://hitherby.xavid.us/%s' % last_upload['path'],
-                description=desc, tags=get_tags(last_upload))
+            print client.create_audio(
+                'hitherby-storytime',
+                external_url=last_upload['soundcloud'],
+                caption=desc, tags=get_tags(last_upload))
 
     Command('post', 'docs/%sindex.html' % last_upload['path'], post_stuff)
