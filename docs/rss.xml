@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Thu, 17 Aug 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Thu, 17 Aug 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Sat, 19 Aug 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Sat, 19 Aug 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -30,19 +30,6 @@
     <width>144</width>
     <height>400</height>
   </image>
-  <item>
-    <title>Daniel</title>
-    <guid>http://hitherby.xavid.us/1/daniel/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/daniel/"&gt;&lt;img src="http://hitherby.xavid.us/1/daniel/square.png" height="360" width="360" /&gt;&lt;/a&gt;
-        The history of Daniel’s attempt to rescue his sister Jenna, who would later become Jane, from the monster.
-
-    </description>
-      <category>angels</category>
-      <category>fairies</category>
-      <category>Daniel</category>
-    <pubDate>Tue, 14 Mar 2017 04:00:00 -0000</pubDate>
-  </item>
   <item>
     <title>A Story</title>
     <guid>http://hitherby.xavid.us/1/a-story/</guid>
@@ -209,6 +196,16 @@
       <category>Jane</category>
       <category>Martin</category>
     <pubDate>Thu, 17 Aug 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>The Righteousness Game</title>
+    <guid>http://hitherby.xavid.us/1/the-righteousness-game/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/1/the-righteousness-game/"&gt;&lt;img src="http://hitherby.xavid.us/1/the-righteousness-game/square.png" height="360" width="360" /&gt;&lt;/a&gt;
+        From Hitherby Dragons by Jenna Moran.
+    </description>
+      <category>Meredith</category>
+    <pubDate>Sat, 19 Aug 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>
