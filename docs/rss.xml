@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Sat, 19 Aug 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Sat, 19 Aug 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Sat, 26 Aug 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Sat, 26 Aug 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -30,15 +30,6 @@
     <width>144</width>
     <height>400</height>
   </image>
-  <item>
-    <title>A Story</title>
-    <guid>http://hitherby.xavid.us/1/a-story/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/a-story/"&gt;&lt;img src="http://hitherby.xavid.us/1/a-story/square.png" height="360" width="360" /&gt;&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
-    </description>
-    <pubDate>Mon, 20 Mar 2017 04:00:00 -0000</pubDate>
-  </item>
   <item>
     <title>Classifying Things</title>
     <guid>http://hitherby.xavid.us/1/classifying-things/</guid>
@@ -206,6 +197,17 @@
     </description>
       <category>Meredith</category>
     <pubDate>Sat, 19 Aug 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>Jane Confronts the Problem of Martin</title>
+    <guid>http://hitherby.xavid.us/1/jane-confronts-the-problem-of-martin/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/1/jane-confronts-the-problem-of-martin/"&gt;&lt;img src="http://hitherby.xavid.us/1/jane-confronts-the-problem-of-martin/square.png" height="360" width="360" /&gt;&lt;/a&gt;
+        From Hitherby Dragons by Jenna Moran.
+    </description>
+      <category>Martin</category>
+      <category>Jane</category>
+    <pubDate>Sat, 26 Aug 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>
