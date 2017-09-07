@@ -386,7 +386,7 @@ if post:
         desc = '<p><a href="http://hitherby.xavid.us/%s">%s</a>, from <a href="http://hitherby.xavid.us/">Hitherby Dragons Storytime.</a>\n\n' % (
             last_upload['path'], last_upload['name'])
         if 'tagline' in last_upload:
-            desc += '<p>' + next_upload['tagline'] + '\n\n'
+            desc += '<p>' + last_upload['tagline'] + '\n\n'
         desc += '<p><a href="%s">Hitherby Dragons</a> by <a href="http://jennamoran.tumblr.com/">@jennamoran</a>.' % last_upload['url']
         print 'Description:'
         print desc
