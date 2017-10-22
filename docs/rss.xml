@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Sun, 27 Aug 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Sun, 27 Aug 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Sun, 22 Oct 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Sun, 22 Oct 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -30,20 +30,6 @@
     <width>144</width>
     <height>400</height>
   </image>
-  <item>
-    <title>Alan</title>
-    <guid>http://hitherby.xavid.us/1/alan/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/alan/"&gt;&lt;img src="http://hitherby.xavid.us/1/alan/square.png" height="360" width="360" /&gt;&lt;/a&gt;
-        The history of the birth of Alan, brother to Jenna, who will become Jane.
-
-    </description>
-      <category>fiends</category>
-      <category>Alan</category>
-      <category>Jenna</category>
-      <category>the monster</category>
-    <pubDate>Mon, 01 May 2017 04:00:00 -0000</pubDate>
-  </item>
   <item>
     <title>She Puts on Shows</title>
     <guid>http://hitherby.xavid.us/1/she-puts-on-shows/</guid>
@@ -210,6 +196,15 @@
       <category>Lisa</category>
       <category>Thess</category>
     <pubDate>Sun, 27 Aug 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>The River at the Edge of the World</title>
+    <guid>http://hitherby.xavid.us/2/the-river-at-the-edge-of-the-world/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/2/the-river-at-the-edge-of-the-world/"&gt;&lt;img src="http://hitherby.xavid.us/2/the-river-at-the-edge-of-the-world/square.png" height="360" width="360" /&gt;&lt;/a&gt;
+        From Hitherby Dragons by Jenna Moran.
+    </description>
+    <pubDate>Sun, 22 Oct 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>
