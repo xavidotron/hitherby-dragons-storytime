@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Sun, 22 Oct 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Sun, 22 Oct 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Sun, 29 Oct 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Sun, 29 Oct 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -31,21 +31,11 @@
     <height>400</height>
   </image>
   <item>
-    <title>She Puts on Shows</title>
-    <guid>http://hitherby.xavid.us/1/she-puts-on-shows/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/she-puts-on-shows/"&gt;&lt;img src="http://hitherby.xavid.us/1/she-puts-on-shows/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "She Puts on Shows"&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
-    </description>
-      <category>Jane</category>
-    <pubDate>Sun, 07 May 2017 04:00:00 -0000</pubDate>
-  </item>
-  <item>
     <title>The Truth</title>
     <guid>http://hitherby.xavid.us/1/the-truth/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/the-truth/"&gt;&lt;img src="http://hitherby.xavid.us/1/the-truth/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "The Truth"&lt;/a&gt;
-        A legend that misleads, perhaps, to reveal a truer reality.
+        &lt;p&gt;A legend that misleads, perhaps, to reveal a truer reality.&lt;/p&gt;
     </description>
       <category>Jane</category>
       <category>Bob</category>
@@ -56,7 +46,7 @@
     <guid>http://hitherby.xavid.us/1/tenebrae/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/tenebrae/"&gt;&lt;img src="http://hitherby.xavid.us/1/tenebrae/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Tenebrae"&lt;/a&gt;
-        A history with insights into woglies and the monster.
+        &lt;p&gt;A history with insights into woglies and the monster.&lt;/p&gt;
     </description>
       <category>woglies</category>
       <category>the shadow</category>
@@ -68,7 +58,7 @@
     <guid>http://hitherby.xavid.us/1/scanning-things/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/scanning-things/"&gt;&lt;img src="http://hitherby.xavid.us/1/scanning-things/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Scanning Things"&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
       <category>woglies</category>
       <category>siggorts</category>
@@ -82,8 +72,8 @@
     <guid>http://hitherby.xavid.us/1/bob/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/bob/"&gt;&lt;img src="http://hitherby.xavid.us/1/bob/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Bob"&lt;/a&gt;
-        The history of Bob’s attempt to keep his sister Jane safe.
-
+        &lt;p&gt;The history of Bob’s attempt to keep his sister Jane safe.
+&lt;/p&gt;
     </description>
       <category>fetches</category>
       <category>woglies</category>
@@ -96,7 +86,7 @@
     <guid>http://hitherby.xavid.us/1/woglies/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/woglies/"&gt;&lt;img src="http://hitherby.xavid.us/1/woglies/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Woglies"&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
       <category>woglies</category>
     <pubDate>Wed, 12 Jul 2017 04:00:00 -0000</pubDate>
@@ -106,8 +96,8 @@
     <guid>http://hitherby.xavid.us/1/before-he-was-cool/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/before-he-was-cool/"&gt;&lt;img src="http://hitherby.xavid.us/1/before-he-was-cool/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Before He Was Cool"&lt;/a&gt;
-        Martin, Jane’s final brother, is born on a night of screams and fire.
-
+        &lt;p&gt;Martin, Jane’s final brother, is born on a night of screams and fire.
+&lt;/p&gt;
     </description>
       <category>Martin</category>
       <category>the monster</category>
@@ -119,7 +109,7 @@
     <guid>http://hitherby.xavid.us/1/the-girl-and-the-rat/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/the-girl-and-the-rat/"&gt;&lt;img src="http://hitherby.xavid.us/1/the-girl-and-the-rat/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "The Girl And The Rat"&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
       <category>Jane</category>
       <category>Broderick</category>
@@ -131,7 +121,7 @@
     <guid>http://hitherby.xavid.us/1/broderick/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/broderick/"&gt;&lt;img src="http://hitherby.xavid.us/1/broderick/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Broderick"&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
       <category>Broderick</category>
     <pubDate>Wed, 26 Jul 2017 04:00:00 -0000</pubDate>
@@ -141,7 +131,7 @@
     <guid>http://hitherby.xavid.us/1/the-angels/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/the-angels/"&gt;&lt;img src="http://hitherby.xavid.us/1/the-angels/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "The Angels"&lt;/a&gt;
-        In which Jane, amidst inexplicable circumstances, meets four angels for the first time.
+        &lt;p&gt;In which Jane, amidst inexplicable circumstances, meets four angels for the first time.&lt;/p&gt;
     </description>
       <category>Jane</category>
       <category>the Angel Four</category>
@@ -157,7 +147,7 @@
     <guid>http://hitherby.xavid.us/1/janes-father/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/janes-father/"&gt;&lt;img src="http://hitherby.xavid.us/1/janes-father/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Jane’s Father"&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
       <category>Jane</category>
       <category>Martin</category>
@@ -168,7 +158,7 @@
     <guid>http://hitherby.xavid.us/1/the-righteousness-game/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/the-righteousness-game/"&gt;&lt;img src="http://hitherby.xavid.us/1/the-righteousness-game/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "The Righteousness Game"&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
       <category>Meredith</category>
     <pubDate>Sat, 19 Aug 2017 04:00:00 -0000</pubDate>
@@ -178,7 +168,7 @@
     <guid>http://hitherby.xavid.us/1/jane-confronts-the-problem-of-martin/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/jane-confronts-the-problem-of-martin/"&gt;&lt;img src="http://hitherby.xavid.us/1/jane-confronts-the-problem-of-martin/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Jane Confronts the Problem of Martin"&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
       <category>Martin</category>
       <category>Jane</category>
@@ -189,7 +179,7 @@
     <guid>http://hitherby.xavid.us/1/martin/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/1/martin/"&gt;&lt;img src="http://hitherby.xavid.us/1/martin/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Martin"&lt;/a&gt;
-        Martin meets the monster.
+        &lt;p&gt;Martin meets the monster.&lt;/p&gt;
     </description>
       <category>Martin</category>
       <category>the monster</category>
@@ -202,9 +192,18 @@
     <guid>http://hitherby.xavid.us/2/the-river-at-the-edge-of-the-world/</guid>
     <description>
       &lt;a href="http://hitherby.xavid.us/2/the-river-at-the-edge-of-the-world/"&gt;&lt;img src="http://hitherby.xavid.us/2/the-river-at-the-edge-of-the-world/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "The River at the Edge of the World"&lt;/a&gt;
-        From Hitherby Dragons by Jenna Moran.
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
     <pubDate>Sun, 22 Oct 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>Ninja Tathagata</title>
+    <guid>http://hitherby.xavid.us/2/ninja-tathagata/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/2/ninja-tathagata/"&gt;&lt;img src="http://hitherby.xavid.us/2/ninja-tathagata/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Ninja Tathagata"&lt;/a&gt;
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
+    </description>
+    <pubDate>Sun, 29 Oct 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>

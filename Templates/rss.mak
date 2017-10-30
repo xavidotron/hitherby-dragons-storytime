@@ -42,9 +42,9 @@ def fmtdate(ep):
     <description>
       &lt;a href="http://hitherby.xavid.us/${ep['path']}"&gt;&lt;img src="http://hitherby.xavid.us/${ep['path']}square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "${ep['name']}"&lt;/a&gt;
       %if 'tagline' in ep:
-        ${ep['tagline']}
+        &lt;p&gt;${ep['tagline']}&lt;/p&gt;
       %else:
-        From Hitherby Dragons by Jenna Moran.
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
       %endif
     </description>
     %if 'tags' in ep:
