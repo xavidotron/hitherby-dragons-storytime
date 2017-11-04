@@ -1,6 +1,19 @@
 ## -*- coding: utf-8 -*-
 <%inherit file="../base.mak"/>
 
+<%block name="meta">
+<meta property="og:image" content="http://hitherby.xavid.us/Images/square.png" />
+<meta property="og:url" content="http://hitherby.xavid.us/" />
+<meta property="og:title" content="Hitherby Dragons Storytime" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@HitherbyStorytm" />
+<meta name="twitter:title" content="Hitherby Dragons Storytime" />
+<meta name="twitter:image" content="http://hitherby.xavid.us/Images/square.png" />
+<meta property="og:description" content="A Voicecast to Answer Suffering" />
+<meta name="twitter:description" content="A Voicecast to Answer Suffering" />
+</%block>
+
+
 %if title == 'Timeline':
 <p>A chronological ordering of the Histories, with certain additional contextual
   notes.</p>
