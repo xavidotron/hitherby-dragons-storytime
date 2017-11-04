@@ -90,6 +90,12 @@
         used to be Karen, but then woglies ate the
         integrity of her world. Now she’s just the shadow.
     -
+      tag: Mei Ming
+      desc: |
+        is a girl the monster pulled from the shadow’s womb. She lives
+        in the tunnels. Martin wants to rescue her, but she’s scared
+        of the light.
+    -
       tag: Jenna
       desc: |
         was one of the people of salt. To evade the monster, she died,
@@ -99,6 +105,12 @@
         there. It didn’t work, and sometime between then and now,
         Martin found her and remade her. He kept the name Jane.
       ref: http://imago.hitherby.com/2004/05/character-profile-jane/
+    -
+      tag: the hero
+      desc: |
+        , Sebastien, was Jenna’s brother. He is somewhat dubious about
+        Jane, what with all the dying and coming back to life and
+        transforming into different people and all.
     -
       tag: the Angel Four
       subtags: [Evasive A, Forbidden A, Magic A, Realistic A]
@@ -111,12 +123,36 @@
         a realistic assessment of any situation.
       ref: http://imago.hitherby.com/2004/05/character-profile-the-angel-four/
     -
+      tag: Ninja Tathagata
+      desc: |
+        is probably that aspect of Tathagata Buddha who is a ninja. He
+        might also be the scion of a clan of ninjas who adopt the
+        names of classic Buddhas when they achieve Ninja Nirvana. It’s
+        hard to say without infinite wisdom.
+    -
+      tag: Dukkha
+      desc: |
+        is the world’s fundamental tendency to include hostility and
+        anguish in everyday life. He fights a neverending battle with
+        Ninja Tathagata.
+    -
+      tag: Maya
+      desc: |
+        is the illusion of material existence. She’s also Lot’s wife,
+        adoptive mother of the lines of the monster and the people of
+        salt, and Queen Mahamaya, mother to Prince Siddhartha. She
+        gets around.
+    -
       tag: Daniel, Lisa, Thess, Alan, and Bob
       subtags: [Daniel, Lisa, Thess, Alan, Bob]
       desc: |
         were each at one time
         Jane’s brother or sister. They did not work out very well and had to be
         replaced.
+    -
+      tag: Vicious Lily
+      desc: |
+        is a robotic assassin made to advance the cause of Impressionism.
 -
   section: Strange Entities
   ref: http://hitherby-dragons.wikidot.com/what-is-hitherby-dragons-2
@@ -137,6 +173,9 @@
     -
       tag: fiends
       desc: answer hurt with madness.
+    -
+      tag: heroes
+      desc: can kill monsters.
     -
       tag: merins
       desc: help make sense of the world.

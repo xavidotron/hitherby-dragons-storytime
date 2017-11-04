@@ -57,6 +57,12 @@ def get_href(tab, prefix):
 def cap_first(s):
   return s[0].upper() + s[1:]
 
+def maybe_space(s):
+    if s.startswith(','):
+        return s
+    else:
+        return ' ' + s
+
 def render_mako(prefix='../', **kw):
     def tag_path(t):
         if t in TAG_ALIASES:
@@ -74,6 +80,7 @@ def render_mako(prefix='../', **kw):
         rendered = tmpl.render(tablist=tablist,
                                prefix=prefix,
                                cap_first=cap_first,
+                               maybe_space=maybe_space,
                                tag_path=tag_path,
                                **kw)
         with open(str(target[0]), 'w') as fil:
@@ -120,8 +127,15 @@ for yamlf in Glob('Volumes/*.yaml'):
             vol['number'],
             ep['name'].lower().replace('.', '').replace('?', '').replace(
                 ' ', '-').replace(u'’', ''))
-        if 'date' in ep:
-            ep['date'] = dateparse(ep['date'])
+        if ep['type'] == 'History':
+            assert 'timeline' in ep
+        if 'timeline' in ep:
+            assert ep['type'] == 'History'
+            for k in ep['timeline']:
+                tl = dict(ep)
+                tl['date'] = dateparse(k)
+                tl['timenote'] = ep['timeline'][k]
+                age.append(tl)
         if 'seebit' not in ep:
             ep['seebit'] = vol['seebits'][ep['type']]
         if 'soundcloud' in ep:
@@ -143,8 +157,6 @@ for yamlf in Glob('Volumes/*.yaml'):
                 print
                 print get_desc(ep)
 
-        if ep['type'] == 'History':
-            age.append(ep)
     volumes.append(vol)
 
 TAG_TO_EPISODES = {}
@@ -198,8 +210,11 @@ for vol in volumes:
                 assert t.lower() not in ep['name'].lower(), (t, ep['name'])
                 assert t.lower() not in ep.get('tagline', '').lower(), (
                     t, ep['tagline'])
-                assert t.lower() not in ep.get('timenote', '').lower(), (
-                    t, ep['timenote'])
+                if 'timeline' in ep:
+                    for k in ep['timeline']:
+                        timenote = ep['timeline'][k]
+                        assert t.lower() not in timenote.lower(), (
+                            t, timenote)
                 assert t.lower() not in ep['credits'].lower(), (
                     t, ep['credits'])
             c = Command('docs/%sindex.html' % (ep['path']),

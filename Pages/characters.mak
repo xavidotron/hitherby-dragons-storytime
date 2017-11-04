@@ -20,11 +20,10 @@
 %endif
 
 %if t['tag'] in TAG_ALIASES or len(TAG_TO_EPISODES[t['tag']]) > 0:
-<a href="${tag_path(t['tag'])}/"><b>${cap_first(t['tag'])}</b></a>
+<a href="${tag_path(t['tag'])}/"><b>${cap_first(t['tag'])}</b></a>${maybe_space(t['desc'])}
 %else:
-<b>${cap_first(t['tag'])}</b>
+<b>${cap_first(t['tag'])}</b>${maybe_space(t['desc'])}
 %endif
-${t['desc']}
 
 %if sec.get('mode') == 'ul':
 </li>

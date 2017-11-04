@@ -10,6 +10,7 @@ episodes:
   name: The River at the Edge of the World
   url: http://imago.hitherby.com/2003/12/one-of-those-days/
   type: Legend
+  tags: [Ninja Tathagata]
   credits: |
     Narrator: Xavid
     Hopping Vampire: Andrew Clough
@@ -29,6 +30,7 @@ episodes:
 -
   name: Ninja Tathagata
   type: Merin
+  tags: [Ninja Tathagata]
   url: http://imago.hitherby.com/2003/12/ninja-tathagata/
   seebit: |
     For more real individuals, see <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
@@ -43,3 +45,46 @@ episodes:
   soundcloud: http://soundcloud.com/hitherby/ninja-tathagata
   youtube: https://www.youtube.com/watch?v=dwqpxAjeGRg
   
+-
+  name: Dumping Glue on a Log
+  type: Legend
+  url: http://imago.hitherby.com/2003/12/dumping-glue-on-a-log/
+  seebit: |
+    For more on Jane and Martin, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  tags: [Jane, Martin, Ninja Tathagata, Maya]
+  credits: |
+    Narrator: Xavid
+    Gautama: Thomas Mack
+    Jane: Sarah
+    Martin: Edwin
+    Mara: Andrew Clough
+    The earth: Xavid
+
+    Music and Sounds by:
+    Smhertz: <a href="http://99sounds.org/massamolla/">"Retrofuture" from Massamolla</a>
+    bart: <a href="https://opengameart.org/content/the-adventure-begins-8-bit-remix">The Adventure Begins 8-bit Remix</a>
+    SketchyLogic: <a href="https://opengameart.org/content/hungry-dino-9-chiptune-tracks-10-sfx">Hungry Dino</a>
+  art: legend-log.svg
+  postdate: 2017-11-03
+  soundcloud: http://soundcloud.com/hitherby/dumping-glue-on-a-log
+  youtube: https://www.youtube.com/watch?v=dmELPA2Y4Gk
+-
+  name: Tunnel Rat
+  type: History
+  url: http://imago.hitherby.com/2004/05/tunnel-rat-iiv/
+  tags: [Jenna, Sebastien, heroes]
+  tagline: Introducing Jenna’s original brother, Sebastien.
+  timeline:
+    1973: Jenna and Sebastien live in a cedar house.
+    1974-01-12: Jenna hears about the monster for the first time.
+    1974-04-06: Sebastien decides to fight the monster.
+  seebit: |
+    For more on Jenna and Sebastien, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+  credits: |
+    Narrator: Xavid
+    Sebastien: Thomas Mack
+    Jenna: Sarah
+    Tara: Barbara Fleming
+    Ben: James Pretzer
+    The oceanid: Mehitabel Glenhaber
+  art: history-cabin.svg

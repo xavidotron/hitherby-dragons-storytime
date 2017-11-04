@@ -40,10 +40,10 @@ episodes:
   tags: [Jane]
 -
   name: Daniel
-  date: 1976.2
+  timeline:
+    1976.2: Daniel deals with Mr. Banks and Ms. Bell.
   type: History
   url: http://imago.hitherby.com/2004/02/daniel-iiv/
-  timenote: Daniel deals with Mr. Banks and Ms. Bell.
   postdate: 2017-03-14
   tagline: |
     The history of Daniel’s attempt to rescue his sister Jenna, who would later become Jane, from the monster.
@@ -101,12 +101,12 @@ episodes:
   name: Alan
   postdate: 2017-05-01
   type: History
-  date: Early 1980
+  timeline:
+    Early 1980: Alan is born.
   url: http://imago.hitherby.com/2004/02/alan-iiiv/
   art: history-toad.svg
   tagline: |
     The history of the birth of Alan, brother to Jenna, who will become Jane.
-  timenote: Alan is born.
   seebit: |
     For more on Jane’s brothers, see <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
   tags: [fiends, Alan, Jenna, the monster]
@@ -158,8 +158,8 @@ episodes:
   name: Tenebrae
   type: History
   url: http://imago.hitherby.com/2004/04/good-friday-tenebrae-ii/
-  date: 1975
-  timenote: Karen succumbs to woglies.
+  timeline:
+    1975: Karen succumbs to woglies.
   tagline: A history with insights into woglies and the monster.
   tags: [woglies, the shadow, the monster]
   seebit: |
@@ -202,8 +202,8 @@ episodes:
   name: Bob
   type: History
   url: http://imago.hitherby.com/2004/02/bob-iiiiv/
-  date: 1989-10-28
-  timenote: Bob meets the wogly. The firewood world is born.
+  timeline:
+    1989-10-28: Bob meets the wogly. The firewood world is born.
   tagline: |
     The history of Bob’s attempt to keep his sister Jane safe.
   seebit: |
@@ -238,8 +238,8 @@ episodes:
   name: Before He Was Cool
   type: History
   url: http://imago.hitherby.com/2005/03/before-he-was-cool-ii/
-  date: 1995-03-22
-  timenote: Martin is born on a night of screams and fire.
+  timeline:
+    1995-03-22: Martin is born on a night of screams and fire.
   tagline: |
     Martin, Jane’s final brother, is born on a night of screams and fire.
   seebit: |
@@ -297,8 +297,8 @@ episodes:
   name: The Angels
   type: History
   url: http://imago.hitherby.com/2003/12/the-angels-iiiiv/
-  date: 1996-12-08?
-  timenote: Jane meets the Angel Four.
+  timeline:
+    1996-12-08: Jane meets the Angel Four.
   tagline: In which Jane, amidst inexplicable circumstances, meets four angels for the first time.
   seebit: |
     For more on the Angel Four, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
@@ -372,8 +372,8 @@ episodes:
   name: Martin
   type: History
   url: http://imago.hitherby.com/2004/02/martin-iviv/
-  date: 2001
-  timenote: Martin meets the monster.
+  timeline:
+    2001: Martin meets the monster.
   tagline: Martin meets the monster.
   seebit: |
     For more on Martin and the monster, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.

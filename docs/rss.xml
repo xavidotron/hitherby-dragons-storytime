@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Sun, 29 Oct 2017 04:00:00 -0000</pubDate>
-  <lastBuildDate>Sun, 29 Oct 2017 04:00:00 -0000</lastBuildDate>
+  <pubDate>Fri, 03 Nov 2017 04:00:00 -0000</pubDate>
+  <lastBuildDate>Fri, 03 Nov 2017 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -30,17 +30,6 @@
     <width>144</width>
     <height>400</height>
   </image>
-  <item>
-    <title>The Truth</title>
-    <guid>http://hitherby.xavid.us/1/the-truth/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/the-truth/"&gt;&lt;img src="http://hitherby.xavid.us/1/the-truth/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "The Truth"&lt;/a&gt;
-        &lt;p&gt;A legend that misleads, perhaps, to reveal a truer reality.&lt;/p&gt;
-    </description>
-      <category>Jane</category>
-      <category>Bob</category>
-    <pubDate>Mon, 15 May 2017 04:00:00 -0000</pubDate>
-  </item>
   <item>
     <title>Tenebrae</title>
     <guid>http://hitherby.xavid.us/1/tenebrae/</guid>
@@ -194,6 +183,7 @@
       &lt;a href="http://hitherby.xavid.us/2/the-river-at-the-edge-of-the-world/"&gt;&lt;img src="http://hitherby.xavid.us/2/the-river-at-the-edge-of-the-world/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "The River at the Edge of the World"&lt;/a&gt;
         &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
+      <category>Ninja Tathagata</category>
     <pubDate>Sun, 22 Oct 2017 04:00:00 -0000</pubDate>
   </item>
   <item>
@@ -203,7 +193,21 @@
       &lt;a href="http://hitherby.xavid.us/2/ninja-tathagata/"&gt;&lt;img src="http://hitherby.xavid.us/2/ninja-tathagata/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Ninja Tathagata"&lt;/a&gt;
         &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
+      <category>Ninja Tathagata</category>
     <pubDate>Sun, 29 Oct 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>Dumping Glue on a Log</title>
+    <guid>http://hitherby.xavid.us/2/dumping-glue-on-a-log/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/2/dumping-glue-on-a-log/"&gt;&lt;img src="http://hitherby.xavid.us/2/dumping-glue-on-a-log/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Dumping Glue on a Log"&lt;/a&gt;
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
+    </description>
+      <category>Jane</category>
+      <category>Martin</category>
+      <category>Ninja Tathagata</category>
+      <category>Maya</category>
+    <pubDate>Fri, 03 Nov 2017 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>
