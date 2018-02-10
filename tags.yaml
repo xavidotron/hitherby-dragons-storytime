@@ -111,6 +111,9 @@
         , Sebastien, was Jenna’s brother. He is somewhat dubious about
         Jane, what with all the dying and coming back to life and
         transforming into different people and all.
+      image: hero.png
+      imagecredit: Xiiau
+      imageurl: http://xiiau.tumblr.com/
     -
       tag: the Angel Four
       subtags: [Evasive A, Forbidden A, Magic A, Realistic A]
@@ -173,12 +176,18 @@
     -
       tag: fiends
       desc: answer hurt with madness.
+#    -
+#      tag: flying carpets
+#      desc: take you from the confines of your world.
     -
       tag: heroes
       desc: can kill monsters.
     -
       tag: merins
       desc: help make sense of the world.
+#    -
+#      tag: mer-nymphs
+#      desc: open the world.
     -
       tag: siggorts
       desc: vivisect people innocently.

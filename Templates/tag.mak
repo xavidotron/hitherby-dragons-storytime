@@ -6,12 +6,10 @@
 <a href="../../Images/${tag['image']}"><img class="right" style="width: 300px" src="../../Images/${tag['image']}" /></a>
 %endif
 
-<p><b>${cap_first(tag['tag'])}</b>
-${tag['desc']}
+<p><b>${cap_first(tag['tag'])}</b>${maybe_space(tag['desc'])}
 
 %for st in subtags:
-<p><b>${cap_first(st['tag'])}</b>
-${st['desc']}
+<p><b>${cap_first(st['tag'])}</b>${maybe_space(st['desc'])}
 %endfor
   
 <h3>Episodes with ${'/'.join([tag['tag']] + [st['tag'] for st in subtags])}:</h3>
