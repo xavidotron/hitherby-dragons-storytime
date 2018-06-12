@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import re, sys, os, subprocess, calendar
+import re, sys, os, subprocess, calendar, datetime
 import traceback
 import yaml
 from mako.template import Template
@@ -39,12 +39,20 @@ class dateparse(object):
                 elif '.' in d:
                     self.year = d.split('.')[0]
                     self.full = self.year
+                elif '-' in d:
+                    self.year, month = d.split('-')
+                    self.monthday = calendar.month_name[int(month)]
+                    self.key = d
+                    self.full = '%s, %s' % (self.monthday, self.year)
                 else:
                     self.year = d
     def __repr__(self):
         return '<%s>' % self.key
     def __str__(self):
         return self.full
+    def __cmp__(self, other):
+        return cmp(self.key, other.key)
+                
 
 def get_title(tab):
     return TITLES[tab] if tab in TITLES else tab.title().replace('-', ' ')
@@ -131,14 +139,18 @@ for yamlf in Glob('Volumes/*.yaml'):
             assert 'timeline' in ep
         if 'timeline' in ep:
             assert ep['type'] == 'History'
+            dates = []
             for k in ep['timeline']:
                 tl = dict(ep)
                 tl['date'] = dateparse(k)
+                dates.append(tl['date'])
                 tl['timenote'] = ep['timeline'][k]
                 age.append(tl)
-        if 'seebit' not in ep:
-            ep['seebit'] = vol['seebits'][ep['type']]
+            dates.sort()
+            ep['date'] = '; '.join(str(k) for k in dates)
         if 'soundcloud' in ep:
+            if 'seebit' not in ep:
+                ep['seebit'] = vol['seebits'][ep['type']]
             if prev_ep:
                 ep['prev'] = prev_ep['path']
                 prev_ep['next'] = ep['path']
@@ -190,7 +202,8 @@ for makof in Glob('Pages/*.mak'):
     else:
         htmlf = 'docs/' + stem + '/index.html'
     c = Command(htmlf, makof, render_mako(
-        tags=tags, TAG_TO_EPISODES=TAG_TO_EPISODES, TAG_ALIASES=TAG_ALIASES))
+        tags=tags, TAG_TO_EPISODES=TAG_TO_EPISODES, TAG_ALIASES=TAG_ALIASES,
+        volumes=volumes))
     Depends(c, 'SConstruct')
     Depends(c, 'tags.yaml')
     for d in Glob('Templates/*.mak'):

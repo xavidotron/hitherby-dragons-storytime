@@ -88,3 +88,79 @@ episodes:
     Ben: James Pretzer
     The oceanid: Mehitabel Glenhaber
   art: history-cabin.svg
+-
+  name: In A World Rapidly Turning To Cards
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/in-a-world-rapidly-turning-to-cards/
+-
+  name: Dragons
+  type: Merin
+  url: http://imago.hitherby.com/2004/01/dragons/
+-
+  name: The Tunnels
+  type: History
+  timeline:
+    1974-04: ???
+  url: http://imago.hitherby.com/2004/01/the-tunnels-iiv/
+-
+  name: The World’s Not Fair to Dead People
+  type: Legend
+  url: http://imago.hitherby.com/2003/12/the-worlds-not-fair-to-dead-people/
+-
+  name: The Forest
+  type: History
+  timeline:
+    1981-12: ???
+  url: http://imago.hitherby.com/2004/01/the-forest-iiiv/
+-
+  name: Two Great Tastes
+  type: Legend
+  url: http://imago.hitherby.com/2003/12/two-great-tastes/
+-
+  name: The Castle
+  type: History
+  timeline:
+    1984+: ???
+  url: http://imago.hitherby.com/2004/01/the-castle-iiiiv/
+-
+  name: The Interpretation of Spam
+  type: Legend
+  url: http://imago.hitherby.com/2004/05/the-interpretation-of-spam/
+-
+  name: The Stage
+  type: History
+  timeline:
+    1985?: ???
+  url: http://imago.hitherby.com/2004/01/the-stage-iviv/
+-
+  name: Skipping Right Over King Obo-Zed
+  type: Legend
+  url: http://imago.hitherby.com/2003/12/skipping-right-over-king-obo-zed/
+-
+  name: Chasing Away the Blues
+  type: Legend
+  url: http://imago.hitherby.com/2004/12/chasing-away-the-blues/
+-
+  name: The Snake, The Horses, The Tiger, and The Elephant
+  type: Legend
+  url: http://imago.hitherby.com/2004/06/the-snake-the-horses-the-tiger-and-the-elephant/
+-
+  name: Mei Ming
+  type: History
+  timeline:
+    1997: ???
+  url: http://imago.hitherby.com/2004/05/mei-ming-ii/
+-
+  name: The Failed Escape Attempt
+  type: Legend
+  url: http://imago.hitherby.com/2004/12/the-failed-escape-attempt/
+-
+  name: Martin
+  type: Merin
+  url: http://imago.hitherby.com/2005/02/martin/
+-
+  name: Reinterpreting Bad Milk
+  type: History
+  timeline:
+    Early 2004?: ???
+  url: http://imago.hitherby.com/2005/04/reinterpreting-bad-milk-ii/
