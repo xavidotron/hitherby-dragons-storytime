@@ -1,0 +1,103 @@
+name: |
+  <i>Martin in Darkness</i>
+desc: |
+
+episodes:
+-
+  name: King Cole
+  type: Legend
+  url: http://imago.hitherby.com/2004/10/king-cole/
+-
+  name: The Toucan Clock
+  type: History
+  timeline:
+    1995-03-23?: ???
+  url: http://imago.hitherby.com/2005/03/the-toucan-clock-ii/
+-
+  name: Destiny and Disappointment (Abridged)
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/destiny-and-disappointment-abridged/
+-
+  name: Martin and Lisa
+  type: History
+  timeline:
+    1995-03-24?: ???
+  url: http://imago.hitherby.com/2005/03/martin-and-lisa-iiii/
+-
+  name: Martin and Thess
+  type: History
+  timeline:
+    1995-03-24?: ???
+  url: http://imago.hitherby.com/2005/03/martin-and-thess-iiiii/
+-
+  name: Martin and the Woglies
+  type: History
+  timeline:
+    1995-03-24?: ???
+  url: http://imago.hitherby.com/2005/03/martin-and-the-woglies-iiiiii/
+-
+  name: Ink in an Interlude
+  type: Legend
+  url: http://imago.hitherby.com/2004/04/ink-in-an-interlude/
+-
+  name: The Weight of the Contradiction
+  type: Legend
+  url: http://imago.hitherby.com/2005/04/the-weight-of-the-contradiction/
+-
+  name: Tre Ore
+  type: History
+  timeline:
+    1995-03-25: ???
+  url: http://imago.hitherby.com/2005/03/good-friday-hitherby-annual-1-ii-tre-ore-2/
+-
+  name: The Puppy is Sad
+  type: Legend
+  url: http://imago.hitherby.com/2004/11/the-puppy-is-sad/
+-
+  name: Intermission
+  type: History
+  timeline:
+    1995-03-25: ???
+  url: http://imago.hitherby.com/2011/12/intermission-ii/
+-
+  name: A Poorly Timed Deus Ex Machina
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/a-poorly-timed-deus-ex-machina/
+-
+  name: Meredith
+  type: Merin
+  url: http://imago.hitherby.com/2004/01/meredith/
+-
+  name: The Rent in the Fullness of the World
+  type: History
+  timeline:
+    1996: ???
+  url: http://imago.hitherby.com/2004/08/the-rent-in-the-fullness-of-the-world-iii/
+-
+  name: Angus’s Bad Day
+  type: Legend
+  url: http://imago.hitherby.com/2004/08/angus-bad-day/
+-
+  name: Sour, Bitter, and Sweet
+  type: Legend
+  url: http://imago.hitherby.com/2005/02/sour-bitter-and-sweet/
+-
+  name: An Answer to Emptiness
+  type: History
+  timeline:
+    1997: ???
+  url: http://imago.hitherby.com/2004/08/an-answer-to-emptiness-iiii/
+-
+  name: Stones Tell
+  type: Legend
+  url: http://imago.hitherby.com/2004/03/stones-tell/
+-
+  name: Anecdotes from the Matrix
+  type: Legend
+  url: http://imago.hitherby.com/2004/11/anecdotes-from-the-matrix/
+-
+  name: Tantalus Looks for Work
+  type: History
+  timeline:
+    2004-04: ???
+  url: http://imago.hitherby.com/2005/03/tantalus-looks-for-work-1-of-1/
