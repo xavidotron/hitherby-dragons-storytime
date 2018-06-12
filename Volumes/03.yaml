@@ -75,7 +75,7 @@ episodes:
   name: Sunday
   type: History
   timeline:
-    2004-04-18: ???
+    2004-04-18.1: ???
   url: http://imago.hitherby.com/2004/04/sunday-2-of-2/
 -
   name: Rainbow Noir
@@ -85,7 +85,7 @@ episodes:
   name: Surrender
   type: History
   timeline:
-    2004-04-18: ???
+    2004-04-18.3: ???
   url: http://imago.hitherby.com/2004/05/surrender-1-of-2/
 -
   name: See Jane

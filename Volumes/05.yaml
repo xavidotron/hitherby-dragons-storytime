@@ -1,0 +1,104 @@
+name: |
+  The Show
+desc: |
+  
+episodes:
+-
+  name: The Monster
+  type: History
+  timeline:
+    2004-04-04: ???
+  url: http://imago.hitherby.com/2003/12/the-monster-iiv/
+-
+  name: Rolled. Into. One.
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/rolled-into-one/
+-
+  name: The Hero
+  type: History
+  timeline:
+    2004-04-06: ???
+  url: http://imago.hitherby.com/2003/12/the-hero-iiiv/
+-
+  name: Avoiding the Use of Exclamation Points
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/avoiding-the-use-of-exclamation-points/
+-
+  name: The Shadow
+  type: History
+  timeline:
+    2004-01: ???
+  url: http://imago.hitherby.com/2003/12/the-shadow-iviv/
+-
+  name: Mr. A
+  type: Merin
+  url: http://imago.hitherby.com/2003/12/mr-a/
+-
+  name: The Awa
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/the-awa/
+-
+  name: Ants
+  type: Merin
+  url: http://imago.hitherby.com/2004/02/ants/
+-
+  name: The Land Where Suffering is Remembered
+  type: Legend
+  url: http://imago.hitherby.com/2005/07/the-land-where-suffering-is-remembered/
+-
+  name: Pelopia Visits Martin
+  type: History
+  timeline:
+    2004-03-21: ???
+  url: http://imago.hitherby.com/2004/03/pelopia-visits-martin-1-of-1/
+-
+  name: The Abbey, After the Rain
+  type: Legend
+  url: http://imago.hitherby.com/2004/07/the-abbey-after-the-rain/
+-
+  name: Static
+  type: History
+  timeline:
+    2004-04?: ???
+  url: http://imago.hitherby.com/2004/04/static/
+-
+  name: The Shelf, And What Happened There
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/the-shelf-and-what-happened-there/
+-
+  name: The Show
+  type: History
+  timeline:
+    2004-04-03: ???
+    2004-04-05: ???
+  url: http://imago.hitherby.com/2004/05/the-show-iiiv/
+-
+  name: Innovations in Cereal
+  type: Legend
+  url: http://imago.hitherby.com/2004/07/innovations-in-cereal/
+-
+  name: It’s Only Wounds
+  type: History
+  timeline:
+    1999+?: ???
+  url: http://imago.hitherby.com/2004/03/its-only-wounds-ii/
+-
+  name: A Very Special Episode
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/a-very-special-episode/
+-
+  name: Jane
+  type: History
+  timeline:
+    2004-04-03: ???
+  url: http://imago.hitherby.com/2004/05/jane-iiiiv/
+-
+  name: Mechanical Issues
+  type: Legend
+  url: http://imago.hitherby.com/2004/07/mechanical-issues/
+-
+  name: Questions and Answers
+  type: History
+  timeline:
+    2004-04-06: ???
+  url: http://imago.hitherby.com/2004/05/questions-and-answers-2-of-2/

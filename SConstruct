@@ -21,9 +21,13 @@ class dateparse(object):
             d = str(d)
             if '-' in d and d.endswith('?'):
                 d = str(d)[:-1]
-                self.year, month, day = d.split('-')
-                self.monthday = '%s %s' % (calendar.month_name[int(month)],
-                                           int(day))
+                self.year, monthday = d.split('-', 1)
+                if '-' in monthday:
+                    month, day = monthday.split('-')
+                    self.monthday = '%s %s' % (calendar.month_name[int(month)],
+                                               int(day))
+                else:
+                    self.monthday = calendar.month_name[int(monthday)]
                 self.key = d
                 self.full = '%s, %s?' % (self.monthday, self.year)
                 self.monthday += '?'
