@@ -42,7 +42,6 @@ class dateparse(object):
                 elif '-' in d:
                     self.year, month = d.split('-')
                     self.monthday = calendar.month_name[int(month)]
-                    self.key = d
                     self.full = '%s, %s' % (self.monthday, self.year)
                 else:
                     self.year = d

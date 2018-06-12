@@ -1,0 +1,99 @@
+name: |
+  <i>The Thorn that Does Not Kill</i>
+desc: |
+  
+episodes:
+-
+  name: The Breaking of the World
+  type: Merin
+  url: http://imago.hitherby.com/2004/06/the-breaking-of-the-world/
+-
+  name: Creating Reasonable Explanations
+  type: Merin
+  url: http://imago.hitherby.com/2003/12/a-reasonable-explanation/
+-
+  name: The Dancing Popes
+  type: Legend
+  url: http://imago.hitherby.com/2003/12/the-dancing-popes/
+-
+  name: Excerpt from a Larger Thought
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/excerpt-from-a-larger-thought/
+-
+  name: Monsters
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/monsters/
+-
+  name: Liril and Micah
+  type: Merin
+  url: http://imago.hitherby.com/2004/02/liril-and-micah/
+-
+  name: Don’t Forget Your Infinite Mercy, Kwan-Yin!
+  type: Legend
+  url: http://imago.hitherby.com/2003/12/dont-forget-your-infinite-mercy-kwan-yin/
+-
+  name: Bodhisattvas
+  type: Merin
+  url: http://imago.hitherby.com/2003/12/bodhisattvas/
+-
+  name: Micah
+  type: History
+  timeline:
+    2003?.1: ???
+  url: http://imago.hitherby.com/2004/03/micah-1-of-2/
+-
+  name: Liril
+  type: History
+  timeline:
+    2003?.2: ???
+  url: http://imago.hitherby.com/2004/03/liril-2-of-2/
+-
+  name: Downhill, Uphill, Hereabouts
+  type: Legend
+  url: http://imago.hitherby.com/2004/06/downhill-uphill-hereabouts/
+-
+  name: The Footsoldiers
+  type: History
+  timeline:
+    2004-01-18: ???
+  url: http://imago.hitherby.com/2004/06/the-footsoldiers-ii/
+-
+  name: Progression and Regression
+  type: Legend
+  url: http://imago.hitherby.com/2004/06/progression-and-regression/
+-
+  name: Phantasmagoria
+  type: Merin
+  url: http://imago.hitherby.com/2004/06/phantasmagoria/
+-
+  name: Saturday
+  type: History
+  timeline:
+    2004-04-17: ???
+  url: http://imago.hitherby.com/2004/04/saturday-1-of-2/
+-
+  name: Sunday
+  type: History
+  timeline:
+    2004-04-18: ???
+  url: http://imago.hitherby.com/2004/04/sunday-2-of-2/
+-
+  name: Rainbow Noir
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/rainbow-noir/
+-
+  name: Surrender
+  type: History
+  timeline:
+    2004-04-18: ???
+  url: http://imago.hitherby.com/2004/05/surrender-1-of-2/
+-
+  name: See Jane
+  type: Legend
+  url: http://imago.hitherby.com/2003/12/see-jane-2/
+-
+  name: The Stone
+  type: History
+  timeline:
+    2004-04-06: ???
+  url: http://imago.hitherby.com/2004/05/the-stone-iviv/
