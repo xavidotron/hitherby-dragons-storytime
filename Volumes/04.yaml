@@ -1,0 +1,99 @@
+name: |
+  Necessity Presents: <i>The House of Atreus</i>
+desc: |
+  
+episodes:
+-
+  name: Ways of Avoiding Migranes
+  type: Legend
+  url: http://imago.hitherby.com/2004/07/ways-of-avoiding-migraines/
+-
+  name: People are So Strange!
+  type: Legend
+  url: http://imago.hitherby.com/2003/12/people-are-so-strange/
+-
+  name: Puppies
+  type: Merin
+  url: http://imago.hitherby.com/2003/12/puppies/
+-
+  name: Tantalus
+  type: History
+  timeline:
+    1315 BCE: ???
+  url: http://imago.hitherby.com/2004/03/tantalus-iiv/
+-
+  name: Brick Road
+  type: Legend
+  url: http://imago.hitherby.com/2004/08/brick-road/
+-
+  name: Pelops
+  type: History
+  timeline:
+    1308 BCE: ???
+  url: http://imago.hitherby.com/2004/03/pelops-iiiv/
+-
+  name: Woo-Wobble-Wobble
+  type: Legend
+  url: http://imago.hitherby.com/2005/05/woo-wobble-wobble/
+-
+  name: Thyestes
+  type: History
+  timeline:
+    1223 BCE: ???
+  url: http://imago.hitherby.com/2004/03/thyestes-iiiiv/
+-
+  name: “A Sanrio Experience”
+  type: Legend
+  url: http://imago.hitherby.com/2004/10/a-sanrio-experience/
+-
+  name: Aegisthus
+  type: History
+  timeline:
+    1212 BCE: ???
+  url: http://imago.hitherby.com/2004/03/aegisthus-iviv/
+-
+  name: A Thousand Mice
+  type: Legend
+  url: http://imago.hitherby.com/2005/04/tired-bonus-a-thousand-mice/
+-
+  name: The Contemner
+  type: History
+  timeline:
+    2004-02-22: ???
+  url: http://imago.hitherby.com/2004/07/the-contemner-ii/
+-
+  name: The Sea is Not Kind
+  type: Legend
+  url: http://imago.hitherby.com/2004/06/the-sea-is-not-kind/
+-
+  name: Histories
+  type: Merin
+  url: http://imago.hitherby.com/2004/06/histories/
+-
+  name: The Unsubstantiated Assertions Fairy
+  type: History
+  timeline:
+    1968-09-24: ???
+  url: http://imago.hitherby.com/2004/06/the-unsubstantiated-assertions-fairy-iiii/
+-
+  name: Saul
+  type: Legend
+  url: http://imago.hitherby.com/2004/06/saul/
+-
+  name: Training
+  type: Legend
+  url: http://imago.hitherby.com/2004/06/training/
+-
+  name: Priyanka
+  type: History
+  timeline:
+    1968-09-23: ???
+  url: http://imago.hitherby.com/2004/06/priyanka-iii/
+-
+  name: Djinn
+  type: Merin
+  url: http://imago.hitherby.com/2004/06/djinn/
+-
+  name: The Tower
+  type: Legend
+  url: http://imago.hitherby.com/2004/03/the-tower/
