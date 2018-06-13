@@ -55,7 +55,7 @@ episodes:
   name: The Footsoldiers
   type: History
   timeline:
-    2004-01-18: ???
+    2004-01-18: Professor Jones observes the footsoldiers questioning pie to achieve peace.
   url: http://imago.hitherby.com/2004/06/the-footsoldiers-ii/
 -
   name: Progression and Regression
@@ -69,13 +69,13 @@ episodes:
   name: Saturday
   type: History
   timeline:
-    2004-04-17: ???
+    2004-04-17: Tainted John begins his one-year pact.
   url: http://imago.hitherby.com/2004/04/saturday-1-of-2/
 -
   name: Sunday
   type: History
   timeline:
-    2004-04-18.1: ???
+    2004-04-18.1: Micah surrenders (1)
   url: http://imago.hitherby.com/2004/04/sunday-2-of-2/
 -
   name: Rainbow Noir
@@ -85,7 +85,7 @@ episodes:
   name: Surrender
   type: History
   timeline:
-    2004-04-18.3: ???
+    2004-04-18.3: Micah surrenders (2)
   url: http://imago.hitherby.com/2004/05/surrender-1-of-2/
 -
   name: See Jane

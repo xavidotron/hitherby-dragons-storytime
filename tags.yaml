@@ -176,18 +176,21 @@
     -
       tag: fiends
       desc: answer hurt with madness.
-#    -
-#      tag: flying carpets
-#      desc: take you from the confines of your world.
+    -
+      tag: flying carpets
+      desc: take you from the confines of your world.
     -
       tag: heroes
       desc: can kill monsters.
     -
+      tag: imps
+      desc: eat the soul that you cannot bear to keep.
+    -
       tag: merins
       desc: help make sense of the world.
-#    -
-#      tag: mer-nymphs
-#      desc: open the world.
+    -
+      tag: mer-nymphs
+      desc: open the world.
     -
       tag: siggorts
       desc: vivisect people innocently.

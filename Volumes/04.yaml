@@ -19,7 +19,7 @@ episodes:
   name: Tantalus
   type: History
   timeline:
-    1315 BCE: ???
+    1315 BCE: Tantalus begins his quest to learn the secrets of the gods.
   url: http://imago.hitherby.com/2004/03/tantalus-iiv/
 -
   name: Brick Road
@@ -29,7 +29,8 @@ episodes:
   name: Pelops
   type: History
   timeline:
-    1308 BCE: ???
+    1308 BCE: King Oenomaus consults the oracle of his house.
+    1290 BCE: Pelops woos Hippodamia.
   url: http://imago.hitherby.com/2004/03/pelops-iiiv/
 -
   name: Woo-Wobble-Wobble
@@ -39,7 +40,7 @@ episodes:
   name: Thyestes
   type: History
   timeline:
-    1223 BCE: ???
+    1223 BCE: Thyestes rejects the notion of redeeming his line.
   url: http://imago.hitherby.com/2004/03/thyestes-iiiiv/
 -
   name: “A Sanrio Experience”
@@ -49,7 +50,7 @@ episodes:
   name: Aegisthus
   type: History
   timeline:
-    1212 BCE: ???
+    1212 BCE: Aegisthus becomes a monster. Cyane, a nymph, becomes Magic A. Pelopia plans to become Evasive A.
   url: http://imago.hitherby.com/2004/03/aegisthus-iviv/
 -
   name: A Thousand Mice
@@ -59,7 +60,9 @@ episodes:
   name: The Contemner
   type: History
   timeline:
-    2004-02-22: ???
+    2004-02-22: The contemner kills Ellen.
+    2004-03-17: Leila attempts to drown herself in reaction to the contemner’s judgment.
+    30 BCE-: At Golgotha, a monster’s family cuts the tendons of his arms and legs and leaves him there for the birds and beasts to devour.
   url: http://imago.hitherby.com/2004/07/the-contemner-ii/
 -
   name: The Sea is Not Kind
@@ -87,7 +90,7 @@ episodes:
   name: Priyanka
   type: History
   timeline:
-    1968-09-23: ???
+    1968-09-23: Persephone takes Priyanka into the Underworld to free Tantalus. Priyanka doesn’t.
   url: http://imago.hitherby.com/2004/06/priyanka-iii/
 -
   name: Djinn

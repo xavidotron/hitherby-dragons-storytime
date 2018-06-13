@@ -12,45 +12,95 @@ import soundcloud
 
 class dateparse(object):
     def __init__(self, d):
+        self.age = None
+        yearquest = ''
         if hasattr(d, 'year'):
-            self.year = str(d.year)
             self.monthday = '%s %d' % (d.strftime('%B'), d.day)
-            self.key = str(d)
-            self.full = '%s, %s' % (self.monthday, self.year)
+            self.key = (d.year, d.month, d.day, '')
+            self.full = '%s, %s' % (self.monthday, d.year)
+            self.year = d.year
         else:
+            extra = ''
+            suffix = ''
             d = str(d)
-            if '-' in d and d.endswith('?'):
-                d = str(d)[:-1]
+            if '.' in d:
+                d, extra = d.split('.')
+                extra = '.' + extra
+            while d[-1] in ('?', '+', '-'):
+                extra = d[-1] + extra
+                suffix = d[-1] + suffix
+                d = d[:-1]
+            virtual_month = 0
+            virtual_day = 0
+            if ':' in d:
+                d, virtual = d.split(':')
+                if '-' in d:
+                    virtual_day = int(virtual)
+                else:
+                    virtual_month = int(virtual)
+            if '-' in d:
                 self.year, monthday = d.split('-', 1)
                 if '-' in monthday:
                     month, day = monthday.split('-')
                     self.monthday = '%s %s' % (calendar.month_name[int(month)],
                                                int(day))
                 else:
-                    self.monthday = calendar.month_name[int(monthday)]
-                self.key = d
-                self.full = '%s, %s?' % (self.monthday, self.year)
-                self.monthday += '?'
+                    month = monthday
+                    day = virtual_day
+                    self.monthday = calendar.month_name[int(month)]
+                self.full = '%s, %s%s' % (self.monthday, self.year, suffix)
+                self.monthday += suffix
+                self.key = (int(self.year), int(month), int(day), extra)
+                self.year = int(self.year)
             else:
                 self.monthday = None
-                self.key = d
-                self.full = d
-                if ' ' in d:
+                self.full = d + suffix
+                if ' BCE' in d:
+                    self.year, rest = d.split(' BCE')
+                    yearquest = suffix
+                    if self.year[-1] == 's':
+                        self.year = self.year[:-1]
+                        yearquest = 's' + yearquest
+                    self.key = (-int(self.year), virtual_month, virtual_day, extra)
+                    assert rest == '', rest
+                    self.year = -int(self.year)
+                elif ' ' in d:
                     self.year, self.monthday = d.split(' ')
                     if self.monthday.isdigit():
                         self.year, self.monthday = self.monthday, self.year
-                        self.key = '%s %s' % (self.year, self.monthday)
-                elif '.' in d:
-                    self.year = d.split('.')[0]
-                    self.full = self.year
+                        self.key = (int(self.year), virtual_month, virtual_day, extra)
+                        self.year = int(self.year)
                 elif '-' in d:
                     self.year, month = d.split('-')
                     self.monthday = calendar.month_name[int(month)]
-                    self.full = '%s, %s' % (self.monthday, self.year)
-                else:
+                    self.full = '%s, %s%s' % (self.monthday, self.year, suffix)
+                    self.key = (int(self.year), int(month), virtual_day, extra)
+                    self.year = int(self.year)
+                elif d in ('Prehistory',):
+                    self.key = (-90000, 0, 0, extra)
                     self.year = d
+                    self.age = ''
+                else:
+                    self.key = (int(d), virtual_month, virtual_day, extra)
+                    self.year = int(d)
+                    yearquest = suffix
+        if self.age is None:
+            if self.year <= -1212:
+                self.age = 'Third Kingdom'
+            elif self.year <= -539:
+                self.age = 'Third Tyranny'
+            elif self.year <= 715:
+                self.age = 'Fourth Kingdom'
+            else:
+                self.age = 'Fourth Tyranny'
+            
+            if self.year < 0:
+                self.year = '%d%s BCE' % (-self.year, yearquest)
+            else:
+                self.year = '%d%s CE' % (self.year, yearquest)
+        
     def __repr__(self):
-        return '<%s>' % self.key
+        return '<%s>' % repr(self.key)
     def __str__(self):
         return self.full
     def __cmp__(self, other):
@@ -122,7 +172,7 @@ with open('tags.yaml') as fil:
     tags = yaml.load(fil)
 
 volumes = []
-age = []
+ages = {}
 prev_ep = None
 last_upload = None
 next_upload = None
@@ -148,7 +198,7 @@ for yamlf in Glob('Volumes/*.yaml'):
                 tl['date'] = dateparse(k)
                 dates.append(tl['date'])
                 tl['timenote'] = ep['timeline'][k]
-                age.append(tl)
+                ages.setdefault(tl['date'].age, []).append(tl)
             dates.sort()
             ep['date'] = '; '.join(str(k) for k in dates)
         if 'soundcloud' in ep:
@@ -262,7 +312,8 @@ for vol in volumes:
 
 c = Command('docs/index.html', 'Templates/episodes.mak',
             render_mako(prefix='', volumes=volumes, mode='episodes',
-                        title='Episodes'))
+                        title='Episodes',
+                        full=False))
 Depends(c, 'SConstruct')
 Depends(c, 'Templates/base.mak')
 Depends(c, 'Volumes/')
@@ -271,16 +322,25 @@ with open('historical-notes.yaml') as fil:
     notes = yaml.load(fil)
 for n in notes:
     n['date'] = dateparse(n['date'])
-    age.append(n)
+    ages[n['date'].age].append(n)
 
 def gk(ep):
     return ep['date'].key
-age.sort(key=gk)
-
+for a in ages:
+    ages[a].sort(key=gk)
+ageord = {'': 0, 'Third Kingdom': 30, 'Third Tyranny': 31,
+          'Fourth Kingdom': 40, 'Fourth Tyranny': 41}
+agelist = [dict(name=k, episodes=ages[k], ord=ageord[k]) for k in ages]
+agelist.sort(key=lambda a: a['ord'])
+    
 c = Command('docs/timeline/index.html', 'Templates/episodes.mak',
-            render_mako(volumes=[dict(name='The Fourth Tyranny',
-                                      episodes=age)],
-                        title='Timeline'))
+            render_mako(volumes=agelist,
+                        title='Timeline',
+                        full=False))
+c = Command('docs/timeline/full.html', 'Templates/episodes.mak',
+            render_mako(volumes=agelist,
+                        title='Timeline',
+                        full=True))
 Depends(c, 'SConstruct')
 Depends(c, 'Templates/base.mak')
 Depends(c, 'Volumes/')

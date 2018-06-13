@@ -1,0 +1,108 @@
+name: |
+  <i>The Unburied Child</i>
+desc: |
+
+episodes:
+-
+  name: The Wind is Changing
+  type: Merin
+  url: http://imago.hitherby.com/2005/01/the-wind-is-changing/
+-
+  name: Tina
+  type: History
+  timeline:
+    1961: Tina becomes a killer of gods.
+  url: http://imago.hitherby.com/2005/01/tina-iiv/
+-
+  name: Iphigenia
+  type: History
+  timeline:
+    1981: Tina extracts Iphigenia.
+  url: http://imago.hitherby.com/2005/01/iphigenia-iiiv/
+-
+  name: Sacrifice
+  type: History
+  timeline:
+    2004-04-19.1: Tina kills Iphigenia…
+  url: http://imago.hitherby.com/2005/01/sacrifice-3-of-4/
+-
+  name: Rahu
+  type: History
+  timeline:
+    580s BCE: Prajapati creates the demons Rahu and Ketu.
+    2002: Tina brushes Iphigenia’s hair.
+  url: http://imago.hitherby.com/2005/01/rahu-iviv/
+-
+  name: Ink in Perspective
+  type: Legend
+  url: http://imago.hitherby.com/2005/05/ink-in-perspective/
+-
+  name: Transformation
+  type: History
+  timeline:
+    2004-04-19.3: …but Jane substitutes a Cadbury bunny.
+  url: http://imago.hitherby.com/2005/01/transformation-1-of-1/
+-
+  name: Dusk and Dawn
+  type: Legend
+  url: http://imago.hitherby.com/2004/05/still-sick-dusk-and-dawn/
+-
+  name: Jacob, His Runt, The Angel, and the Maw
+  type: History
+  timeline:
+    2004-05-12: ???
+  url: http://imago.hitherby.com/2005/06/jacob-his-runt-the-angel-and-the-maw-1-of-3/
+-
+  name: On the Endings of Stories
+  type: History
+  timeline:
+    2004-05-12: ???
+  url: http://imago.hitherby.com/2005/06/on-the-endings-of-stories-2-of-3/
+-
+  name: The Army
+  type: History
+  timeline:
+    2004-05-13: ???
+  url: http://imago.hitherby.com/2005/06/the-army-3-of-3/
+-
+  name: "Ink is Backstage: “Unexplorable Places”"
+  type: Legend
+  url: http://imago.hitherby.com/2005/07/ink-is-backstage-unexplorable-places/
+-
+  name: Regarding Ink’s Intermission
+  type: History
+  timeline:
+    2004-06?: ???
+  url: http://imago.hitherby.com/2005/07/regarding-inks-intermission-1-of-1/
+-
+  name: "Ink is Backstage: “Accidental Dispositions”"
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/ink-is-backstage-accidental-dispositions
+-
+  name: Iphagenea’s Story
+  type: History
+  timeline:
+    2004-06?: ???
+  url: http://imago.hitherby.com/2005/07/iphigenias-story-1-of-1/
+-
+  name: "Ink is Backstage: “It Means Something Good”"
+  type: Legend
+  url: http://imago.hitherby.com/2005/07/ink-is-backstage-it-means-something-good/
+-
+  name: Life, Through a Film of Palmolive
+  type: Legend
+  url: http://imago.hitherby.com/2005/12/life-through-a-film-of-palmolive/
+-
+  name: "Ink in Emptiness: The Lord of Suburbia"
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/ink-in-emptiness-the-lord-of-suburbia
+-
+  name: "Ink in Emptiness: The Mirror Cracks"
+  type: Legend
+  url: http://imago.hitherby.com/2006/02/ink-in-emptiness-the-mirror-cracks/
+-
+  name: Hard on the Heels of Ink’s Legend
+  type: History
+  timeline:
+    2004-06?: ???
+  url: http://imago.hitherby.com/2006/02/hard-on-the-heels-of-inks-legend-1-of-1/

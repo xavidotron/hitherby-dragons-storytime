@@ -20,29 +20,38 @@
 %endif
 
 %for vi in xrange(len(volumes)):
-<% vol = volumes[vi] %>
+<%
+  vol = volumes[vi]
+  printed_vol = False
+%>
+
+<%
+lastyear = None
+%>
+
+%for ei in xrange(len(vol['episodes'])):
+<%
+ep = vol['episodes'][ei]
+%>
+<%
+if 'name' in ep and 'soundcloud' not in ep and not full:
+    continue
+%>
+%if not printed_vol:
 <h2 id="${vi+1}">${vol['name']}</h2>
 
 %if 'desc' in vol:
 <p>${vol['desc']}</p>
 %endif
 
-<%
-lastyear = None
-%>
-
 <table>
-%for ei in xrange(len(vol['episodes'])):
 <%
-ep = vol['episodes'][ei]
+  printed_vol = True
 %>
-<%
-if 'name' in ep and 'soundcloud' not in ep:
-    continue
-%>
+%endif
 %if title == 'Timeline':
   %if ep['date'].year != lastyear:
-    <tr><th colspan="4">${ep['date'].year} CE</th></tr>
+    <tr><th colspan="4">${ep['date'].year}</th></tr>
     <% lastyear = ep['date'].year %>
   %endif
 %endif
@@ -57,6 +66,7 @@ if 'name' in ep and 'soundcloud' not in ep:
   %if ep['date'].monthday:
     ${ep['date'].monthday}: 
   %endif
+  ##${repr(ep['date'].key)}
 %endif
 
 %if 'name' not in ep:
@@ -90,6 +100,8 @@ ${ep['type']}
 </tr>
 %endif
 %endfor
+%if printed_vol:
 </table>
+%endif
 
 %endfor

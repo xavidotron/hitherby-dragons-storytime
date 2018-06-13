@@ -100,7 +100,8 @@ episodes:
   name: The Tunnels
   type: History
   timeline:
-    1974-04: ???
+    1974-01: The Pandora Squad begins stocking the tunnels.
+    1974-04-06: Jenna dies, revives, and goes to live in the tunnels.
   url: http://imago.hitherby.com/2004/01/the-tunnels-iiv/
 -
   name: The World’s Not Fair to Dead People
@@ -110,7 +111,7 @@ episodes:
   name: The Forest
   type: History
   timeline:
-    1981-12: ???
+    1981-12: Jenna meets Ninja Tathagata and Dukkha. Ninja Tathagata leaves behind a forest.
   url: http://imago.hitherby.com/2004/01/the-forest-iiiv/
 -
   name: Two Great Tastes
@@ -120,7 +121,10 @@ episodes:
   name: The Castle
   type: History
   timeline:
-    1984+: ???
+    1925: Monet creates Vicious Lily to advance the cause of Impressionism.
+    1975: The monster pulls Mei Ming from the shadow’s womb.
+    1983: The spiders in the tunnels go hungry.
+    1984: Jenna hangs out with Coyote, Duck, and Boar.
   url: http://imago.hitherby.com/2004/01/the-castle-iiiiv/
 -
   name: The Interpretation of Spam
@@ -148,7 +152,7 @@ episodes:
   name: Mei Ming
   type: History
   timeline:
-    1997: ???
+    1997: Martin visits Mei Ming.
   url: http://imago.hitherby.com/2004/05/mei-ming-ii/
 -
   name: The Failed Escape Attempt

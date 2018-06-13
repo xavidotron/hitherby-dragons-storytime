@@ -1,0 +1,116 @@
+name: |
+  Necessity Presents: <i>Martin in Darkness</i>
+desc: |
+
+episodes:
+-
+  name: King Cole
+  type: Legend
+  url: http://imago.hitherby.com/2004/10/king-cole/
+-
+  name: The Toucan Clock
+  type: History
+  timeline:
+    1995-03-23?: Martin descends into the Underworld.
+  url: http://imago.hitherby.com/2005/03/the-toucan-clock-ii/
+-
+  name: Destiny and Disappointment (Abridged)
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/destiny-and-disappointment-abridged/
+-
+  name: The Sifter
+  type: History
+  timeline:
+    539 BCE: Chen Yu casts the I Ching poorly, arguably breaking the world. Bad Chen Yu! Be more careful with the I Ching!
+  url: http://imago.hitherby.com/2005/03/the-sifter-ii/
+-
+  name: “Why Can’t I Fix You?”
+  type: History
+  timeline:
+    548 BCE: "Belshazzar eats a cockatrice’s nature, asking: “But why would a serpent coil around an egg?”"
+    543 BCE: "Belshazzar eats zombie Nitocris’s nature, asking: “What lingers in the body after death?”"
+  url: http://imago.hitherby.com/2005/03/why-cant-i-fix-you-iii/
+-
+  name: Legend of the Sifter
+  type: Legend
+  url: http://imago.hitherby.com/2005/03/the-sifter/
+-
+  name: “There are Stars in Your Eyes, Elli”
+  type: History
+  timeline:
+    1650 BCE?: Lia dies.
+    550 BCE: ???
+    540 BCE: The hero falls before the monster. (The monster, apparently, was the referee.)
+  url: http://imago.hitherby.com/2005/03/there-are-stars-in-your-eyes-elli-iiii/
+-
+  name: No Innards, No Problem
+  type: Legend
+  url: http://imago.hitherby.com/2005/10/no-innards-no-problem/
+-
+  name: Ink and Illogic
+  type: Legend
+  url: http://imago.hitherby.com/2005/02/ink-and-illogic/
+-
+  name: The Old Man
+  type: History
+  timeline:
+    554 BCE: Siddhartha encounters an old man. Maya expounds the Maya-Dharma.
+  url: http://imago.hitherby.com/2005/03/the-old-man-vii/
+-
+  name: The Covenant of the Sharks
+  type: Legend
+  url: http://imago.hitherby.com/2005/05/the-covenant-of-the-sharks/
+-
+  name: Martin and Lisa
+  type: History
+  timeline:
+    1995-03-24?: Martin meets Lisa.
+  url: http://imago.hitherby.com/2005/03/martin-and-lisa-iiii/
+-
+  name: Martin and Thess
+  type: History
+  timeline:
+    1995-03-24?: Martin meets Thess.
+  url: http://imago.hitherby.com/2005/03/martin-and-thess-iiiii/
+-
+  name: Martin and the Woglies
+  type: History
+  timeline:
+    1995-03-24?: Martin’s life sucks.
+  url: http://imago.hitherby.com/2005/03/martin-and-the-woglies-iiiiii/
+-
+  name: The Weight of the Contradiction
+  type: Legend
+  url: http://imago.hitherby.com/2005/04/the-weight-of-the-contradiction/
+-
+  name: Fetches
+  type: Merin
+  url: http://imago.hitherby.com/2004/07/fetches/
+-
+  name: The Sick Man
+  type: History
+  timeline:
+    550 BCE.0: Siddhartha encounters a sick man.
+  url: http://imago.hitherby.com/2005/03/the-sick-man-viii/
+-
+  name: The Corpse
+  type: History
+  timeline:
+    547 BCE: Siddhartha sees a corpse.
+  url: http://imago.hitherby.com/2005/03/maundy-thursday-the-corpse-ix/
+-
+  name: Tre Ore
+  type: History
+  timeline:
+    1995-03-25: Martin escapes the Underworld.
+    540 BCE: ???
+    546 BCE: Siddhartha and Yasodhara have a son.
+    539 BCE: Mylitta breaks.
+    2004-04-23: Sebastien confronts the monster, again.
+  url: http://imago.hitherby.com/2005/03/good-friday-hitherby-annual-1-ii-tre-ore-2/
+-
+  name: Stories of Deliverance
+  type: History
+  timeline:
+    539 BCE: Belshazzar devours himself. The Buddha achieves enlightenment.
+  url: http://imago.hitherby.com/2005/03/holy-saturday-stories-of-deliverance/

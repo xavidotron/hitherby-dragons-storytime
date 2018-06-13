@@ -27,7 +27,7 @@ episodes:
   name: The Shadow
   type: History
   timeline:
-    2004-01: ???
+    2004-01: The shadow eats Mr. P’s arms.
   url: http://imago.hitherby.com/2003/12/the-shadow-iviv/
 -
   name: Mr. A
@@ -69,7 +69,7 @@ episodes:
   name: The Show
   type: History
   timeline:
-    2004-04-03: ???
+    2004-04-03: Martin’s letter reaches the monster.
     2004-04-05: ???
   url: http://imago.hitherby.com/2004/05/the-show-iiiv/
 -
@@ -80,7 +80,7 @@ episodes:
   name: It’s Only Wounds
   type: History
   timeline:
-    1999+?: ???
+    1999+?: Erin becomes Forbidden A.
   url: http://imago.hitherby.com/2004/03/its-only-wounds-ii/
 -
   name: A Very Special Episode
@@ -93,9 +93,9 @@ episodes:
     2004-04-03: ???
   url: http://imago.hitherby.com/2004/05/jane-iiiiv/
 -
-  name: Mechanical Issues
+  name: Ink in an Interlude
   type: Legend
-  url: http://imago.hitherby.com/2004/07/mechanical-issues/
+  url: http://imago.hitherby.com/2004/04/ink-in-an-interlude/
 -
   name: Questions and Answers
   type: History

@@ -1,103 +1,115 @@
 name: |
-  <i>Martin in Darkness</i>
+  Necessity Presents: <i>The Thus-it-Happened of Maya</i>
 desc: |
 
 episodes:
 -
-  name: King Cole
-  type: Legend
-  url: http://imago.hitherby.com/2004/10/king-cole/
--
-  name: The Toucan Clock
+  name: The Summoning of the King
   type: History
   timeline:
-    1995-03-23?: ???
-  url: http://imago.hitherby.com/2005/03/the-toucan-clock-ii/
+    Prehistory: Maya promises to know everybody’s pains and end suffering.
+    577 BCE: Maya acquires the power of the Ultimate Monarch. She demands that the Deva Setateku enters her womb, which he does.
+  url: http://imago.hitherby.com/2004/06/the-summoning-of-the-king-i/
 -
-  name: Destiny and Disappointment (Abridged)
+  name: Young Horrors
   type: Legend
-  url: http://imago.hitherby.com/2004/01/destiny-and-disappointment-abridged/
+  url: http://imago.hitherby.com/2004/07/young-horrors/
 -
-  name: Martin and Lisa
-  type: History
-  timeline:
-    1995-03-24?: ???
-  url: http://imago.hitherby.com/2005/03/martin-and-lisa-iiii/
--
-  name: Martin and Thess
-  type: History
-  timeline:
-    1995-03-24?: ???
-  url: http://imago.hitherby.com/2005/03/martin-and-thess-iiiii/
--
-  name: Martin and the Woglies
-  type: History
-  timeline:
-    1995-03-24?: ???
-  url: http://imago.hitherby.com/2005/03/martin-and-the-woglies-iiiiii/
--
-  name: Ink in an Interlude
-  type: Legend
-  url: http://imago.hitherby.com/2004/04/ink-in-an-interlude/
--
-  name: The Weight of the Contradiction
-  type: Legend
-  url: http://imago.hitherby.com/2005/04/the-weight-of-the-contradiction/
--
-  name: Tre Ore
-  type: History
-  timeline:
-    1995-03-25: ???
-  url: http://imago.hitherby.com/2005/03/good-friday-hitherby-annual-1-ii-tre-ore-2/
--
-  name: The Puppy is Sad
-  type: Legend
-  url: http://imago.hitherby.com/2004/11/the-puppy-is-sad/
--
-  name: Intermission
-  type: History
-  timeline:
-    1995-03-25: ???
-  url: http://imago.hitherby.com/2011/12/intermission-ii/
--
-  name: A Poorly Timed Deus Ex Machina
-  type: Legend
-  url: http://imago.hitherby.com/2004/01/a-poorly-timed-deus-ex-machina/
--
-  name: Meredith
+  name: Melomids
   type: Merin
-  url: http://imago.hitherby.com/2004/01/meredith/
+  url: http://imago.hitherby.com/2004/07/melomids/
 -
-  name: The Rent in the Fullness of the World
+  name: Explaining The Decision to Waste Perfectly Good Tea
+  type: Legend
+  url: http://imago.hitherby.com/2004/07/fourth-of-july-explaining-the-decision-to-waste-perfectly-good-tea/
+-
+  name: At the Temple
   type: History
   timeline:
-    1996: ???
-  url: http://imago.hitherby.com/2004/08/the-rent-in-the-fullness-of-the-world-iii/
+    556 BCE.2: Mylitta takes her turn as a sacred prostitute. She meets the monster.
+  url: http://imago.hitherby.com/2004/07/at-the-temple-iiii/
 -
-  name: Angus’s Bad Day
-  type: Legend
-  url: http://imago.hitherby.com/2004/08/angus-bad-day/
--
-  name: Sour, Bitter, and Sweet
-  type: Legend
-  url: http://imago.hitherby.com/2005/02/sour-bitter-and-sweet/
--
-  name: An Answer to Emptiness
+  name: Shame
   type: History
   timeline:
-    1997: ???
-  url: http://imago.hitherby.com/2004/08/an-answer-to-emptiness-iiii/
+    556 BCE.1: On the last day of spring, Mylitta descends into the Underworld.
+  url: http://imago.hitherby.com/2004/07/shame-iii/
 -
-  name: Stones Tell
-  type: Legend
-  url: http://imago.hitherby.com/2004/03/stones-tell/
+  name: Random Genealogical Interjection
+  type: Merin
+  url: http://imago.hitherby.com/2004/07/random-genealogical-interjection/
 -
-  name: Anecdotes from the Matrix
-  type: Legend
-  url: http://imago.hitherby.com/2004/11/anecdotes-from-the-matrix/
--
-  name: Tantalus Looks for Work
+  name: The Dove
   type: History
   timeline:
-    2004-04: ???
-  url: http://imago.hitherby.com/2005/03/tantalus-looks-for-work-1-of-1/
+    583 BCE: Maya kills Prajapati’s monster.
+    576 BCE: Maya gives birth to Siddhartha. Prajapati hides her suffering in the fetch Yasodhara.
+    561 BCE: Devadatta shoots down Yasodhara, who was, at the time, in the shape of a dove.
+  url: http://imago.hitherby.com/2004/07/the-dove-ii/
+-
+  name: It Goes On Forever
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/it-goes-on-forever/
+-
+  name: Hero and Monster
+  type: History
+  timeline:
+    556 BCE.3: The monster frees his gods.
+  url: http://imago.hitherby.com/2004/09/hero-and-monster-iiv/
+-
+  name: Mylitta’s Question
+  type: History
+  timeline:
+    550 BCE.1: Mylitta and the monster ride a chimera to the temple of Sin.
+  url: http://imago.hitherby.com/2004/09/mylittas-question-iiiv/
+-
+  name: Belshazzar
+  type: History
+  timeline:
+    550 BCE.2: Belshazzar is born.
+  url: http://imago.hitherby.com/2004/09/belshazzar-iiiiv/
+-
+  name: Nabonidus’s Gods
+  type: History
+  timeline:
+    550 BCE: ???
+    572 BCE: Nabonidus, age 6, creates Ninlil and a fiend.
+    570 BCE: Nabonidus creates the moon god Sin. Sin impregnates Ella, who conceives and then gives birth to Mylitta and her brother. Nabonidus becomes a monster.
+  url: http://imago.hitherby.com/2004/09/nabonidus-gods-iviv/
+-
+  name: Demons
+  type: Merin
+  url: http://imago.hitherby.com/2004/06/demons/
+-
+  name: Devadatta and Various Killers
+  type: History
+  timeline:
+    561 BCE: Siddhartha saves Yasodhara.
+  url: http://imago.hitherby.com/2004/09/devadatta-and-various-killers-iii/
+-
+  name: The Miracle
+  type: History
+  timeline:
+    581 BCE: Madhav saves King Suddhodana’s life.
+    561 BCE: Madhav shoots Prajapati, who does not resent it.
+  url: http://imago.hitherby.com/2004/09/the-miracle-iv/
+-
+  name: Ink in an Introduction
+  type: Legend
+  url: http://imago.hitherby.com/2004/06/ink-in-an-introduction/
+-
+  name: The Betrothal
+  type: History
+  timeline:
+    560 BCE: Siddhartha falls in love with Yasodhara.
+  url: http://imago.hitherby.com/2004/10/the-betrothal-v-backfill-to-be/
+-
+  name: Mechanical Issues
+  type: Legend
+  url: http://imago.hitherby.com/2004/07/mechanical-issues/
+-
+  name: The Contest
+  type: History
+  timeline:
+    560 BCE: ???
+  url: http://imago.hitherby.com/2005/02/the-contest-vi/

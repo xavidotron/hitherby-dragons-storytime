@@ -41,7 +41,7 @@ episodes:
 -
   name: Daniel
   timeline:
-    1976.2: Daniel deals with Mr. Banks and Ms. Bell.
+    "1976:10": Daniel deals with Mr. Banks and Ms. Bell.
   type: History
   url: http://imago.hitherby.com/2004/02/daniel-iiv/
   postdate: 2017-03-14

@@ -1,0 +1,102 @@
+name: |
+  <i>The Harrowing of Hell</i>
+desc: |
+
+episodes:
+-
+  name: A Season of Metal
+  type: Merin
+  url: http://imago.hitherby.com/2004/08/a-season-of-metal/
+-
+  name: The Chorus of Definition
+  type: History
+  timeline:
+    2004-04:18.4: Sebastien and the monster return from the tower.
+  url: http://imago.hitherby.com/2004/08/the-chorus-of-definition-1-of-1/
+-
+  name: The Sickness
+  type: Legend
+  url: http://imago.hitherby.com/2004/03/the-sickness/
+-
+  name: Martin visits Liz
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/martin-visits-liz/
+-
+  name: Ink in the Wrong Allegory
+  type: Legend
+  url: http://imago.hitherby.com/2004/06/ink-in-the-wrong-allegory/
+-
+  name: Why the Monster Laughs at God
+  type: History
+  timeline:
+    2004-04:18.5: Sebastien and the monster talk about God.
+  url: http://imago.hitherby.com/2004/10/why-the-monster-laughs-at-god-1-of-1/
+-
+  name: Angus’s Bad Day
+  type: Legend
+  url: http://imago.hitherby.com/2004/08/angus-bad-day/
+-
+  name: Every Log Cabin
+  type: History
+  timeline:
+    1809: The secret history of Abraham Lincoln.
+  url: http://imago.hitherby.com/2004/11/every-log-cabin-ii/
+-
+  name: A Poorly Timed Deus Ex Machina
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/a-poorly-timed-deus-ex-machina/
+-
+  name: Meredith
+  type: Merin
+  url: http://imago.hitherby.com/2004/01/meredith/
+-
+  name: Truth is Not Lost
+  type: History
+  timeline:
+    2004-05?: ???
+  url: http://imago.hitherby.com/2005/05/truth-is-not-lost-1-of-1/
+-
+  name: Passing Odysseus
+  type: Legend
+  url: http://imago.hitherby.com/2004/12/passing-odysseus/
+-
+  name: The Old Man of the Sea
+  type: History
+  timeline:
+    2004-04-20: Liril and Micah head to Elm Hill.
+  url: http://imago.hitherby.com/2005/02/the-old-man-of-the-sea-1-of-2/
+-
+  name: A Raw Deal for Creepy Handwriting Girl
+  type: History
+  timeline:
+    2004-04-20: Cheryl gets a raw deal.
+  url: http://imago.hitherby.com/2005/02/a-raw-deal-for-creepy-handwriting-girl-2-of-2/
+-
+  name: The Failing of the Lens
+  type: Merin
+  url: http://imago.hitherby.com/2005/03/the-failing-of-the-lens/
+-
+  name: Legend of Dr. T
+  type: Legend
+  url: http://imago.hitherby.com/2005/03/legend-of-dr-t/
+-
+  name: Nightmare of the Rustling
+  type: Legend
+  url: http://imago.hitherby.com/2005/03/nightmare-of-the-rustling/
+-
+  name: Legend of the Wheel
+  type: Legend
+  url: http://imago.hitherby.com/2005/03/legend-of-the-wheel/
+-
+  name: The Fable of the Lamb
+  type: History
+  timeline:
+    2004-04-23: Sebastien and the monster arrive at Central.
+  url: http://imago.hitherby.com/2005/02/the-fable-of-the-lamb-1-of-2/
+-
+  name: Tigers in their Cages
+  type: History
+  timeline:
+    2004-04-23: The hero tries to free Central’s victims.
+  url: http://imago.hitherby.com/2005/02/tigers-in-their-cages-2-of-2/
+  
