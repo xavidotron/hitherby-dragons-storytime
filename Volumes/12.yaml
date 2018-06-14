@@ -1,0 +1,120 @@
+name: |
+  In Memory of Necessity: <i>The Miracles We Cannot Work</i>
+desc: |
+
+episodes:
+-
+  name: Theories Regarding the Box
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/theories-regarding-the-box/
+-
+  name: Boisterous Immortal
+  type: History
+  url: http://imago.hitherby.com/2005/08/boisterous-immortal-iiv/
+  timeline:
+    539 BCE: Boisterous Immortal kills Placid Immortal.
+-
+  name: Wishing Boy
+  type: History
+  url: http://imago.hitherby.com/2005/08/wishing-boy-iiiv-2/
+  timeline:
+    541 BCE: Mr. Kong meets Wishing Boy.
+    511 BCE: Mr. Kong returns to the well.
+-
+  name: The Unrighteous Daughter
+  type: History
+  url: http://imago.hitherby.com/2005/08/the-unrighteous-daughter-iiiiv/
+  timeline:
+    539 BCE: Mr. Kong attempts to assist Xue.
+-
+  name: The Water
+  type: History
+  url: http://imago.hitherby.com/2005/08/the-water-4-of-4/
+  timeline:
+    2004-05-24: Ginette is washed away by the water.
+-
+  name: Still Life
+  type: Legend
+  url: http://imago.hitherby.com/2004/01/still-life/
+-
+  name: Boxes
+  type: Merin
+  url: http://imago.hitherby.com/2004/01/boxes/
+-
+  name: The Thistle
+  type: History
+  url: http://imago.hitherby.com/2005/09/the-thistle-iiv/
+  timeline:
+    1328 BCE: Persephone grows a thistle.
+    1317 BCE: Hades kidnaps Persephone. (2)
+-
+  name: Never
+  type: History
+  url: http://imago.hitherby.com/2005/09/never-iiiv/
+  timeline:
+    1560 BCE: Hera curses Leto.
+    1317 BCE: Demeter visits Delos.
+-
+  name: The Route to Never
+  type: History
+  url: http://imago.hitherby.com/2005/09/the-route-to-never-iiiiv/
+  timeline:
+    1560 BCE: Guides led men and gods on the sacred path to Never.
+-
+  name: The Borders of the World
+  type: History
+  url: http://imago.hitherby.com/2005/09/the-borders-of-the-world-iviv/
+  timeline:
+    1560 BCE: Artemis is born.
+    1317 BCE: Demeter asks Leucippus to guide her to Never.
+-
+  name: A World of One
+  type: Legend
+  url: http://imago.hitherby.com/2005/01/a-world-of-one/
+-
+  name: "Boedromion 14: The Growing God"
+  type: History
+  url: http://imago.hitherby.com/2005/09/canon-boedromion-14-the-growing-god/
+  timeline:
+    2004-05-25: Liril, Micah, and Tainted John arrive at Elm Hill.
+    2004-05-28: The grangler and Truth Daniels approach Elm Hill.
+-
+  name: "Boedromion 15: Round Man vs. Manners"
+  type: History
+  url: http://imago.hitherby.com/2005/09/history-boedromion-15-round-man-vs-manners/
+  timeline:
+    Prehistory: Round Man gives dogs lasers.
+-
+  name: "Boedromion 16: Three Short Bits"
+  type: Legend, History, Legend
+  url: http://imago.hitherby.com/2005/09/boedromion-16-legend-history-history-three-short-bits/
+  timeline:
+    Prehistory: Chaos Woman talks to the serpent.
+-
+  name: "Boedromion 17: The Cakkavattisihananda Sutra"
+  type: History
+  url: http://imago.hitherby.com/2005/09/history-boedromion-17-the-cakkavattisihananda-sutra/
+  timeline:
+    Prehistory: Round Man makes a wheel.
+-
+  name: "Boedromion 18: Static"
+  type: Merin
+  url: http://imago.hitherby.com/2005/09/boedromion-18-static/
+-
+  name: "Boedromion 19: Delicious Pomegranate!"
+  type: History
+  url: http://imago.hitherby.com/2005/09/history-boedromion-19-delicious-pomegranate/
+  timeline:
+    1317 BCE: Hades ignites the Underworld.
+-
+  name: "Boedromion 20: The Only Fruit That Tastes Like Dust"
+  type: History
+  url: http://imago.hitherby.com/2005/09/history-boedromion-20-the-only-fruit-that-tastes-like-dust/
+  timeline:
+    1317 BCE: Hades asks Persephone to bring forth hope.
+-
+  name: "Boedromion 21-22: Things and Choices"
+  type: History
+  url: http://imago.hitherby.com/2005/09/history-boedromion-21-22-things-and-choices/
+  timeline:
+    1317 BCE: Persephone decides not to destroy the Underworld.

@@ -10,6 +10,20 @@ sys.path.append('/Library/Python/2.7/site-packages/')
 import pytumblr
 import soundcloud
 
+AGEORD = {}
+# (age, "first" year in age)
+AGEYEAR = [
+    ('Prehistory', -90000),
+    ('Second Kingdom', -85000),
+    ('Second Tyranny', -80000),
+    ('Third Kingdom', -70000),
+    ('Third Tyranny', -1213),
+    ('Fourth Kingdom', -540),
+    ('Fourth Tyranny', 716)
+]
+for age, year in AGEYEAR:
+    AGEORD[age] = year
+
 class dateparse(object):
     def __init__(self, d):
         self.age = None
@@ -64,6 +78,10 @@ class dateparse(object):
                     self.key = (-int(self.year), virtual_month, virtual_day, extra)
                     assert rest == '', rest
                     self.year = -int(self.year)
+                elif d in AGEORD:
+                    self.key = (AGEORD[d], 0, 0, extra)
+                    self.year = ''
+                    self.age = d
                 elif ' ' in d:
                     self.year, self.monthday = d.split(' ')
                     if self.monthday.isdigit():
@@ -76,23 +94,14 @@ class dateparse(object):
                     self.full = '%s, %s%s' % (self.monthday, self.year, suffix)
                     self.key = (int(self.year), int(month), virtual_day, extra)
                     self.year = int(self.year)
-                elif d in ('Prehistory',):
-                    self.key = (-90000, 0, 0, extra)
-                    self.year = d
-                    self.age = ''
                 else:
                     self.key = (int(d), virtual_month, virtual_day, extra)
                     self.year = int(d)
                     yearquest = suffix
         if self.age is None:
-            if self.year <= -1212:
-                self.age = 'Third Kingdom'
-            elif self.year <= -539:
-                self.age = 'Third Tyranny'
-            elif self.year <= 715:
-                self.age = 'Fourth Kingdom'
-            else:
-                self.age = 'Fourth Tyranny'
+            for age, year in AGEYEAR:
+                if self.year > year:
+                    self.age = age
             
             if self.year < 0:
                 self.year = '%d%s BCE' % (-self.year, yearquest)
@@ -183,7 +192,8 @@ for yamlf in Glob('Volumes/*.yaml'):
     vol['number'] = len(volumes) + 1
     vol['name'] = 'Volume %d: %s' % (len(volumes) + 1, vol['name'])
     for ep in vol['episodes']:
-        assert ep['type'] in ('Legend', 'Merin', 'History')
+        for t in ep['type'].split(', '):
+            assert t in ('Legend', 'Merin', 'History')
         ep['path'] = '%d/%s/' % (
             vol['number'],
             ep['name'].lower().replace('.', '').replace('?', '').replace(
@@ -191,7 +201,7 @@ for yamlf in Glob('Volumes/*.yaml'):
         if ep['type'] == 'History':
             assert 'timeline' in ep
         if 'timeline' in ep:
-            assert ep['type'] == 'History'
+            assert 'History' in ep['type'].split(', '), ep['type']
             dates = []
             for k in ep['timeline']:
                 tl = dict(ep)
@@ -328,9 +338,7 @@ def gk(ep):
     return ep['date'].key
 for a in ages:
     ages[a].sort(key=gk)
-ageord = {'': 0, 'Third Kingdom': 30, 'Third Tyranny': 31,
-          'Fourth Kingdom': 40, 'Fourth Tyranny': 41}
-agelist = [dict(name=k, episodes=ages[k], ord=ageord[k]) for k in ages]
+agelist = [dict(name=k, episodes=ages[k], ord=AGEORD[k]) for k in ages]
 agelist.sort(key=lambda a: a['ord'])
     
 c = Command('docs/timeline/index.html', 'Templates/episodes.mak',

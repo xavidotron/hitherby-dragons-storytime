@@ -50,7 +50,7 @@ if 'name' in ep and 'soundcloud' not in ep and not full:
 %>
 %endif
 %if title == 'Timeline':
-  %if ep['date'].year != lastyear:
+  %if ep['date'].year != '' and ep['date'].year != lastyear:
     <tr><th colspan="4">${ep['date'].year}</th></tr>
     <% lastyear = ep['date'].year %>
   %endif

@@ -1,0 +1,118 @@
+name: |
+  <i>The Cracking of the Lens</i>
+desc: |
+
+episodes:
+-
+  name: The Melomid
+  type: History
+  timeline:
+    Second Kingdom: The creation of the anakim, the erinyes, the incandoi, and the melomids.
+    Second Tyranny: Pentheus encounters Papakenos the melomid.
+  url: http://imago.hitherby.com/2006/02/the-melomid-iii/
+-
+  name: Good and True and Noble
+  type: History
+  timeline:
+    Second Tyranny: Pentheus attempts to repair his ship.
+    2004-06?.7: Jane learns a moral lesson.
+  url: http://imago.hitherby.com/2006/02/good-and-true-and-noble-iiii/
+-
+  name: A Comparative Study of Two Fighting Styles
+  type: Legend
+  url: http://imago.hitherby.com/2005/12/a-comparative-study-of-two-fighting-styles/
+-
+  name: “That Was Quick,” The Monster Said
+  type: History
+  url: http://imago.hitherby.com/2006/02/that-was-quick-the-monster-said-iiii/
+  timeline:
+    1978: Meredith is born.
+-
+  name: The False Enlightenment
+  type: History
+  url: http://imago.hitherby.com/2006/02/the-false-enlightenment-iiiii/
+  timeline:
+    1978: Meredith suffers a false enlightenment.
+-
+  name: Scattered
+  type: History
+  url: http://imago.hitherby.com/2006/02/scattered-iiiiii/
+  timeline:
+    1981: Meredith yields a good harvest.
+    1986: Meredith ceases to exist.
+-
+  name: The Big World
+  type: Legend
+  url: http://imago.hitherby.com/2004/07/the-big-world/
+-
+  name: The Imago
+  type: History
+  url: http://imago.hitherby.com/2006/02/quinquagesima-sunday-the-imago-2-of-2/
+  timeline:
+    2004-06?: It begins to rain.
+-
+  name: A Succession of Magical Fish
+  type: Legend
+  url: http://imago.hitherby.com/2004/08/a-succession-of-magical-fish/
+-
+  name: The Starfish Men
+  type: History
+  timeline:
+    1975.2: Clarissa meets and marries a starfish man.
+    1985: Clarissa cleans the sloughed-bits room.
+  url: http://imago.hitherby.com/2006/03/starfish-men-iii/
+-
+  name: How Meredith Ran from the Chaos
+  type: History
+  url: http://imago.hitherby.com/2006/03/how-meredith-ran-from-the-chaos-iiii/
+  timeline:
+    1987: Meredith arrives in Spattle.
+-
+  name: "Drunkard’s God: “The Wine-Ogre”"
+  type: Legend
+  url: http://imago.hitherby.com/2005/08/drunkards-god-the-wine-ogre/
+-
+  name: "Drunkard’s God: “The Ale-Man”"
+  type: Legend
+  url: http://imago.hitherby.com/2005/08/drunkards-god-the-ale-man/
+-
+  name: The Problem of Persephone
+  type: History
+  url: http://imago.hitherby.com/2006/04/good-friday-the-problem-of-persephone-iv/
+  timeline:
+    2004-06?: Martin seeks to know more about Persephone.
+-
+  name: Accidental Properties
+  type: Legend
+  url: http://imago.hitherby.com/2006/04/low-saturday-accidental-properties/
+-
+  name: The Harrowing of Hell
+  type: History
+  timeline:
+    2004-06?: Jane worries about Meredith.
+  url: http://imago.hitherby.com/2006/04/low-saturday-the-harrowing-of-hell-iiv/
+-
+  name: That Morning
+  type: History
+  timeline:
+    2004-06?: The lens Necessity turns to the unfinished history of Boedromion.
+  url: http://imago.hitherby.com/2006/04/easter-that-morning-iiiv/
+-
+  name: Hard on the Heels of Ink’s Legend
+  type: History
+  url: http://imago.hitherby.com/2006/04/hard-on-the-heels-of-inks-legend-ii/
+  timeline:
+    2004-06?.5: The lens Necessity cracks. (2)
+-
+  name: The Cut
+  type: History
+  url: http://imago.hitherby.com/2006/04/the-cut-4-of-5/
+  timeline:
+    2004-06?.5: Jane cuts the imago’s cocoon.
+-
+  name: The Nest of Mirror Pieces
+  type: History
+  url: http://imago.hitherby.com/2006/04/the-nest-of-mirror-pieces-5-of-5/
+  timeline:
+    1975: The monster pulls Mei Ming from the shadow’s womb. (2)
+    2004-06?.7: Martin brings Mei Ming a gift.
