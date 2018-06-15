@@ -1,0 +1,111 @@
+name: |
+  <i>How Beautiful</i>
+desc: |
+
+episodes:
+-
+  name: The Place Without Recourse
+  type: History
+  url: http://imago.hitherby.com/2004/08/the-place-without-recourse-ii/
+  timeline:
+    2002: Train Morgan visits the facility on Elm Hill.
+-
+  name: "Drunkard’s God: “The Wine-Ogre”"
+  type: Legend
+  url: http://imago.hitherby.com/2005/08/drunkards-god-the-wine-ogre/
+-
+  name: "Drunkard’s God: “The Ale-Man”"
+  type: Legend
+  url: http://imago.hitherby.com/2005/08/drunkards-god-the-ale-man/
+-
+  name: The Chimerae
+  type: History
+  url: http://imago.hitherby.com/2006/02/the-chimerae-ii/
+  timeline:
+    2003?: Train pulls a rickshaw up the hill.
+-
+  name: The Covenant of the Sharks
+  type: Legend
+  url: http://imago.hitherby.com/2005/05/the-covenant-of-the-sharks/
+-
+  name: The Staff
+  type: Legend
+  url: http://imago.hitherby.com/2005/10/the-staff/
+-
+  name: Paradise Forgotten
+  type: Legend
+  url: http://imago.hitherby.com/2006/03/paradise-forgotten/
+-
+  name: The Ragged Things
+  type: History
+  url: http://imago.hitherby.com/2006/02/the-ragged-things-1-of-1/
+  timeline:
+    2004-05:29: Train Morgan petitions Ii Ma.
+-
+  name: Lacking the Power of Reflection
+  type: Legend
+  url: http://imago.hitherby.com/2006/04/lacking-the-power-of-reflection/
+-
+  name: It’s a Wonderful Murder
+  type: Legend
+  url: http://imago.hitherby.com/2004/08/its-a-wonderful-murder/
+-
+  name: Sid and Max
+  type: History
+  url: http://imago.hitherby.com/2006/04/palm-sunday-iiv-sid-and-max/
+  timeline:
+    1968: Sid threatens Grouchy Pete.
+-
+  name: Jigsawing
+  type: History
+  url: http://imago.hitherby.com/2006/04/palm-sunday-iiiv-jigsawing/
+  timeline:
+    1973: Max calls Sid while playing basketball.
+-
+  name: Mr. McGruder’s Question
+  type: History
+  url: http://imago.hitherby.com/2006/04/palm-sunday-iiiiv-mr-mcgruders-question/
+  timeline:
+    1979: Max first encounters a ragged thing.
+-
+  name: The Siggort in Exile
+  type: History
+  url: http://imago.hitherby.com/2006/04/palm-sunday-iviv-the-siggort-in-exile/
+  timeline:
+    1979: Sid helps Max carry his homeroom teacher home.
+-
+  name: She Had Forgotten All the Red
+  type: Legend
+  url: http://imago.hitherby.com/2006/01/she-had-forgotten-all-the-red-complete/
+-
+  name: Are Siggorts?
+  type: History
+  url: http://imago.hitherby.com/2006/04/are-siggorts-ii/
+  timeline:
+    1979: Max learns about the nature of siggorts.
+    1980: Sid helps Ronald Reagan’s presidential campaign through grassroots activism.
+-
+  name: The Well
+  type: Legend
+  url: http://imago.hitherby.com/2006/01/the-well/
+-
+  name: Should Siggorts?
+  type: History
+  url: http://imago.hitherby.com/2006/04/should-siggorts-ii/
+  timeline:
+    Unknown: The Kings of the Unforgivable Dominions live “before the world”.
+    668: Sid realizes he is not alone.
+    1989: A King comes to Spattle.
+-
+  name: Oriane
+  type: Legend
+  url: http://imago.hitherby.com/2006/05/oriane/
+-
+  name: Maundy Thursday
+  type: History
+  url: http://imago.hitherby.com/2006/04/hitherby-annual-2-maundy-thursday-ii/
+  timeline:
+    Second Kingdom: Sid is born and cast into a place of darkness and emptiness.
+    1992: Max finds “Prester Gee and the Ragged Things”.
+    1994-03-31: The ragged things come for Max.
+    

@@ -1,0 +1,117 @@
+name: |
+  <i>The Island of the Centipede: Severance Pay</i>
+desc: |
+
+episodes:
+-
+  name: The Isn’t
+  type: History
+  url: http://imago.hitherby.com/2006/06/the-island-of-the-centipede-the-isnt-ii/
+  timeline:
+    1994-04-03: Ii Ma asks Sid a question.
+-
+  name: How the New Cycle Begins
+  type: Legend
+  url: http://imago.hitherby.com/2005/04/bonus-content-how-the-new-cycle-begins/
+-
+  name: The LED
+  type: History
+  url: http://imago.hitherby.com/2006/06/the-led-1-of-4/
+  timeline:
+    2004-06-01.2: Martin moves the imago to the top floor of the tower.
+-
+  name: Feeding Dangerous Things
+  type: History
+  url: http://imago.hitherby.com/2006/06/feeding-dangerous-things-2-of-4/
+  timeline:
+    2004-06-01.2: Martin feeds Sukaynah an apple.
+-
+  name: Brick Fishing
+  type: History
+  url: http://imago.hitherby.com/2006/06/brick-fishing-3-of-4/
+  timeline:
+    2004-06-01.2: Martin goes fishing.
+-
+  name: Newton’s First Law
+  type: History
+  url: http://imago.hitherby.com/2006/06/newtons-first-law-4-of-4/
+  timeline:
+    2004-06-01: Martin buys 125 packages of Fig Newtons at Costco.
+    2004-06-01.2: Martin feeds Sukaynah a Fig Newton.
+-
+  name: A Brief Explanation of Werewolves
+  type: Legend
+  url: http://imago.hitherby.com/2004/08/a-brief-explanation-of-werewolves/
+-
+  name: The Immensity of Love
+  type: History
+  url: http://imago.hitherby.com/2006/06/the-immensity-of-love-iiv/
+  timeline:
+    2004-06-01.2: Jane visits Max.
+-
+  name: The Eclipse
+  type: History
+  url: http://imago.hitherby.com/2006/06/the-eclipse-iiiv/
+  timeline:
+    2004-06-01.2: Iphigenia realizes Rahu is coming.
+-
+  name: The Looming Cloud
+  type: History
+  url: http://imago.hitherby.com/2006/06/the-looming-cloud-iiiiv/
+  timeline:
+    2004-06-01.2: Sid confronts Rahu.
+-
+  name: The Extinguishment of Karma
+  type: History
+  url: http://imago.hitherby.com/2006/06/the-extinguishment-of-karma-iviv/
+  timeline:
+    2004-06-01.2: Sid brings Rahu to Mr. Schiff.
+-
+  name: A Leopard that Eats Too Many Books
+  type: Legend
+  url: http://imago.hitherby.com/2006/05/a-leopard-that-eats-too-many-books/
+-
+  name: Sid vs. Max
+  type: History
+  url: http://imago.hitherby.com/2006/06/sid-vs-max-1-of-1/
+  timeline:
+    2004-06-01.2: Sid and Max fight.
+    2004-06-02: Sid wakes up on the grass next to the tower.
+-
+  name: No Actual Bears Were Harmed
+  type: Legend
+  url: http://imago.hitherby.com/2006/02/no-actual-bears-were-harmed/
+-
+  name: Max Sets Forth to Kill God
+  type: History
+  url: http://imago.hitherby.com/2006/06/max-sets-forth-to-kill-god-1-of-4/
+  timeline:
+    2004-06-01.2: "Max helps put on a performance of <b>Hamlet 2: The Arrows of Fate</b>."
+    2004-06-02: Jane gives Max severance pay.
+-
+  name: "Hamlet 2: The Arrows of Fate"
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/hamlet-2-the-arrows-of-fate/
+-
+  name: The Chaos Adapts
+  type: History
+  url: http://imago.hitherby.com/2006/07/hurry-on-2-of-4/
+  timeline:
+    2004-06-03: Max sails west.
+-
+  name: Red Mary
+  type: History
+  url: http://imago.hitherby.com/2006/07/red-mary-3-of-4/
+  timeline:
+    2004-06-03: Max fights Red Mary.
+-
+  name: The Peculiar Case Of Miss Mu Lung
+  type: History
+  url: http://imago.hitherby.com/2006/07/severance-4-of-4/
+  timeline:
+    532 BCE: Mr. Kong gives advice to Miss Mu Lung.
+    2004-06-03: Red Mary lifts Max from the sea.
+-
+  name: In the Shadow of the Centipede
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/in-the-shadow-of-the-centipede/

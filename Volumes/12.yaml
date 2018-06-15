@@ -4,9 +4,9 @@ desc: |
 
 episodes:
 -
-  name: Theories Regarding the Box
+  name: A Succession of Magical Fish
   type: Legend
-  url: http://imago.hitherby.com/2004/01/theories-regarding-the-box/
+  url: http://imago.hitherby.com/2004/08/a-succession-of-magical-fish/
 -
   name: Boisterous Immortal
   type: History
@@ -33,13 +33,13 @@ episodes:
   timeline:
     2004-05-24: Ginette is washed away by the water.
 -
-  name: Still Life
+  name: Baggage
   type: Legend
-  url: http://imago.hitherby.com/2004/01/still-life/
+  url: http://imago.hitherby.com/2005/02/baggage/
 -
-  name: Boxes
+  name: Sid and Max
   type: Merin
-  url: http://imago.hitherby.com/2004/01/boxes/
+  url: http://imago.hitherby.com/2005/02/sid-and-max/
 -
   name: The Thistle
   type: History

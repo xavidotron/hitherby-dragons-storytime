@@ -30,6 +30,7 @@
       desc: is a geology teacher. According to legend, he falls a lot.
     -
       tag: Mrs. Schiff
+      subtags: [Parvati]
       desc: |
         comes out when the performance isn’t ready and
         narrates stuff. Every theater needs a Mrs. Schiff! Her first name is
@@ -48,6 +49,8 @@
         Gibbelins’ Tower. Like, a basketball game gone bad, or Max locking Sid
         in a box or something.
       ref: http://imago.hitherby.com/2005/02/sid-and-max/
+      # Sid has black hair: http://imago.hitherby.com/2006/06/the-looming-cloud-iiiiv/
+      # Max's last name is Lamner
     -
       tag: Meredith
       desc: |
@@ -85,6 +88,11 @@
         is not a very nice person, but he has a shiny
         tie. He descends from the House of Atreus.
     -
+      tag: Tina
+      desc: |
+        tortures people for the monster. She doesn’t have a tie or any
+        kind of fancy heredity. That’s too bad for her!
+    -
       tag: the shadow
       desc: |
         used to be Karen, but then woglies ate the
@@ -107,6 +115,7 @@
       ref: http://imago.hitherby.com/2004/05/character-profile-jane/
     -
       tag: the hero
+      subtags: [Sebastien]
       desc: |
         , Sebastien, was Jenna’s brother. He is somewhat dubious about
         Jane, what with all the dying and coming back to life and
@@ -115,8 +124,34 @@
       imagecredit: Xiiau
       imageurl: http://xiiau.tumblr.com/
     -
+      tag: Liril
+      desc: |
+        is one of the people of salt; that is, a child of the line
+        that is the monster’s natural prey. The monster put the Thorn
+        That Does Not Kill through her neck, stealing her volition,
+        but circumstances have recently conspired to return a certain
+        dynamism to her life. This is almost as much her story as it
+        is Jane’s, except she doesn’t put on 250 shows a year
+        explaining her perspective on things.
+    -
+      tag: Micah
+      desc: |
+        is Liril’s brother. She created him to defy the monster, most
+        likely in the moment when she no longer could.
+    -
+      tag: Tainted John
+      desc: |
+        is something Liril made out of an abused boy who she thought
+        would otherwise turn out to be another abuser. He has no eyes
+        and no heart.
+    -
+      tag: Priyanka
+      desc: |
+        is one of the people of salt. She was prey to 1968′s
+        monster. She refused to save Tantalus from his punishment.
+    -
       tag: the Angel Four
-      subtags: [Evasive A, Forbidden A, Magic A, Realistic A]
+      subtags: [Evasive A, Forbidden A, Magic A, Realistic A, Pelopia, Erin, Cyane]
       desc: |
         wear jackets with holes cut out for their
         wings. Actually, pretty much every angel in this story wears a jacket,
@@ -153,6 +188,20 @@
         Jane’s brother or sister. They did not work out very well and had to be
         replaced.
     -
+      tag: Persephone, Tantalus, and the Greek Gods
+      subtags: [Persephone, Tantalus, Zeus, Nemesis, Demeter, Artemis, Hades, Hera, Pelops, Thyestes, Aegisthus]
+      desc: |
+        (Zeus, Nemesis, etcetera) are more or less as the myths describe.
+    -
+      tag: Nabonidus
+      desc: was King of Babylon, and a monster.
+    -
+      tag: Mylitta
+      desc: fought the monster at Babylon, but lost.
+    -
+      tag: Belshazzar
+      desc: is a god Nabonidus tore from Mylitta at the Temple of Sin.
+    -
       tag: Vicious Lily
       desc: |
         is a robotic assassin made to advance the cause of Impressionism.
@@ -165,8 +214,20 @@
       tag: angels
       desc: answer emptiness with hope.
     -
+      tag: chimerae
+      desc: cause boolean expressions to evaluate as neither true nor false.
+    -
+      tag: contemners
+      desc: impose judgment to divide their prey from the pack.
+    -
+      tag: cynosures
+      desc: are fixed points in the chaos.
+    -
       tag: Death
       desc: solves problems through extinction.
+    -
+      tag: demons
+      desc: teach acceptance.
     -
       tag: fairies
       desc: reflect the chaos outside the world.
@@ -177,20 +238,45 @@
       tag: fiends
       desc: answer hurt with madness.
     -
+      tag: footsoldiers
+      desc: question pie to achieve their goals.
+    -
       tag: flying carpets
       desc: take you from the confines of your world.
+    -
+      tag: ghosts
+      desc: cling to your memories.
     -
       tag: heroes
       desc: can kill monsters.
     -
+      tag: Ii Ma
+      desc: ", the Warden, keeps the place without recourse."
+    -
       tag: imps
       desc: eat the soul that you cannot bear to keep.
+    -
+      tag: Kings of the Unforgivable Dominions
+      desc: break the covenant that holds together the pieces of the world.
+    -
+      tag: libellatici
+      desc: (also called succubi, incubi, and rakshasa) are the enemies of the gods.
+      subtags: [succubi, incubi, rakshasa]
+    -
+      tag: lincolns
+      desc: ind things together.
+    -
+      tag: melomids
+      desc: lack the power of intention.
     -
       tag: merins
       desc: help make sense of the world.
     -
       tag: mer-nymphs
       desc: open the world.
+    -
+      tag: ragged things
+      desc: catch you up, at the wrong place, in the wrong time.
     -
       tag: siggorts
       desc: vivisect people innocently.

@@ -13,6 +13,7 @@ import soundcloud
 AGEORD = {}
 # (age, "first" year in age)
 AGEYEAR = [
+    ('Unknown', -95000),
     ('Prehistory', -90000),
     ('Second Kingdom', -85000),
     ('Second Tyranny', -80000),
@@ -41,7 +42,7 @@ class dateparse(object):
                 d, extra = d.split('.')
                 extra = '.' + extra
             while d[-1] in ('?', '+', '-'):
-                extra = d[-1] + extra
+                #extra = d[-1] + extra
                 suffix = d[-1] + suffix
                 d = d[:-1]
             virtual_month = 0
@@ -187,6 +188,7 @@ last_upload = None
 next_upload = None
 upload_vol = None
 for yamlf in Glob('Volumes/*.yaml'):
+    vol_paths = set()
     with open(str(yamlf)) as fil:
         vol = yaml.load(fil)
     vol['number'] = len(volumes) + 1
@@ -198,6 +200,8 @@ for yamlf in Glob('Volumes/*.yaml'):
             vol['number'],
             ep['name'].lower().replace('.', '').replace('?', '').replace(
                 ' ', '-').replace(u'’', ''))
+        assert ep['path'] not in vol_paths, ep['path']
+        vol_paths.add(ep['path'])
         if ep['type'] == 'History':
             assert 'timeline' in ep
         if 'timeline' in ep:
