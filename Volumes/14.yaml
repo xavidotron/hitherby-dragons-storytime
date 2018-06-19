@@ -76,7 +76,7 @@ episodes:
   url: http://imago.hitherby.com/2006/06/sid-vs-max-1-of-1/
   timeline:
     2004-06-01.2: Sid and Max fight.
-    2004-06-02: Sid wakes up on the grass next to the tower.
+    2004-06-02.1: Sid wakes up on the grass next to the tower.
 -
   name: No Actual Bears Were Harmed
   type: Legend
@@ -86,7 +86,7 @@ episodes:
   type: History
   url: http://imago.hitherby.com/2006/06/max-sets-forth-to-kill-god-1-of-4/
   timeline:
-    2004-06-01.2: "Max helps put on a performance of <b>Hamlet 2: The Arrows of Fate</b>."
+    2004-06-01.3: "Max helps put on a performance of <b>Hamlet 2: The Arrows of Fate</b>."
     2004-06-02: Jane gives Max severance pay.
 -
   name: "Hamlet 2: The Arrows of Fate"

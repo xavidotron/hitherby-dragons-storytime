@@ -50,6 +50,7 @@
         in a box or something.
       ref: http://imago.hitherby.com/2005/02/sid-and-max/
       # Sid has black hair: http://imago.hitherby.com/2006/06/the-looming-cloud-iiiiv/
+      # a drawn-looking man with a bit of a slacker’s slouch, in a nice kind of suit. He’s got his hands in his pockets and there’s a wheel of knives at his side. A feather hangs limply from his hair.
       # Max's last name is Lamner
     -
       tag: Meredith
@@ -81,7 +82,11 @@
   tags:
     -
       tag: Ink Catherly
+      subtags: [Ink]
       desc: deserves special mention, but won’t get any.
+      # "A fifteen-year-old girl" (as the Imago)
+      # overalls and a blouse (as the Imago)
+      # her backpack is pink and very flat and a bit too small for her
     -
       tag: the monster
       desc: |
@@ -280,6 +285,9 @@
     -
       tag: siggorts
       desc: vivisect people innocently.
+    -
+      tag: sirens
+      desc: dissolve others into the greatness of the world.
     -
       tag: woglies
       desc: |

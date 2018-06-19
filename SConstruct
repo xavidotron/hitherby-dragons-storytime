@@ -18,8 +18,8 @@ AGEYEAR = [
     ('Second Kingdom', -85000),
     ('Second Tyranny', -80000),
     ('Third Kingdom', -70000),
-    ('Third Tyranny', -1213),
-    ('Fourth Kingdom', -540),
+    ('Third Tyranny', -1211),
+    ('Fourth Kingdom', -538),
     ('Fourth Tyranny', 716)
 ]
 for age, year in AGEYEAR:
@@ -29,13 +29,13 @@ class dateparse(object):
     def __init__(self, d):
         self.age = None
         yearquest = ''
+        extra = ''
         if hasattr(d, 'year'):
-            self.monthday = '%s %d' % (d.strftime('%B'), d.day)
+            self.monthday = '%s %d' % (calendar.month_name[d.month], d.day)
             self.key = (d.year, d.month, d.day, '')
             self.full = '%s, %s' % (self.monthday, d.year)
             self.year = d.year
         else:
-            extra = ''
             suffix = ''
             d = str(d)
             if '.' in d:
@@ -82,6 +82,7 @@ class dateparse(object):
                 elif d in AGEORD:
                     self.key = (AGEORD[d], 0, 0, extra)
                     self.year = ''
+                    self.monthday = suffix
                     self.age = d
                 elif ' ' in d:
                     self.year, self.monthday = d.split(' ')
@@ -100,8 +101,11 @@ class dateparse(object):
                     self.year = int(d)
                     yearquest = suffix
         if self.age is None:
+            vyear = self.year
+            if extra == '.9':
+                vyear += 1
             for age, year in AGEYEAR:
-                if self.year > year:
+                if vyear >= year:
                     self.age = age
             
             if self.year < 0:

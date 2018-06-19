@@ -1,0 +1,131 @@
+name: |
+  <i>The Island of the Centipede: The Burdens of the Skandhas</i>
+desc: |
+
+episodes:
+-
+  name: The Tyranny of the Mundane
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/the-tyranny-of-the-mundane/
+-
+  name: Ink In Re Dyslexic Agnostics
+  type: History
+  url: http://imago.hitherby.com/2006/07/ink-in-re-dyslexic-agnostics-iiii/
+  timeline:
+    2004-06-01.2: Ink Catherly falls on Tep.
+    1887-03-16: Abel Clay meets Bernard and learns of the chaos.
+    1888-10-05: Emma Clay wastes away.
+-
+  name: Ink Indigestible
+  type: History
+  url: http://imago.hitherby.com/2006/07/ink-indigestible-iiiii/
+  timeline:
+    2004-06-01.2: Sukaynah swallows Ink Catherly and Tep.
+    1890-02-11: Abel Clay goes to California.
+    1890-05-05: Abel Clay meets Tep.
+    1890-05-07: Abel Clay explores the tower of the gibbelins.
+    1890-05-09: Abel Clay discovers Sukaynah.
+-
+  name: Tep vs. Sukaynah
+  type: History
+  url: http://imago.hitherby.com/2006/07/tep-vs-sukaynah-iiiiv/
+  timeline:
+    2004-06-01.2: Tep fights Sukaynah.
+    1890-05-18: Abel Clay studies the records of the gibbelins.
+    1890-05-24: Tep assists Abel Clay.
+    1890-07-30: Tep hauls in fishing nets.
+    1890-08-04: Abel Clay’s condition worsens.
+-
+  name: That Moldless Legacy of Hell
+  type: History
+  url: http://imago.hitherby.com/2006/07/iviv/
+  timeline:
+    2004-06-01.2: Ink Catherly and Tep part ways.
+    1890-08-05: Abel Clay talks to a jellyfish.
+    1891-01-01: Abel Clay has settled in.
+    1891-01-12: Abel Clay throws a spear at God.
+    "1891:02": Abel Clay finishes his journal.
+-
+  name: Blood Wonderland
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/blood-wonderland/
+-
+  name: Ink Indestructible
+  type: History
+  url: http://imago.hitherby.com/2006/07/ink-indestructible-ii/
+  timeline:
+    2004-06-01.2: Ink Catherly breaks Sukaynah free.
+    Third Tyranny?: A young girl named Sukaynah makes a promise.
+-
+  name: Dead Bunny Tango
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/dead-bunny-tango/
+-
+  name: The Broken Island
+  type: History
+  url: http://imago.hitherby.com/2006/07/the-broken-island-1-of-4/
+  timeline:
+    2004-06-03: Max and Red Mary discuss Confucianism.
+-
+  name: The Loneliness of the World
+  type: History
+  url: http://imago.hitherby.com/2006/08/the-loneliness-of-the-world-2-of-4/
+  timeline:
+    2004-06-03: Red Mary tells Max a story of the Buddha.
+    539 BCE: The Buddha speaks the word <i>anatman</i>.
+-
+  name: Pumpkin Sickness
+  type: History
+  url: http://imago.hitherby.com/2006/08/pumpkin-sickness-3-of-4/
+  timeline:
+    2004-06-03: Max encounters the giraumon.
+-
+  name: Happy Endings
+  type: History
+  url: http://imago.hitherby.com/2006/08/happy-endings-4-of-4/
+  timeline:
+    2004-06-03: Max sees the goodblow.
+-
+  name: Six’s Story
+  type: Legend
+  url: http://imago.hitherby.com/2006/03/sixs-story/
+-
+  name: The Aftermath of Heaven
+  type: History
+  url: http://imago.hitherby.com/2006/08/the-aftermath-of-heaven-1-of-2/
+  timeline:
+    2004-06-03: Max lets go of a miscomprehension.
+-
+  name: The Latter Days of the Law
+  type: History
+  url: http://imago.hitherby.com/2006/08/the-latter-days-of-the-law-2-of-2-2/
+  timeline:
+    2004-06-03: Red Mary takes Max’s life.
+-
+  name: Such a Strange and Funny Image
+  type: Legend
+  url: http://imago.hitherby.com/2006/03/such-a-strange-and-funny-image/
+-
+  name: The Uncanny Valley
+  type: History
+  url: http://imago.hitherby.com/2006/08/the-uncanny-valley-iiv/
+  timeline:
+    2004-06-02.1: Martin talks to Sid.
+-
+  name: The Pirate
+  type: History
+  url: http://imago.hitherby.com/2006/08/the-pirate-iiiv/
+  timeline:
+    2004-06-02.1: Sid meets the dread pirate Tara.
+-
+  name: The Heaps
+  type: History
+  url: http://imago.hitherby.com/2006/08/the-heaps-iiiiv/
+  timeline:
+    Third Tyranny?: Five bandits assail Simon.
+-
+  name: The Skandhas of Head Island
+  type: History
+  url: http://imago.hitherby.com/2006/08/the-skandhas-of-head-island-iviv/
+  timeline:
+    2004-06-02.1: Sid encounters a Heap.
