@@ -1,0 +1,131 @@
+name: |
+  <i>The Island of the Centipede: The Bottom of the World</i>
+desc: |
+
+episodes:
+-
+  name: "Morgan-Thurible Laboratories: A Love Story"
+  type: Legend
+  url: http://imago.hitherby.com/2006/03/morgan-thurible-laboratories-a-love-story/
+-
+  name: Dead Bunny Tango
+  type: Legend
+  url: http://imago.hitherby.com/2004/02/dead-bunny-tango/
+-
+  name: Ink and Abandonment
+  type: History
+  url: http://imago.hitherby.com/2006/09/ink-and-abandonment-iiv/
+  timeline:
+    2004-06-02.1: Ink Catherly meets a hummingbird.
+    1965?: Jacob’s carpet fails to rescue Jacob. 
+-
+  name: Ink Inappropriate
+  type: History
+  url: http://imago.hitherby.com/2006/09/ink-inappropriate-iiiv/
+  timeline:
+    2004-06-02.1: Ink Catherly insults a tree.
+    1966?: Jacob’s carpet leaves.
+    2004-06-07: Ink Catherly shrieks viciously about a pun.
+-
+  name: Ink and Annihilation
+  type: History
+  url: http://imago.hitherby.com/2006/09/ink-and-annihilation-iiiiv/
+  timeline:
+    2004-06-02.1: Ink Catherly bargains with a carpet.
+    1990s?: Jacob’s carpet meets Anatman.
+    2004-05-12: Jacob’s carpet becomes tangled in the roots of trees.
+-
+  name: Ink Infallible
+  type: History
+  url: http://imago.hitherby.com/2006/09/ink-infallible-iviv/
+  timeline:
+    2004-06-02.1: Ink Catherly explains Dukkha.
+-
+  name: Seventy Two Respects, To Be Precise
+  type: Legend
+  url: http://imago.hitherby.com/2005/02/seventy-two-respects-to-be-precise/
+-
+  name: Exactly One Pterodactyl, For Clarity’s Sake
+  type: Legend
+  url: http://imago.hitherby.com/2005/02/exactly-one-pterodactyl-for-claritys-sake/
+-
+  name: Ink Immeasurable
+  type: History
+  url: http://imago.hitherby.com/2006/09/ink-immeasurable-ixvi/
+  timeline:
+    2004-06-02.1: Ink Catherly meets Minister Jof.
+    Third Kingdom.2: Various gods visit Cronos.
+-
+  name: Ink Asymmetric
+  type: History
+  url: http://imago.hitherby.com/2006/09/ink-asymmetric-iixvi/
+  timeline:
+    2004-06-02.1: Ink Catherly asks Minister Jof how to get to the surface.
+-
+  name: Ink Interrupted
+  type: History
+  url: http://imago.hitherby.com/2006/09/ink-interrupted-iiixvi/
+  timeline:
+    2004-06-02.1: Minister Jof criticizes Ink Catherly’s name.
+    Second Tyranny.9: Zeus judges Cronos.
+-
+  name: Ink Invaluable
+  type: History
+  url: http://imago.hitherby.com/2006/09/ink-invaluable-ivxvi/
+  timeline:
+    2004-06-02.1: Riffle stabs Ink Catherly.
+    Third Kingdom.1: The end of human sacrifice was the beginning of time.
+-
+  name: “The Lord of Misrule” – From the Journals of Ink Catherly
+  type: History
+  url: http://imago.hitherby.com/2006/09/the-lord-of-misrule-from-the-journals-of-ink-catherly-vxvi/
+  timeline:
+    Second Tyranny.8: Zeus confronts Cronos.
+    2004-06-02.1: Ink Catherly wonders if it is possible to die.
+-
+  name: Ink Inapplicable
+  type: History
+  url: http://imago.hitherby.com/2006/09/ink-inapplicable-vixvi/
+  timeline:
+    2004-06-02.1: Ink Catherly explains the history of a sword.
+-
+  name: The Treason of Minister Jof
+  type: History
+  url: http://imago.hitherby.com/2006/10/the-treason-of-minister-jof-viixvi/
+  timeline:
+    2004-06-02.1: Minister Jof sees a sawbones.
+-
+  name: Ink Incurable
+  type: History
+  url: http://imago.hitherby.com/2006/10/ink-incurable-viiixvi/
+  timeline:
+    2004-06-02.1: Orderlies lead Ink Catherly to Sarous.
+    Second Tyranny: Cronos eats Demeter.
+-
+  name: “The Test Defends Itself from Life”- From the Journals of Ink Catherly
+  type: History
+  url: http://imago.hitherby.com/2006/10/the-test-defends-itself-from-life-from-the-journals-of-ink-catherly-ixxvi/
+  timeline:
+    1993?: Sarous hears the gospel of King Snorn.
+    2000?: Melissa imagines a lens that shows imperfection.
+-
+  name: Ink and Anarchy
+  type: History
+  url: http://imago.hitherby.com/2006/10/ink-and-anarchy-xxvi/
+  timeline:
+    2004-06-02.1: Ink Catherly spits out a wogly.
+    12 pesserids before the end of the Second Kingdom: Hestia is born.
+-
+  name: “The Golden Age” – From the Journals of Ink Catherly
+  type: History
+  url: http://imago.hitherby.com/2006/10/the-golden-age-from-the-journals-of-ink-catherly-xixvi/
+  timeline:
+    Second Kingdom.2: Cronos casts open the gates of Tartarus.
+    9512 pesserids before time began: A nymph encounters an man-eating ogre.
+-
+  name: Ink Unwrappable
+  type: History
+  url: http://imago.hitherby.com/2006/10/ink-unwrappable-xiixvi/
+  timeline:
+    1926: André Masson creates a box without entrances or exits.
+    2004-06-02.1: Ink Catherly destroys the ziggurat.

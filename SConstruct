@@ -70,7 +70,23 @@ class dateparse(object):
             else:
                 self.monthday = None
                 self.full = d + suffix
-                if ' BCE' in d:
+                if ' pesserids before the end of the Second Kingdom' in d:
+                    self.year, rest = d.split(' pesserids before the end of the Second Kingdom')
+                    self.age = "Second Kingdom"
+                    yearquest = suffix
+                    self.key = (-70000 - int(self.year),
+                                virtual_month, virtual_day, extra)
+                    assert rest == '', rest
+                    self.year = self.year + ' pesserids before the end of the Second Kingdom'
+                elif ' pesserids before time began' in d:
+                    self.year, rest = d.split(' pesserids before time began')
+                    self.age = "Second Kingdom"
+                    yearquest = suffix
+                    self.key = (-70000 - int(self.year),
+                                virtual_month, virtual_day, extra)
+                    assert rest == '', rest
+                    self.year = self.year + ' pesserids before time began'
+                elif ' BCE' in d:
                     self.year, rest = d.split(' BCE')
                     yearquest = suffix
                     if self.year[-1] == 's':
@@ -97,9 +113,12 @@ class dateparse(object):
                     self.key = (int(self.year), int(month), virtual_day, extra)
                     self.year = int(self.year)
                 else:
+                    yearquest = suffix
+                    if d[-1] == 's':
+                        d = d[:-1]
+                        yearquest = 's' + yearquest
                     self.key = (int(d), virtual_month, virtual_day, extra)
                     self.year = int(d)
-                    yearquest = suffix
         if self.age is None:
             vyear = self.year
             if extra == '.9':
@@ -219,9 +238,9 @@ for yamlf in Glob('Volumes/*.yaml'):
                 ages.setdefault(tl['date'].age, []).append(tl)
             dates.sort()
             ep['date'] = '; '.join(str(k) for k in dates)
+        if 'seebit' not in ep and 'seebits' in vol and ep['type'] in vol['seebits']:
+            ep['seebit'] = vol['seebits'][ep['type']]
         if 'soundcloud' in ep:
-            if 'seebit' not in ep:
-                ep['seebit'] = vol['seebits'][ep['type']]
             if prev_ep:
                 ep['prev'] = prev_ep['path']
                 prev_ep['next'] = ep['path']

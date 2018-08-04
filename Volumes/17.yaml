@@ -1,0 +1,62 @@
+name: |
+  <i>The Island of the Centipede: Making Answer</i>
+desc: |
+
+episodes:
+-
+  name: Ink Unrepeatable
+  type: History
+  url: http://imago.hitherby.com/2006/10/ink-unrepeatable-xiiixvi/
+  timeline:
+    2004-06-02.1: Ink Catherly admits to being evil.
+    2004-06-03: Ink Catherly tells Dr. Sarous of Cronos.
+    Second Kingdom.2: Cronos attempts to free the siggorts.
+-
+  name: Ink Entomological
+  type: History
+  url: http://imago.hitherby.com/2006/10/ink-entomological-xivxvi/
+  timeline:
+    2004-06-03: Stickbugs attack Ink Catherly.
+    Second Kingdom.1: Cronos ascends to the throne of the world.
+-
+  name: That Even the Least of These May Know Joy
+  type: History
+  url: http://imago.hitherby.com/2006/10/that-even-the-least-of-these-may-know-joy-xvxvi/
+  timeline:
+    2004-06-02.2: Riffle attempts to unify the people of Dr. Sarous.
+    Second Kingdom.0: Ge and Cronos conspire against Uri.
+    2004-06-03: Dr Sarous and the stickbug general fall.
+-
+  name: Ink Ascending
+  type: History
+  url: http://imago.hitherby.com/2006/10/ink-ascending-xvixvi/
+  timeline:
+    2004-06-03: Ink Catherly encounters Cronos.
+    Second Kingdom.-1: Cronos is advised by Uri not to love evil.
+    2005-10-20: The History of Ink Catherly is performed in the Gibbelins’ Tower.
+-
+  name: Theory of Centipede
+  type: Legend
+  url: http://imago.hitherby.com/2004/09/theory-of-centipede/
+-
+  name: The Beginning
+  type: History
+  url: http://imago.hitherby.com/2006/10/the-beginning-ii/
+  timeline:
+    Second Kingdom: Ophion and Cronos struggle.
+-
+  name: 3GTE
+  type: Legend
+  url: http://imago.hitherby.com/2004/12/3gte/
+-
+  name: This Blasphemous Thing
+  type: History
+  url: http://imago.hitherby.com/2006/11/the-blasphemous-thing-iiv/
+  timeline:
+    2004-06-02.1: Sid and the pirates approach Head Island.
+-
+  name: Transience
+  type: History
+  url: http://imago.hitherby.com/2006/11/transience-iiiv/
+  timeline:
+    2004-06-02.1: The good ship <i>Honest with Myself</i> is destroyed.

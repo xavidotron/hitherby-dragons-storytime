@@ -72,14 +72,14 @@ episodes:
   name: Tunnel Rat
   type: History
   url: http://imago.hitherby.com/2004/05/tunnel-rat-iiv/
-  tags: [Jenna, Sebastien, heroes]
+  tags: [Jenna, Sebastien, heroes, the monster]
   tagline: Introducing Jenna’s original brother, Sebastien.
   timeline:
     1973: Jenna and Sebastien live in a cedar house.
     1974-01-12: Jenna hears about the monster for the first time.
     1974-04-06: Sebastien decides to fight the monster.
   seebit: |
-    For more on Jenna and Sebastien, check out <a href="https://www.smashwords.com/books/view/256783">Jack o’Lantern Girl</a>.
+    For more on Jenna and Sebastien, check out <a href="https://www.smashwords.cvvom/books/view/256783">Jack o’Lantern Girl</a>.
   credits: |
     Narrator: Xavid
     Sebastien: Thomas Mack
@@ -87,11 +87,36 @@ episodes:
     Tara: Barbara Fleming
     Ben: James Pretzer
     The oceanid: Mehitabel Glenhaber
+
+    Music and Sounds by:
+    Smhertz: <a href="http://99sounds.org/massamolla/">"Serial Bloom" from Massamolla</a>
+    Tabletop Audio: <a href="https://tabletopaudio.com/">Hermit Hut (Ambience Only), Down by the Sea</a>
+    nebulousflynn: <a href="https://freesound.org/people/nebulousflynn/sounds/220531/">Sea - Ocean - Beach - Close</a>
+    univ_lyon3: <a href="https://freesound.org/people/univ_lyon3/sounds/410832/">BUISSON_Manara_2017-2018_WaveSound</a>
+    dobroide: <a href="https://freesound.org/people/dobroide/sounds/317432/">20150720_seagull.screech</a>
   art: history-cabin.svg
+  postdate: 2018-08-04
+  soundcloud: https://soundcloud.com/hitherby/tunnel-rat
+  youtube: https://www.youtube.com/watch?v=XiDRD3YICtA
 -
   name: In A World Rapidly Turning To Cards
   type: Legend
   url: http://imago.hitherby.com/2004/02/in-a-world-rapidly-turning-to-cards/
+  credits: |
+    Narrator: Xavid
+    Dame Mathilda: Mehitabel Glenhaber
+    Morningshine: Andrew Clough
+    The princess: Zan
+    The dryad: Barbara Fleming
+    The dragon: Matthew Peairs
+    Willow: Sarah
+
+    Music and Sounds by:
+    Smhertz: <a href="http://99sounds.org/massamolla/">"Retrofuture" from Massamolla</a>
+    __O: <a href="https://freesound.org/people/__O/sounds/325834/">Field in Canezac</a>
+    pickleparade: <a href="https://freesound.org/people/pickleparade/sounds/155122/">Sword fight with monster</a>
+    EFlexTheSoundDesigner: <a href="https://freesound.org/people/EFlexTheSoundDesigner/sounds/372226/">Bodyfall 3</a>
+    kvgarlic: <a href="https://freesound.org/people/kvgarlic/sounds/135834/">SummerWoodsWoodThrushJuly</a>
 -
   name: Dragons
   type: Merin
