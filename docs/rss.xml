@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Sat, 04 Aug 2018 04:00:00 -0000</pubDate>
-  <lastBuildDate>Sat, 04 Aug 2018 04:00:00 -0000</lastBuildDate>
+  <pubDate>Tue, 14 Aug 2018 04:00:00 -0000</pubDate>
+  <lastBuildDate>Tue, 14 Aug 2018 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -30,20 +30,6 @@
     <width>144</width>
     <height>400</height>
   </image>
-  <item>
-    <title>Scanning Things</title>
-    <guid>http://hitherby.xavid.us/1/scanning-things/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/scanning-things/"&gt;&lt;img src="http://hitherby.xavid.us/1/scanning-things/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Scanning Things"&lt;/a&gt;
-        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
-    </description>
-      <category>woglies</category>
-      <category>siggorts</category>
-      <category>Jane</category>
-      <category>Bob</category>
-      <category>Martin</category>
-    <pubDate>Wed, 21 Jun 2017 04:00:00 -0000</pubDate>
-  </item>
   <item>
     <title>Bob</title>
     <guid>http://hitherby.xavid.us/1/bob/</guid>
@@ -209,6 +195,15 @@
       <category>heroes</category>
       <category>the monster</category>
     <pubDate>Sat, 04 Aug 2018 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>In A World Rapidly Turning To Cards</title>
+    <guid>http://hitherby.xavid.us/2/in-a-world-rapidly-turning-to-cards/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/2/in-a-world-rapidly-turning-to-cards/"&gt;&lt;img src="http://hitherby.xavid.us/2/in-a-world-rapidly-turning-to-cards/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "In A World Rapidly Turning To Cards"&lt;/a&gt;
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
+    </description>
+    <pubDate>Tue, 14 Aug 2018 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>

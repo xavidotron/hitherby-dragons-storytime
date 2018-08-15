@@ -527,6 +527,6 @@ if post:
             print client.create_audio(
                 'hitherby-storytime',
                 external_url=last_upload['soundcloud'],
-                caption=desc, tags=get_tags(last_upload))
+                caption=desc.encode('utf-8'), tags=get_tags(last_upload))
 
     Command('post', 'docs/%sindex.html' % last_upload['path'], post_stuff)

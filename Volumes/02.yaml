@@ -43,8 +43,7 @@ episodes:
   art: merin-shuriken.svg
   postdate: 2017-10-29
   soundcloud: http://soundcloud.com/hitherby/ninja-tathagata
-  youtube: https://www.youtube.com/watch?v=dwqpxAjeGRg
-  
+  youtube: https://www.youtube.com/watch?v=dwqpxAjeGRg  
 -
   name: Dumping Glue on a Log
   type: Legend
@@ -117,10 +116,24 @@ episodes:
     pickleparade: <a href="https://freesound.org/people/pickleparade/sounds/155122/">Sword fight with monster</a>
     EFlexTheSoundDesigner: <a href="https://freesound.org/people/EFlexTheSoundDesigner/sounds/372226/">Bodyfall 3</a>
     kvgarlic: <a href="https://freesound.org/people/kvgarlic/sounds/135834/">SummerWoodsWoodThrushJuly</a>
+    Tabletop Audio: <a href="https://tabletopaudio.com/">Deep Space EVA</a>
+  art: legend-card.svg
+  postdate: 2018-08-14
+  soundcloud: http://soundcloud.com/hitherby/in-a-world-rapidly-turning-to
+  youtube: https://www.youtube.com/watch?v=IKbjT0jAW6Q
 -
   name: Dragons
   type: Merin
   url: http://imago.hitherby.com/2004/01/dragons/
+  credits: |
+    Narrator: Xavid
+
+    Ambiance by:
+    Smhertz: <a href="http://99sounds.org/massamolla/">"Oriental Plucks" from Massamolla</a>
+    Bryan Lake: <a href="http://99sounds.org/project-pegasus/">"Minor Oddity" from Project Pegasus</a>
+  seebit: |
+    For more about the boundaries of the world, check out <a href="http://www.drivethrufiction.com/product/102805/Enemies-Endure-Stomping-the-World-Round">Stomping the World Round</a>.
+  art: merin-edge-of-map.svg
 -
   name: The Tunnels
   type: History
