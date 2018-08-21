@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Tue, 14 Aug 2018 04:00:00 -0000</pubDate>
-  <lastBuildDate>Tue, 14 Aug 2018 04:00:00 -0000</lastBuildDate>
+  <pubDate>Mon, 20 Aug 2018 04:00:00 -0000</pubDate>
+  <lastBuildDate>Mon, 20 Aug 2018 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -30,20 +30,6 @@
     <width>144</width>
     <height>400</height>
   </image>
-  <item>
-    <title>Bob</title>
-    <guid>http://hitherby.xavid.us/1/bob/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/bob/"&gt;&lt;img src="http://hitherby.xavid.us/1/bob/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Bob"&lt;/a&gt;
-        &lt;p&gt;The history of Bob’s attempt to keep his sister Jane safe.
-&lt;/p&gt;
-    </description>
-      <category>fetches</category>
-      <category>woglies</category>
-      <category>Bob</category>
-      <category>Jane</category>
-    <pubDate>Sun, 09 Jul 2017 04:00:00 -0000</pubDate>
-  </item>
   <item>
     <title>Woglies</title>
     <guid>http://hitherby.xavid.us/1/woglies/</guid>
@@ -204,6 +190,15 @@
         &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
     <pubDate>Tue, 14 Aug 2018 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>Dragons</title>
+    <guid>http://hitherby.xavid.us/2/dragons/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/2/dragons/"&gt;&lt;img src="http://hitherby.xavid.us/2/dragons/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Dragons"&lt;/a&gt;
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
+    </description>
+    <pubDate>Mon, 20 Aug 2018 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>
