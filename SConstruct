@@ -304,6 +304,7 @@ for vol in volumes:
     for ep in vol['episodes']:
         if 'postdate' in ep:
             assert 'art' in ep, ep
+            if ep['type'] == 'History': assert 'tagline' in ep, ep
             assert ep['art'].startswith(ep['type'].lower() + '-'), ep
             for t in ep.get('tags', ()):
                 assert t in TAG_TO_EPISODES or t in TAG_ALIASES, t

@@ -140,6 +140,7 @@ episodes:
 -
   name: The Tunnels
   type: History
+  tagline: Jenna and the hero, her brother Sebastien, part ways.
   timeline:
     1974-01: The Pandora Squad begins stocking the tunnels.
     1974-04-06: Jenna dies, revives, and goes to live in the tunnels.
@@ -154,7 +155,7 @@ episodes:
     Music and Sounds by:
     Smhertz: <a href="http://99sounds.org/massamolla/">"Serial Bloom" from Massamolla</a>
     Tabletop Audio: <a href="https://tabletopaudio.com/">Cave of Time, Dust to Dust</a>
-  tags: [Jenna, the hero, heroes]
+  tags: [Jenna, the hero, Sebastien, heroes]
   art: history-zeppelin.svg
   postdate: 2018-09-02
   youtube: https://www.youtube.com/watch?v=IQ9esgxNjMI
