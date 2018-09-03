@@ -19,8 +19,8 @@
   <copyright>Jenna Moran</copyright>
   <managingEditor>hitherby@xavid.us (Xavid)</managingEditor>
   <webMaster>hitherby@xavid.us (Xavid)</webMaster>
-  <pubDate>Mon, 20 Aug 2018 04:00:00 -0000</pubDate>
-  <lastBuildDate>Mon, 20 Aug 2018 04:00:00 -0000</lastBuildDate>
+  <pubDate>Sun, 02 Sep 2018 04:00:00 -0000</pubDate>
+  <lastBuildDate>Sun, 02 Sep 2018 04:00:00 -0000</lastBuildDate>
   <category>Surreal</category>
   <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
   <image>
@@ -30,16 +30,6 @@
     <width>144</width>
     <height>400</height>
   </image>
-  <item>
-    <title>Woglies</title>
-    <guid>http://hitherby.xavid.us/1/woglies/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/woglies/"&gt;&lt;img src="http://hitherby.xavid.us/1/woglies/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Woglies"&lt;/a&gt;
-        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
-    </description>
-      <category>woglies</category>
-    <pubDate>Wed, 12 Jul 2017 04:00:00 -0000</pubDate>
-  </item>
   <item>
     <title>Before He Was Cool</title>
     <guid>http://hitherby.xavid.us/1/before-he-was-cool/</guid>
@@ -199,6 +189,18 @@
         &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
     </description>
     <pubDate>Mon, 20 Aug 2018 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>The Tunnels</title>
+    <guid>http://hitherby.xavid.us/2/the-tunnels/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/2/the-tunnels/"&gt;&lt;img src="http://hitherby.xavid.us/2/the-tunnels/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "The Tunnels"&lt;/a&gt;
+        &lt;p&gt;From Hitherby Dragons by Jenna Moran.&lt;/p&gt;
+    </description>
+      <category>Jenna</category>
+      <category>the hero</category>
+      <category>heroes</category>
+    <pubDate>Sun, 02 Sep 2018 04:00:00 -0000</pubDate>
   </item>
 </channel>
 </rss>

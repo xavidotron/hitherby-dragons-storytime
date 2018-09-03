@@ -302,7 +302,7 @@ for makof in Glob('Pages/*.mak'):
 pwd = os.getcwd()
 for vol in volumes:
     for ep in vol['episodes']:
-        if 'soundcloud' in ep:
+        if 'postdate' in ep:
             assert 'art' in ep, ep
             assert ep['art'].startswith(ep['type'].lower() + '-'), ep
             for t in ep.get('tags', ()):
@@ -320,6 +320,7 @@ for vol in volumes:
                             t, timenote)
                 assert t.lower() not in ep['credits'].lower(), (
                     t, ep['credits'])
+        if 'soundcloud' in ep:
             c = Command('docs/%sindex.html' % (ep['path']),
                         'Templates/episode.mak', render_mako(
                             volume=vol, episode=ep, prefix='../../',
