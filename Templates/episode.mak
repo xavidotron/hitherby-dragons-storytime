@@ -42,7 +42,7 @@ w = SC.Widget("player");
 <p>${episode['tagline']}</p>
 %endif
 
-<p>From <a href="${episode['url']}">Hitherby Dragons</a> by <a href="https://www.patreon.com/JennaMoran">Jenna Moran</a>.</p>
+<p>From <a href="${get_url(episode)}">Hitherby Dragons</a> by <a href="https://www.patreon.com/JennaMoran">Jenna Moran</a>.</p>
 
 <p>${episode['seebit']}</p>
 
@@ -60,5 +60,5 @@ w = SC.Widget("player");
 <ul>
 <li><a href="${episode['soundcloud']}">Listen on SoundCloud</a>
 <li><a href="${episode['youtube']}">Listen on YouTube</a>
-<li><a href="${episode['url']}">Read original text</a>
+<li><a href="${get_url(episode)}">Read original text</a>
 </ul>

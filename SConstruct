@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import re, sys, os, subprocess, calendar, datetime
-import traceback
+import traceback, urllib2
 import yaml
 from mako.template import Template
 from mako.lookup import TemplateLookup
@@ -176,17 +176,50 @@ def render_mako(prefix='../', **kw):
                                cap_first=cap_first,
                                maybe_space=maybe_space,
                                tag_path=tag_path,
+                               get_url=get_url,
                                **kw)
         with open(str(target[0]), 'w') as fil:
             fil.write(rendered.encode('utf-8'))
     return render_mako_impl
+
+def name_sanitize(t, escape_colons=True):
+    ret = t.replace(u' \u2013 ', '-').replace(u'\u2014 ', '-').replace(u'\u2014', '-').replace(u'\u00B9', '').replace('?', '').replace(' ', '-').replace(u'\u2019', '-').replace(',', '').replace('!', '').replace('(', '').replace(')', '').replace('/', '-').replace('.', '').replace('#', '').replace(u'\u201c', '').replace(u'\u201d', '').replace(u'\u2018', '').replace(u'\u2019', '').lower()
+    if escape_colons:
+        ret = ret.replace(':', '')
+    return ret
+
+OVERRIDE_MAP = {
+    'historical-note': 'what-is-hitherby-dragons',
+    'one-of-those-days': 'the-river-at-the-edge-of-the-world',
+    'the-worlds-not-fair-to-dead-people': 'the-world-s-not-fair-to-dead-people'
+}
+SUF_MAP = {
+    'ii': '-i-i',
+    'iiv': '-i-iv',
+    'iiiv': '-ii-iv',
+    'iiiiv': '-iii-iv',
+    'iviv': '-iv-iv',
+}
+URL_200S = set()
+URL_404S = set()
+
+def get_url(ep):
+    _, page, _ = ep['url'].rsplit('/', 2)
+    if page in OVERRIDE_MAP:
+        page = OVERRIDE_MAP[page]
+    elif '-' in page:
+        pref, suf = page.rsplit('-', 1)
+        if suf in SUF_MAP:
+            page = pref + SUF_MAP[suf]
+    ret = u'http://hitherby-dragons.wikidot.com/' + page
+    return ret
 
 def get_desc(ep):
     desc = ''
     if 'tagline' in ep:
         desc = ep['tagline'] + '\n'
     desc += 'From Hitherby Dragons by Jenna Moran.\n'
-    desc += ep['url'] + '\n\n'
+    desc += get_url(ep) + '\n\n'
     desc += LINK_RE.sub(r'\2:\n\1', ep['seebit'].strip()) + '\n\n'
     desc += LINK_RE.sub(r'\1', ep['credits'])
     return desc
@@ -258,6 +291,15 @@ for yamlf in Glob('Volumes/*.yaml'):
                 print ep['name']
                 print
                 print get_desc(ep)
+                url = get_url(ep)
+                if url not in URL_200S:
+                    try:
+                        urllib2.urlopen(url)
+                    except urllib2.HTTPError:
+                        print '!!! bad url:', url
+                        URL_404S.add(url)
+                    else:
+                        URL_200S.add(url)
 
     volumes.append(vol)
 
@@ -515,7 +557,7 @@ if post:
             last_upload['path'], last_upload['name'])
         if 'tagline' in last_upload:
             desc += '<p>' + last_upload['tagline'] + '\n\n'
-        desc += '<p><a href="%s">Hitherby Dragons</a> by <a href="http://jennamoran.tumblr.com/">@jennamoran</a>.' % last_upload['url']
+        desc += '<p><a href="%s">Hitherby Dragons</a> by <a href="http://jennamoran.tumblr.com/">@jennamoran</a>.' % get_url(last_upload)
         print 'Description:'
         print desc
         if raw_input('Post episode "%s" linking to %s? [yN] ' % (
@@ -532,3 +574,8 @@ if post:
                 caption=desc.encode('utf-8'), tags=get_tags(last_upload))
 
     Command('post', 'docs/%sindex.html' % last_upload['path'], post_stuff)
+
+def validate_stuff(target, source, env):
+    if URL_404S:
+        print '!!! Invalid wikidot URLs:', URL_404S
+Command('validate', 'docs/index.html', validate_stuff)
