@@ -31,19 +31,6 @@
     <height>400</height>
   </image>
   <item>
-    <title>Before He Was Cool</title>
-    <guid>http://hitherby.xavid.us/1/before-he-was-cool/</guid>
-    <description>
-      &lt;a href="http://hitherby.xavid.us/1/before-he-was-cool/"&gt;&lt;img src="http://hitherby.xavid.us/1/before-he-was-cool/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Before He Was Cool"&lt;/a&gt;
-        &lt;p&gt;Martin, Jane’s final brother, is born on a night of screams and fire.
-&lt;/p&gt;
-    </description>
-      <category>Martin</category>
-      <category>the monster</category>
-      <category>Death</category>
-    <pubDate>Fri, 14 Jul 2017 04:00:00 -0000</pubDate>
-  </item>
-  <item>
     <title>The Girl And The Rat</title>
     <guid>http://hitherby.xavid.us/1/the-girl-and-the-rat/</guid>
     <description>
@@ -125,6 +112,15 @@
       <category>Lisa</category>
       <category>Thess</category>
     <pubDate>Sun, 27 Aug 2017 04:00:00 -0000</pubDate>
+  </item>
+  <item>
+    <title>Necessary Things</title>
+    <guid>http://hitherby.xavid.us/1/necessary-things/</guid>
+    <description>
+      &lt;a href="http://hitherby.xavid.us/1/necessary-things/"&gt;&lt;img src="http://hitherby.xavid.us/1/necessary-things/square.png" height="360" width="360" /&gt;&lt;br /&gt;Listen to "Necessary Things"&lt;/a&gt;
+        &lt;p&gt;A legend of Santa.&lt;/p&gt;
+    </description>
+    <pubDate>Tue, 01 Jan 2019 05:00:00 -0000</pubDate>
   </item>
   <item>
     <title>The River at the Edge of the World</title>

@@ -391,4 +391,24 @@ episodes:
   art: history-goggles.svg
   youtube: https://www.youtube.com/watch?v=XkltqwTx-SM
   soundcloud: http://soundcloud.com/hitherby/martin
-  
+-
+  name: Necessary Things
+  type: Bonus
+  url: http://hitherby-dragons.wikidot.com/necessary-things/
+  tagline: A legend of Santa.
+  seebit: |
+    For more holiday special content, consider <a href="http://books.hitherby.com/?p=5126">Rat Does Not Become A God</a>.
+  credits: |
+    Narrator: Xavid
+    Santa: James Pretzer
+
+    Sound Effects by:
+    Tabletop Audio: <a href="https://tabletopaudio.com/">Open Ocean</a>
+    UrsaDaBear: <a href="https://freesound.org/people/UrsaDaBear/sounds/400992/">Winter Winds</a>
+  timeline:
+    2003-12-30: Necessary Things is performed.
+  legendtime: True
+  art: legend-santa.svg
+  postdate: 2019-01-01
+  soundcloud: http://soundcloud.com/hitherby/necessary-things
+  youtube: https://www.youtube.com/watch?v=_CjmqG_GKQo

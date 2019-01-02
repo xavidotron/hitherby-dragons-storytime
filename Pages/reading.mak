@@ -33,14 +33,24 @@ lastyear = None
 ep = vol['episodes'][ei]
 %>
 
+%if 'type' in ep and ep['type'] == 'Bonus':
+</table><h3>Holiday Bonus</h3><table>
+%endif
+
 <tr>
-<th>${ei + 1}. <a href="${ep['url']}">${ep['name']}</a></th>
-<td>
-${ep['type']}
+  <th>
+    %if ep.get('type') != 'Bonus':
+    ${ei + 1}.
+    %endif
+    <a href="${ep['url']}">${ep['name']}</a></th>
+%if ep.get('type') != 'Bonus':
+  <td>
+    ${ep['type']}
 %if 'date' in ep:
 (${ep['date']})
 %endif
 </td>
+%endif
 </tr>
 %if 'tagline' in ep:
 <tr>

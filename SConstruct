@@ -251,7 +251,7 @@ for yamlf in Glob('Volumes/*.yaml'):
     vol['name'] = 'Volume %d: %s' % (len(volumes) + 1, vol['name'])
     for ep in vol['episodes']:
         for t in ep['type'].split(', '):
-            assert t in ('Legend', 'Merin', 'History')
+            assert t in ('Legend', 'Merin', 'History', 'Bonus')
         ep['path'] = '%d/%s/' % (
             vol['number'],
             ep['name'].lower().replace('.', '').replace('?', '').replace(
@@ -261,7 +261,7 @@ for yamlf in Glob('Volumes/*.yaml'):
         if ep['type'] == 'History':
             assert 'timeline' in ep
         if 'timeline' in ep:
-            assert 'History' in ep['type'].split(', '), ep['type']
+            assert 'History' in ep['type'].split(', ') or ep['legendtime'], ep['type']
             dates = []
             for k in ep['timeline']:
                 tl = dict(ep)
@@ -347,7 +347,7 @@ for vol in volumes:
         if 'postdate' in ep:
             assert 'art' in ep, ep
             if ep['type'] == 'History': assert 'tagline' in ep, ep
-            assert ep['art'].startswith(ep['type'].lower() + '-'), ep
+            assert ep['art'].startswith(ep['type'].lower() + '-') or (ep['type'] == 'Bonus' and ep['art'].startswith('legend-')), ep
             for t in ep.get('tags', ()):
                 assert t in TAG_TO_EPISODES or t in TAG_ALIASES, t
             for t in TAG_TO_EPISODES.keys() + TAG_ALIASES.keys():
@@ -470,7 +470,7 @@ if upload:
     Command(
         'vids/%syoutube.mp4' % next_upload['path'],
         [upload, 'docs/%srect.png' % next_upload['path']],
-        "/opt/local/bin/ffmpeg -loop 1 -y -i 'docs/%srect.png' -i '%s' "
+        "/usr/local/bin/ffmpeg -loop 1 -y -i 'docs/%srect.png' -i '%s' "
         "-shortest -acodec libfdk_aac -vcodec libx264 -tune stillimage "
         "'vids/%syoutube.mp4'" % (
             next_upload['path'], upload, next_upload['path']))

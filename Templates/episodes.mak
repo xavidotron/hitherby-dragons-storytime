@@ -56,6 +56,10 @@ if 'name' in ep and 'soundcloud' not in ep and not full:
   %endif
 %endif
 
+%if 'type' in ep and ep['type'] == 'Bonus':
+</table><h3>Holiday Bonus</h3><table>
+%endif
+
 <tr>
 %if title == 'Timeline':
   %if 'source' in ep:
@@ -83,9 +87,13 @@ ${ep['desc']}
 %if title == 'Timeline':
 <b><a href="${prefix}${ep['path']}">${ep['name']}</a></b>: ${ep['timenote']}</td>
 %else:
-<th>${ei + 1}. <a href="${prefix}${ep['path']}">${ep['name']}</a></th>
+<th>
+  %if ep.get('type') != 'Bonus':
+  ${ei + 1}.
+  %endif
+  <a href="${prefix}${ep['path']}">${ep['name']}</a></th>
 %endif
-%if title != 'Timeline':
+%if title != 'Timeline' and ep.get('type') != 'Bonus':
 <td>
 ${ep['type']}
 %if 'date' in ep:
