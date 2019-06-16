@@ -378,7 +378,8 @@ for vol in volumes:
             Depends(c, 'SConstruct')
             Depends(c, 'Templates/base.mak')
             # Simplest to depend on all b/c of prev/next
-            Depends(c, 'Volumes/')
+            for d in Glob('Volumes/*.mak'):
+                Depends(c, d)
         if 'art' in ep:
             c = Command(
                 'docs/%ssquare.png' % ep['path'],
