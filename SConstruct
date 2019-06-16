@@ -237,6 +237,12 @@ TITLES = {'characters': 'Characters and Strange Entities'}
 with open('tags.yaml') as fil:
     tags = yaml.load(fil)
 
+AddOption('--bonus',
+          dest='bonus',
+          action='store_true',
+          help='post bonus episode to social media')
+bonus = GetOption('bonus')
+
 volumes = []
 ages = {}
 prev_ep = None
@@ -278,7 +284,8 @@ for yamlf in Glob('Volumes/*.yaml'):
                 ep['prev'] = prev_ep['path']
                 prev_ep['next'] = ep['path']
             prev_ep = ep
-            last_upload = ep
+            if not bonus or ep['type'] == 'Bonus':
+                last_upload = ep
         else:
             if next_upload is None:
                 next_upload = ep
@@ -551,7 +558,7 @@ AddOption('--post',
           help='post episode to social media')
 
 post = GetOption('post')
-if post:
+if post or bonus:
     def post_stuff(target, source, env):
         desc = '<p><a href="http://hitherby.xavid.us/%s">%s</a>, from <a href="http://hitherby.xavid.us/">Hitherby Dragons Storytime.</a>\n\n' % (
             last_upload['path'], last_upload['name'])
