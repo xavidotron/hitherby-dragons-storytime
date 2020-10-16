@@ -192,26 +192,97 @@ def name_sanitize(t, escape_colons=True):
 OVERRIDE_MAP = {
     'historical-note': 'what-is-hitherby-dragons',
     'one-of-those-days': 'the-river-at-the-edge-of-the-world',
-    'the-worlds-not-fair-to-dead-people': 'the-world-s-not-fair-to-dead-people'
+    'the-worlds-not-fair-to-dead-people': 'the-world-s-not-fair-to-dead-people',
+    'a-reasonable-explanation': 'creating-reasonable-explanations',
+    'dont-forget-your-infinite-mercy-kwan-yin': 'don-t-forget-your-infinite-mercy-kwan-yin',
+    'static': 'static-1-of-1',
+    'the-dove-ii': 'the-dove',
+    'mylittas-question-iiiv': 'mylitta-s-question-ii-iv',
+    'devadatta-and-various-killers-iii': 'devadatta-and-various-killers-iii',
+    'the-betrothal-v-backfill-to-be': 'the-betrothal-v',
+    'the-sifter': 'legend-of-the-sifter',
+    'martin-and-lisa-iiii': 'martin-and-lisa-i-iii',
+    'good-friday-hitherby-annual-1-ii-tre-ore-2': 'good-friday-hitherby-annual-1-i-i-tre-ore',
+    'holy-saturday-stories-of-deliverance': 'holy-saturday-stories-of-deliverance-i-i',
+    'merediths-fairy-tale': 'meredith-s-fairy-tale',
+    'why-cant-i-fix-you-iii': 'why-can-t-i-fix-you-i-ii',
+    'the-birth-of-persephone-iiii': 'the-birth-of-persephone-i-iii',
+    'that-was-quick-the-monster-said-iiii': 'that-was-quick-the-monster-said-i-iii',
+    'low-saturday-the-harrowing-of-hell-iiv': 'low-saturday-the-harrowing-of-hell-ii-v',
+    'easter-that-morning-iiiv': 'easter-that-morning-iii-v',
+    'wishing-boy-iiiv-2': 'wishing-boy-ii-iv',
+    'nabonidus-gods-iviv': 'nabonidus-gods-iv-iv',
+    'the-miracle-iv': 'the-miracle-iv',
+    'angus-bad-day': 'angus-bad-day',
+    'the-ragged-things-1-of-1': 'the-ragged-things-1-of-2',
+    'palm-sunday-iiv-sid-and-max': 'palm-sunday-i-iv-sid-and-max',
+    'palm-sunday-iiiv-jigsawing': 'palm-sunday-ii-iv-jigsawing',
+    'palm-sunday-iiiiv-mr-mcgruders-question': 'palm-sunday-iii-iv-mr-mcgruder-s-question',
+    'palm-sunday-iviv-the-siggort-in-exile': 'palm-sunday-iv-iv-the-siggort-in-exile',
+    'she-had-forgotten-all-the-red-complete': 'she-had-forgotten-all-the-red',
+    'newtons-first-law-4-of-4': 'newton-s-first-law-4-of-4',
+    'hurry-on-2-of-4': 'the-chaos-adapts-2-of-4',
+    'severance-4-of-4': 'the-peculiar-case-of-miss-mu-lung-4-of-4',
+    'ink-in-re-dyslexic-agnostics-iiii': 'ink-in-re-dyslexic-agnostics-i-iv',
+    'ink-indigestible-iiiii': 'ink-indigestible-ii-iv',
+    'iviv': 'that-moldless-legacy-of-hell-iv-iv',
+    'the-latter-days-of-the-law-2-of-2-2': 'the-latter-days-of-the-law-2-of-2',
+    'transience-iiiv': 'transience-ii-v',
+    'the-blasphemous-thing-iiv': 'this-blasphemous-thing-i-v',
 }
 SUF_MAP = {
-    'ii': '-i-i',
-    'iiv': '-i-iv',
-    'iiiv': '-ii-iv',
-    'iiiiv': '-iii-iv',
-    'iviv': '-iv-iv',
+    '-ii': '-i-i',
+    '-iii': '-i-ii', # Could really be III/?
+    '-iiii': '-ii-ii', # Could really be I/III
+    '-iiiii': '-ii-iii',
+    '-iiiiii': '-iii-iii',
+    '-iiv': '-i-iv', # Could really be II/V
+    '-iiiv': '-ii-iv',
+    '-iiiiv': '-iii-iv',
+    '-iviv': '-iv-iv',
+    '-iv': '-i-v',
+    '-ixvi': '-i-xvi',
+    '-iixvi': '-ii-xvi',
+    '-iixvi': '-ii-xvi',
+    '-iiixvi': '-iii-xvi',
+    '-ivxvi': '-iv-xvi',
+    '-vxvi': '-v-xvi',
+    '-vixvi': '-vi-xvi',
+    '-viixvi': '-vii-xvi',
+    '-viiixvi': '-viii-xvi',
+    '-ixxvi': '-ix-xvi',
+    '-xxvi': '-x-xvi',
+    '-xixvi': '-xi-xvi',
+    '-xiixvi': '-xii-xvi',
+    '-xiiixvi': '-xiii-xvi',
+    '-xivxvi': '-xiv-xvi',
+    '-xvxvi': '-xv-xvi',
+    '-xvixvi': '-xvi-xvi',
+    # These are just for the apostraphe fix, since these aren't in the name.
+    '-1-of-1': '-1-of-1',
 }
 URL_200S = set()
 URL_404S = set()
 
 def get_url(ep):
+    if ep['url'].startswith('http://hitherby-dragons.wikidot.com'):
+        return ep['url']
     _, page, _ = ep['url'].rsplit('/', 2)
     if page in OVERRIDE_MAP:
         page = OVERRIDE_MAP[page]
     elif '-' in page:
-        pref, suf = page.rsplit('-', 1)
-        if suf in SUF_MAP:
+        for suf in SUF_MAP:
+            if not page.endswith(suf):
+                continue
+            pref = page[:-len(suf)]
+            if u'’' in ep['name'] and u'’ ' not in ep['name']:
+                pref = name_sanitize(ep['name'])
             page = pref + SUF_MAP[suf]
+            break
+        else:
+            if u'’' in ep['name'] and u'’ ' not in ep['name']:
+                page = name_sanitize(ep['name'])
+    assert page != 'hitherby-dragons.wikidot.com', ep
     ret = u'http://hitherby-dragons.wikidot.com/' + page
     return ret
 
@@ -299,15 +370,15 @@ for yamlf in Glob('Volumes/*.yaml'):
                 print ep['name']
                 print
                 print get_desc(ep)
-                url = get_url(ep)
-                if url not in URL_200S:
-                    try:
-                        urllib2.urlopen(url)
-                    except urllib2.HTTPError:
-                        print '!!! bad url:', url
-                        URL_404S.add(url)
-                    else:
-                        URL_200S.add(url)
+        url = get_url(ep)
+        if url not in URL_200S:
+            try:
+                urllib2.urlopen(url)
+            except urllib2.HTTPError:
+                print '!!! bad url:', ep['url'], url
+                URL_404S.add(url)
+            else:
+                URL_200S.add(url)
 
     volumes.append(vol)
 
