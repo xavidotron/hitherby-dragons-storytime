@@ -42,7 +42,7 @@ ep = vol['episodes'][ei]
     %if ep.get('type') != 'Bonus':
     ${ei + 1}.
     %endif
-    <a href="${ep['url']}">${ep['name']}</a></th>
+    <a href="${get_url(ep)}">${ep['name']}</a></th>
 %if ep.get('type') != 'Bonus':
   <td>
     ${ep['type']}

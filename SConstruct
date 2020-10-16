@@ -7,8 +7,9 @@ from mako.lookup import TemplateLookup
 
 # This is dumb.
 sys.path.append('/Library/Python/2.7/site-packages/')
-import pytumblr
-import soundcloud
+
+# was /Applications/Inkscape.app/Contents/Resources/bin/inkscape
+INKSCAPE='/Applications/Inkscape.app/Contents/MacOS/inkscape'
 
 AGEORD = {}
 # (age, "first" year in age)
@@ -384,8 +385,8 @@ for vol in volumes:
             c = Command(
                 'docs/%ssquare.png' % ep['path'],
                 'Art/' + ep['art'],
-                '/Applications/Inkscape.app/Contents/Resources/bin/inkscape '
-                '-b ffffffff --export-png=%s/${TARGET} %s/$SOURCE '
+                INKSCAPE +
+                ' -b ffffffff --export-filename=%s/${TARGET} %s/$SOURCE '
                 '--export-area=560:0:2000:1440' % (pwd, pwd))
             # This file will change a lot more than the art will.
             #Depends(c, 'Volumes/%02d.yaml' % vol['number'])
@@ -393,9 +394,9 @@ for vol in volumes:
             c = Command(
                 'docs/%srect.png' % ep['path'],
                 'Art/' + ep['art'],
-                '/Applications/Inkscape.app/Contents/Resources/bin/inkscape '
-                '-b ffffffff --export-png=%s/${TARGET} %s/$SOURCE '
-                '--export-area-page --export-dpi=67.5' % (pwd, pwd))
+                INKSCAPE +
+                ' -b ffffffff --export-filename=%s/${TARGET} %s/$SOURCE '
+                '--export-area-page -w 1800 -h 1013' % (pwd, pwd))
             # This file will change a lot more than the art will.
             #Depends(c, 'Volumes/%02d.yaml' % vol['number'])
 
@@ -499,6 +500,7 @@ if upload:
         print "Post Date:", next_upload['postdate']
         if raw_input('Upload %s for episode "%s"? [yN] ' % (
                 wav, next_upload['name'].encode('utf-8'))) == 'y':
+            import soundcloud
             with open(os.path.expanduser('~/.soundcloud')) as fil:
                 client = soundcloud.Client(**yaml.load(fil))
             print 'Uploading', wav, 'to Soundcloud with', square
@@ -572,6 +574,7 @@ if post or bonus:
                 last_upload['name'], last_upload['soundcloud'])) == 'y':
             with open(os.path.expanduser('~/.tumblr')) as fil:
                 auth = yaml.load(fil)
+            import pytumblr
             client = pytumblr.TumblrRestClient(
                 auth['consumer_key'], auth['consumer_secret'],
                 auth['oauth_token'], auth['oauth_token_secret'])
