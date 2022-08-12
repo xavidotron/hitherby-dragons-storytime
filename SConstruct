@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import re, sys, os, subprocess, calendar, datetime
-import traceback, urllib2
+import traceback, urllib.request, urllib.error
 import yaml
 from mako.template import Template
 from mako.lookup import TemplateLookup
@@ -139,6 +139,8 @@ class dateparse(object):
         return self.full
     def __cmp__(self, other):
         return cmp(self.key, other.key)
+    def __lt__(self, other):
+        return self.key < other.key
                 
 
 def get_title(tab):
@@ -180,7 +182,7 @@ def render_mako(prefix='../', **kw):
                                get_url=get_url,
                                **kw)
         with open(str(target[0]), 'w') as fil:
-            fil.write(rendered.encode('utf-8'))
+            fil.write(rendered)
     return render_mako_impl
 
 def name_sanitize(t, escape_colons=True):
@@ -363,19 +365,19 @@ for yamlf in Glob('Volumes/*.yaml'):
                 next_upload = ep
                 upload_vol = vol
             if 'credits' in ep:
-                print
-                print '== Future Upload =='
-                print
+                print()
+                print('== Future Upload ==')
+                print()
                 # This is for email convenience
-                print ep['name']
-                print
-                print get_desc(ep)
+                print(ep['name'])
+                print()
+                print(get_desc(ep))
         url = get_url(ep)
         if url not in URL_200S:
             try:
-                urllib2.urlopen(url)
-            except urllib2.HTTPError:
-                print '!!! bad url:', ep['url'], url
+                urllib.request.urlopen(url)
+            except urllib.error.HTTPError:
+                print('!!! bad url:', ep['url'], url)
                 URL_404S.add(url)
             else:
                 URL_200S.add(url)
@@ -429,7 +431,7 @@ for vol in volumes:
             assert ep['art'].startswith(ep['type'].lower() + '-') or (ep['type'] == 'Bonus' and ep['art'].startswith('legend-')), ep
             for t in ep.get('tags', ()):
                 assert t in TAG_TO_EPISODES or t in TAG_ALIASES, t
-            for t in TAG_TO_EPISODES.keys() + TAG_ALIASES.keys():
+            for t in list(TAG_TO_EPISODES.keys()) + list(TAG_ALIASES.keys()):
                 if t in ep.get('tags', ()) or t in ep.get('notags', ()):
                     continue
                 assert t.lower() not in ep['name'].lower(), (t, ep['name'])
@@ -563,18 +565,18 @@ if upload:
         desc = get_desc(next_upload)
         tags = get_tags(next_upload)
         album = FMT_RE.sub('', upload_vol['name'].strip())
-        print "Title:", next_upload['name']
-        print "Album:", album
-        print "Description:"
-        print desc
-        print "Tags:", tags
-        print "Post Date:", next_upload['postdate']
+        print("Title:", next_upload['name'])
+        print("Album:", album)
+        print("Description:")
+        print(desc)
+        print("Tags:", tags)
+        print("Post Date:", next_upload['postdate'])
         if raw_input('Upload %s for episode "%s"? [yN] ' % (
                 wav, next_upload['name'].encode('utf-8'))) == 'y':
             import soundcloud
             with open(os.path.expanduser('~/.soundcloud')) as fil:
                 client = soundcloud.Client(**yaml.load(fil))
-            print 'Uploading', wav, 'to Soundcloud with', square
+            print('Uploading', wav, 'to Soundcloud with', square)
             scd = dict(
                 title=next_upload['name'],
                 sharing='public',
@@ -585,7 +587,7 @@ if upload:
                 release_month=next_upload['postdate'].month,
                 release_day=next_upload['postdate'].day,
                 description=desc)
-            print 'Metadata:', scd
+            print('Metadata:', scd)
             scd['asset_data'] =open(wav, 'rb')
             scd['artwork_data'] = open(square, 'rb')
             if True:
@@ -593,7 +595,7 @@ if upload:
                     track = client.post('/tracks', track=scd)
                     # '--artist', 'Hitherby Dragons Storytime',
                     # '--album', album,
-                    print "Soundcloud URL:", track.permalink_url
+                    print("Soundcloud URL:", track.permalink_url)
                     playlists = client.get('/me/playlists')
                     for pl in playlists:
                         if pl.title == album:
@@ -602,11 +604,11 @@ if upload:
                             client.put(pl.uri, playlist={
                                 'tracks': map(lambda id: dict(id=id), tracks)
                             })
-                            print "Added to playlist", album
+                            print("Added to playlist", album)
                             break
                     else:
-                        print "No playlist found for", album
-                except Exception, e:
+                        print("No playlist found for", album)
+                except Exception:
                     traceback.print_exc()
             if True:
                 subprocess.check_call([
@@ -639,8 +641,8 @@ if post or bonus:
         if 'tagline' in last_upload:
             desc += '<p>' + last_upload['tagline'] + '\n\n'
         desc += '<p><a href="%s">Hitherby Dragons</a> by <a href="http://jennamoran.tumblr.com/">@jennamoran</a>.' % get_url(last_upload)
-        print 'Description:'
-        print desc
+        print('Description:')
+        print(desc)
         if raw_input('Post episode "%s" linking to %s? [yN] ' % (
                 last_upload['name'], last_upload['soundcloud'])) == 'y':
             with open(os.path.expanduser('~/.tumblr')) as fil:
@@ -650,14 +652,14 @@ if post or bonus:
                 auth['consumer_key'], auth['consumer_secret'],
                 auth['oauth_token'], auth['oauth_token_secret'])
             # This doesn't seem to do the preview image right...
-            print client.create_audio(
+            print(client.create_audio(
                 'hitherby-storytime',
                 external_url=last_upload['soundcloud'],
-                caption=desc.encode('utf-8'), tags=get_tags(last_upload))
+                caption=desc.encode('utf-8'), tags=get_tags(last_upload)))
 
     Command('post', 'docs/%sindex.html' % last_upload['path'], post_stuff)
 
 def validate_stuff(target, source, env):
     if URL_404S:
-        print '!!! Invalid wikidot URLs:', URL_404S
+        print('!!! Invalid wikidot URLs:', URL_404S)
 Command('validate', 'docs/index.html', validate_stuff)

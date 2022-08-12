@@ -15,7 +15,7 @@
 
 <p>Presenting a possible reading order of the Imago.</p>
 
-%for vi in xrange(len(volumes)):
+%for vi in range(len(volumes)):
 <% vol = volumes[vi] %>
 <h2 id="${vi+1}">${vol['name']}</h2>
 
@@ -28,7 +28,7 @@ lastyear = None
 %>
 
 <table>
-%for ei in xrange(len(vol['episodes'])):
+%for ei in range(len(vol['episodes'])):
 <%
 ep = vol['episodes'][ei]
 %>

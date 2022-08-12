@@ -19,7 +19,7 @@
   notes.</p>
 %endif
 
-%for vi in xrange(len(volumes)):
+%for vi in range(len(volumes)):
 <%
   vol = volumes[vi]
   printed_vol = False
@@ -29,7 +29,7 @@
 lastyear = None
 %>
 
-%for ei in xrange(len(vol['episodes'])):
+%for ei in range(len(vol['episodes'])):
 <%
 ep = vol['episodes'][ei]
 %>
