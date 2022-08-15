@@ -1,0 +1,125 @@
+name: |
+  <i>The Frog and the Thorn: In a Time of Cages</i>
+desc:
+episodes:
+-
+  name: The No-Good Bird
+  type: History
+  url: http://hitherby-dragons.wikidot.com/the-no-good-bird-i-i
+  timeline:
+    2004-05-28: The grangler dies.
+-
+  name: Anthropomorphizing the Crucible
+  type: History
+  url: http://hitherby-dragons.wikidot.com/anthropomorphizing-the-crucible-i-vii
+  timeline:
+    1995: Liril thinks of Micah.
+-
+  name: Eliza and the Frog
+  type: History
+  url: http://hitherby-dragons.wikidot.com/eliza-and-the-frog-ii-vii
+  timeline:
+    1995-03-18: Liril talks to the timing frog.
+-
+  name: Formica
+  type: History
+  url: http://hitherby-dragons.wikidot.com/formica-iii-vii
+  timeline:
+    1995-03-18: Liril thinks about formica.
+-
+  name: And the Birds Fall Dead
+  type: History
+  url: http://hitherby-dragons.wikidot.com/and-the-birds-fall-dead-iv-vii
+  timeline:
+    1995-03-18: Melanie comes back into Liril’s life.
+-
+  name: Exposition Answers Emptiness with Digressions
+  type: History
+  url: http://hitherby-dragons.wikidot.com/exposition-answers-emptiness-with-digressions-v-vii
+  timeline:
+    1989-10-28: Jane escapes Central’s purview.
+    1995-03-18: Melanie tells Liril about Jane’s escape.
+-
+  name: “And Break.”
+  type: History
+  url: http://hitherby-dragons.wikidot.com/and-break-vi-vii
+  timeline:
+    1995-03-18: Liril fails to bring forth a constructive god.
+-
+  name: Little Faces
+  type: History
+  url: http://hitherby-dragons.wikidot.com/little-faces-vii-vii
+  timeline:
+    1995-03-18: Micah attacks the monster.
+-
+  name: Why the Rooster Crows at Dawn
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/why-the-rooster-crows-at-dawn
+-
+  name: Oh, Harold Dear
+  type: History
+  url: http://hitherby-dragons.wikidot.com/oh-harold-dear-i-i
+  timeline:
+    1981: Liril scratches her name on the wall in the facility at Elm Hill.
+    2004-05-28.1: Micah faces Melanie’s army.
+-
+  name: The Rabbit and the Wolf
+  type: History
+  url: http://hitherby-dragons.wikidot.com/the-rabbit-and-the-wolf-i-i
+  timeline:
+    2004-05-28.1: Vincent tries to avoid a fight.
+-
+  name: The Cautionary Tale of Edmund Zombie
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/the-cautionary-tale-of-edmund-zombie
+-
+  name: The Shepherdess
+  type: History
+  url: http://hitherby-dragons.wikidot.com/the-shepherdess-i-vii
+  timeline:
+    1995-03-18: Micah tells a titan of Lia and Amiel.
+    1995-03-23: Micah drinks the blood of a nameless horror.
+-
+  name: Later…
+  type: History
+  url: http://hitherby-dragons.wikidot.com/later-ia-vii
+  timeline:
+    1995-03-25: The monster finds that Micah is still alive.
+-
+  name: The Boundary Between Liril and the World
+  type: History
+  url: http://hitherby-dragons.wikidot.com/the-boundary-between-liril-and-the-world-ii-vii
+  timeline:
+    1995-03-25: Micah goes home.
+    1995-10?: The monster understands Micah’s use. 
+-
+  name: The Measure of a Monster
+  type: History
+  url: http://hitherby-dragons.wikidot.com/the-measure-of-a-monster-iii-vii
+  timeline:
+    1995-10-10.1: Micah gets arrested.
+-
+  name: Sympathetic Magic
+  type: History
+  url: http://hitherby-dragons.wikidot.com/sympathetic-magic-iv-viii
+  timeline:
+    1995-10-10: Liril starts making a diorama.
+    1995-10-11: Micah encounters a ragged thing.
+-
+  name: The Lion
+  type: History
+  url: http://hitherby-dragons.wikidot.com/the-lion-v-vii
+  timeline:
+    1981-05-13: A Dominion bends itself down upon Elm Hill.
+-
+  name: “I will make you cry”
+  type: History
+  url: http://hitherby-dragons.wikidot.com/i-will-make-you-cry-vi-vii
+  timeline:
+    1995-10-17: The monster visits Micah at Liril’s house.
+-
+  name: What Do You Do with a One-Winged Cherub?
+  type: History
+  url: http://hitherby-dragons.wikidot.com/what-do-you-do-with-a-one-winged-cherub-vii-vii
+  timeline:
+    1998-10-31: Melanie talks to Micah about the monster.

@@ -53,10 +53,75 @@ episodes:
   type: History
   url: http://imago.hitherby.com/2006/11/the-blasphemous-thing-iiv/
   timeline:
-    2004-06-02.1: Sid and the pirates approach Head Island.
+    2004-06-03.1: Sid and the pirates approach Head Island.
 -
   name: Transience
   type: History
   url: http://imago.hitherby.com/2006/11/transience-iiiv/
   timeline:
-    2004-06-02.1: The good ship <i>Honest with Myself</i> is destroyed.
+    2004-06-03.1: The good ship <i>Honest with Myself</i> is destroyed.
+-
+  name: "“You Dirty Skandhas!”"
+  type: History
+  url: http://hitherby-dragons.wikidot.com/you-dirty-skandhas-iii-v
+  timeline:
+    1960s?: Tara’s mother tells her the parable of the heaps.
+    2004-06-03.1: Tara and her pirates fight the heaps.
+-
+  name: The Sword of Love
+  type: History
+  url: http://hitherby-dragons.wikidot.com/the-sword-of-love-iv-v
+  timeline:
+    1990s?: Tara’s master tries to hit her with a stick.
+    2004-06-03.1: Tara faces the great heap.
+-
+  name: Siggort
+  type: History
+  url: http://hitherby-dragons.wikidot.com/siggort-v-v
+  timeline:
+    2004-06-03.2: Sid threatens to tear asunder the fabric of this world.
+-
+  name: Its Second Stage
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/its-second-stage
+-
+  name: Between the Panels of the Day – Piracy
+  type: History
+  url: http://hitherby-dragons.wikidot.com/between-the-panels-of-the-day-piracy-i-i
+  timeline:
+    1990s?: Tara’s master helps her build a ship.
+-
+  name: Kids Today
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/kids-today
+-
+  name: The Metal That Longs to Move
+  type: History
+  url: http://hitherby-dragons.wikidot.com/thanksgiving-the-metal-that-longs-to-move-1-of-5
+  timeline:
+    2004-06-03.2: Red Mary saves Max.
+-
+  name: Max is Dead
+  type: History
+  url: http://hitherby-dragons.wikidot.com/max-is-dead-2-of-5
+  timeline:
+    2004-06-03.2: Sid and Max meet. Then they fight!
+-
+  name: The Matter of Zheng’s Son
+  type: History
+  url: http://hitherby-dragons.wikidot.com/the-matter-of-zheng-s-son-3-of-5
+  timeline:
+    501 BCE: Mr. Kong has tea with an assassin.
+    2004-06-03.2: Sid drives Max into the Good and slams shut the crack.
+-
+  name: On The Nature of Judgement
+  type: History
+  url: http://hitherby-dragons.wikidot.com/on-the-nature-of-judgment-4-of-5
+  timeline:
+    2004-06-03.2: Sid is alone.
+-
+  name: To Light a Candle
+  type: History
+  url: http://hitherby-dragons.wikidot.com/parousia-to-light-a-candle-5-of-5
+  timeline:
+    2004-06-06: Max returns.

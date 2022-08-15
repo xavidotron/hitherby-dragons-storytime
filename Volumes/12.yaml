@@ -86,10 +86,11 @@ episodes:
     Prehistory: Round Man gives dogs lasers.
 -
   name: "Boedromion 16: Three Short Bits"
-  type: Legend, History, Legend
+  type: Legend, History, History
   url: http://imago.hitherby.com/2005/09/boedromion-16-legend-history-history-three-short-bits/
   timeline:
     Prehistory: Chaos Woman talks to the serpent.
+    1317 BCE: Leucippus and Demeter speak on truth.
 -
   name: "Boedromion 17: The Cakkavattisihananda Sutra"
   type: History

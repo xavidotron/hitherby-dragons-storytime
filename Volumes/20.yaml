@@ -1,0 +1,113 @@
+name: |
+  <i>The Frog and the Thorn: Shattered</i>
+desc:
+episodes:
+-
+  name: Whoever Can Bear the Weight
+  type: Merin
+  legendtime: True
+  url: http://hitherby-dragons.wikidot.com/whoever-can-bear-the-weight
+  timeline:
+    Third Tyranny: Zeus gives the power of the world to a woman whom he thought could bear its weight.
+-
+  name: Wicked Children
+  type: History
+  url: http://hitherby-dragons.wikidot.com/wicked-children-i-i
+  timeline:
+    2004-05-28.1: The grangler makes its way to Liril.
+-
+  name: Morality Fable
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/morality-fable
+-
+  name: Ping
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/ping
+-
+  name: Not Unrecorded
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/not-unrecorded
+-
+  name: Harold’s Head Gets Underfoot
+  type: History
+  url: http://hitherby-dragons.wikidot.com/harold-s-head-gets-underfoot-i-iv
+  timeline:
+    2004-05-28.1: Melanie and Vincent proceed through the gates at Elm Hill.
+-
+  name: The Incredible Leap of the Sinless Man
+  type: History
+  url: http://hitherby-dragons.wikidot.com/the-incredible-leap-of-the-sinless-man-ii-iv
+  timeline:
+    2004-05-28.1: Tainted John attacks Vincent.
+-
+  name: The Sting
+  type: History
+  url: http://hitherby-dragons.wikidot.com/the-sting-iii-iv
+  timeline:
+    2004-05-28.1: Micah stands against Melanie’s army.
+-
+  name: “If I Go Crazy Then Will You Still Call Me Superman?”
+  type: History
+  url: http://hitherby-dragons.wikidot.com/if-i-go-crazy-then-will-you-still-call-me-superman-iv-iv
+  timeline:
+    2004-05-28.1: Melanie approaches Micah.
+-
+  name: Hard and Cold
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/hard-and-cold
+-
+  name: The Devil and His Daughter
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/the-devil-and-his-daughter
+-
+  name: Sevens
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/sevens
+-
+  name: Vincent and the Devil
+  type: History
+  url: http://hitherby-dragons.wikidot.com/vincent-and-the-devil-i-v
+  timeline:
+    1981: Vincent playes with Iphigenia.
+    1987-09-17: Vincent finds himself at the Devil’s house.
+-
+  name: And Three Points is the Game
+  type: History
+  url: http://hitherby-dragons.wikidot.com/and-three-points-is-the-game-ii-v
+  timeline:
+    1987-09-17: Vincent asks the Devil some questions.
+    1987-09-18: Vincent wakes up at home in Central.
+-
+  name: Green
+  type: History
+  url: http://hitherby-dragons.wikidot.com/green-iii-v
+  timeline:
+    2002-09-27: John dyes his hair green and sees portents.
+    2004-04-17: Tainted John begins his one-year pact.
+-
+  name: A Digression Concerning the Performance of the Confessional
+  type: History
+  url: http://hitherby-dragons.wikidot.com/a-digression-concerning-the-performance-of-the-confessional
+  timeline:
+    2004-05-28: Micah asks Tained John to hear his confession.
+-
+  name: A Feast of Kin
+  type: History
+  url: http://hitherby-dragons.wikidot.com/a-feast-of-kin-v-v
+  timeline:
+    2004-05-28: Vincent dies.
+-
+  name: Adjective Noun
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/adjective-noun
+-
+  name: A Castle That Ceases to Move Soon Dies
+  type: Legend
+  url: http://hitherby-dragons.wikidot.com/a-castle-that-ceases-to-move-soon-dies
+-
+  name: Scarab All-a-Fulminatin’, Explody & Oh Shi—
+  type: History
+  url: http://hitherby-dragons.wikidot.com/scarab-all-a-fulminatin-explody-oh-shi-i-i
+  timeline:
+    2002: The monster promotes the scarab of explosions to a Prince.
+    2004-05-28: Micah catches the lightning and fails to kill Melanie.

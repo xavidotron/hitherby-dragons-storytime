@@ -95,22 +95,22 @@ episodes:
 -
   name: The Chaos Adapts
   type: History
-  url: http://imago.hitherby.com/2006/07/hurry-on-2-of-4/
+  url: http://hitherby-dragons.wikidot.com/the-chaos-adapts-2-of-4
   timeline:
-    2004-06-03: Max sails west.
+    2004-06-03.1: Max sails west.
 -
   name: Red Mary
   type: History
-  url: http://imago.hitherby.com/2006/07/red-mary-3-of-4/
+  url: http://hitherby-dragons.wikidot.com/red-mary-3-of-4
   timeline:
-    2004-06-03: Max fights Red Mary.
+    2004-06-03.1: Max fights Red Mary.
 -
   name: The Peculiar Case Of Miss Mu Lung
   type: History
   url: http://imago.hitherby.com/2006/07/severance-4-of-4/
   timeline:
     532 BCE: Mr. Kong gives advice to Miss Mu Lung.
-    2004-06-03: Red Mary lifts Max from the sea.
+    2004-06-03.1: Red Mary lifts Max from the sea.
 -
   name: In the Shadow of the Centipede
   type: Legend

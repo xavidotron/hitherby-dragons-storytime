@@ -452,7 +452,7 @@ for vol in volumes:
             Depends(c, 'SConstruct')
             Depends(c, 'Templates/base.mak')
             # Simplest to depend on all b/c of prev/next
-            for d in Glob('Volumes/*.mak'):
+            for d in Glob('Volumes/*.yaml'):
                 Depends(c, d)
         if 'art' in ep:
             c = Command(
@@ -498,13 +498,19 @@ c = Command('docs/timeline/index.html', 'Templates/episodes.mak',
             render_mako(volumes=agelist,
                         title='Timeline',
                         full=False))
+Depends(c, 'SConstruct')
+Depends(c, 'Templates/base.mak')
+for d in Glob('Volumes/*.yaml'):
+    Depends(c, d)
+Depends(c, 'historical-notes.yaml')
 c = Command('docs/timeline/full.html', 'Templates/episodes.mak',
             render_mako(volumes=agelist,
                         title='Timeline',
                         full=True))
 Depends(c, 'SConstruct')
 Depends(c, 'Templates/base.mak')
-Depends(c, 'Volumes/')
+for d in Glob('Volumes/*.yaml'):
+    Depends(c, d)
 Depends(c, 'historical-notes.yaml')
 
 c = Command('docs/rss.xml', 'Templates/rss.mak',

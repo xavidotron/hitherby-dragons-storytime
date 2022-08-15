@@ -56,7 +56,7 @@ if 'name' in ep and 'soundcloud' not in ep and not full:
   %endif
 %endif
 
-%if 'type' in ep and ep['type'] == 'Bonus':
+%if 'type' in ep and ep['type'] == 'Bonus' and title != 'Timeline':
 </table><h3>Holiday Bonus</h3><table>
 %endif
 

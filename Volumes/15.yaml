@@ -65,26 +65,26 @@ episodes:
   type: History
   url: http://imago.hitherby.com/2006/07/the-broken-island-1-of-4/
   timeline:
-    2004-06-03: Max and Red Mary discuss Confucianism.
+    2004-06-03.1: Max and Red Mary discuss Confucianism.
 -
   name: The Loneliness of the World
   type: History
   url: http://imago.hitherby.com/2006/08/the-loneliness-of-the-world-2-of-4/
   timeline:
-    2004-06-03: Red Mary tells Max a story of the Buddha.
+    2004-06-03.1: Red Mary tells Max a story of the Buddha.
     539 BCE: The Buddha speaks the word <i>anatman</i>.
 -
   name: Pumpkin Sickness
   type: History
   url: http://imago.hitherby.com/2006/08/pumpkin-sickness-3-of-4/
   timeline:
-    2004-06-03: Max encounters the giraumon.
+    2004-06-03.1: Max encounters the giraumon.
 -
   name: Happy Endings
   type: History
-  url: http://imago.hitherby.com/2006/08/happy-endings-4-of-4/
+  url: http://hitherby-dragons.wikidot.com/happy-endings-4-of-4
   timeline:
-    2004-06-03: Max sees the goodblow.
+    2004-06-03.1: Max sees the goodblow.
 -
   name: Six’s Story
   type: Legend
@@ -94,13 +94,13 @@ episodes:
   type: History
   url: http://imago.hitherby.com/2006/08/the-aftermath-of-heaven-1-of-2/
   timeline:
-    2004-06-03: Max lets go of a miscomprehension.
+    2004-06-03.2: Max lets go of a miscomprehension.
 -
   name: The Latter Days of the Law
   type: History
   url: http://imago.hitherby.com/2006/08/the-latter-days-of-the-law-2-of-2-2/
   timeline:
-    2004-06-03: Red Mary takes Max’s life.
+    2004-06-03.2: Red Mary takes Max’s life.
 -
   name: Such a Strange and Funny Image
   type: Legend
