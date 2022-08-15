@@ -95,7 +95,7 @@ episodes:
   type: History
   url: http://hitherby-dragons.wikidot.com/a-feast-of-kin-v-v
   timeline:
-    2004-05-28: Vincent dies.
+    2004-05-28.1: Vincent dies.
 -
   name: Adjective Noun
   type: Legend
@@ -110,4 +110,4 @@ episodes:
   url: http://hitherby-dragons.wikidot.com/scarab-all-a-fulminatin-explody-oh-shi-i-i
   timeline:
     2002: The monster promotes the scarab of explosions to a Prince.
-    2004-05-28: Micah catches the lightning and fails to kill Melanie.
+    2004-05-28.1: Micah catches the lightning and fails to kill Melanie.
